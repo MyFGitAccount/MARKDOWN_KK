@@ -58,3 +58,17 @@ graph TD
   C --> C5[Testing & Validation]
   C --> C6[Deployment & Documentation]
  
+
+### WorkFlow
+```mermaid
+graph TD
+  Start[Setup Environment] --> Setup1[Initialize Database Schema]
+  Setup1 --> Setup2[Configure Frontend and Backend Frameworks]
+  Progress0 --> Progress1[Develop Login and Registration UI]
+  Progress1 --> Progress2[Implement Course Page and Material Repository]
+  Progress2 --> Progress3[Build Interactive Tools - Flashcards, Matching Games, Assessments]
+  Progress3 --> Progress4[Integrate Points and Rating System]
+  Progress4 --> Progress5[Create Admin Dashboard and Moderation Tools]
+  Progress5 --> Progress6[Add Articles and Forum Sections]
+  Progress6 --> Progress7[Develop Timetable Matching and Groupmate Finder]
+  Progress7 --> Finalize[Testing, Optimization, and Deployment]

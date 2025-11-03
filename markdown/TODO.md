@@ -2,7 +2,7 @@
 
 ```mermaid
 graph TD
-  st[Login] --> op[Enter credentials]
-  op --> cond{Valid?}
-  cond -->|Yes| e[Success]
-  cond -->|No| op
+  st[Login Start] --> op1[Enter User name]-->op2[Enter password]
+  op2 --> cond{First time user?}
+  cond -->|Yes| op3[enter new username]-->op4[enter new password]
+  cond -->|No| op5[forgetpassword]-->op3

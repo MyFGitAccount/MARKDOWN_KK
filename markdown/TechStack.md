@@ -26,6 +26,7 @@
 ---
 
 ## Role Breakdown
+
 ```mermaid
 graph TD
   Root[HKU SPACE Learning Platform Project]
@@ -61,6 +62,7 @@ graph TD
 ---
 
 ## WorkFlow
+
 ```mermaid
 graph TD
   Start[Setup Environment] --> Setup1[Initialize Database Schema]

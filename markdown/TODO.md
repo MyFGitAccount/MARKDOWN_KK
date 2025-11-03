@@ -1,12 +1,8 @@
 # Login process flow chart:
 
-```markdown
-```flow
-st=>start: Login
-op=>operation: Enter credentials
-cond=>condition: Valid?
-e=>end: Success
-
-st->op->cond
-cond(yes)->e
-cond(no)->op
+```mermaid
+graph TD
+  st[Login] --> op[Enter credentials]
+  op --> cond{Valid?}
+  cond -->|Yes| e[Success]
+  cond -->|No| op

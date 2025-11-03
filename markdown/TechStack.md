@@ -33,13 +33,13 @@ graph TD
   A --> A3[Database Design]
   A --> A4[Admin Dashboard]
 
-  B[Frontend Developer] --> B1[Login & Registration UI]
+  B[Frontend Developer] --> B1[Login and Registration UI]
   B --> B2[Course Page Interface]
-  B --> B3[Interactive Tools (Flashcards, Games)]
-  B --> B4[Responsive Design & Accessibility]
+  B --> B3[Interactive Tools - Flashcards and Games]
+  B --> B4[Responsive Design and Accessibility]
 
-  C[Platform Integrator & QA] --> C1[Discourse Forum Integration]
-  C --> C2[Timetable Matching & Groupmate Finder]
-  C --> C3[Testing & Validation]
-  C --> C4[Deployment & Documentation]
+  C[Platform Integrator and QA] --> C1[Discourse Forum Integration]
+  C --> C2[Timetable Matching and Groupmate Finder]
+  C --> C3[Testing and Validation]
+  C --> C4[Deployment and Documentation]
  

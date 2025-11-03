@@ -39,7 +39,7 @@
 
 ---
 
-# Introduction
+## Introduction
 
 ## Background
 
@@ -47,30 +47,30 @@
 
 ---
 
-# Feature
+## Feature
 
 ---
 
-# Target Users
+## Target Users
 
 ---
 
-# Future Development
+## Future Development
 
 ---
 
-# Schedule and division of work between each groupmate
+## Schedule and division of work between each groupmate
 
 ---
 
-# Cost
+## Cost
 
 - Server
 - Database
 
 ---
 
-# Implementation || Design || Current Development Stage
+## Implementation || Design || Current Development Stage
 
 ## System Design
 
@@ -78,7 +78,7 @@
 
 ---
 
-# Reminder
+## Reminder
 
 - Clearly outlined the problem being addressed, the proposed solution, and the plan for project execution
 - Strong idea, prototype and demonstrations

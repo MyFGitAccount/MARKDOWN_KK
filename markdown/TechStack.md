@@ -58,6 +58,7 @@ graph TD
   C --> C4[Search & Filter Tools]
   C --> C5[Testing & Validation]
   C --> C6[Deployment & Documentation]
+```
  
 ---
 
@@ -75,5 +76,6 @@ graph TD
   Progress5 --> Progress6[Add Articles and Forum Sections]
   Progress6 --> Progress7[Develop Timetable Matching and Groupmate Finder]
   Progress7 --> Finalize[Testing, Optimization, and Deployment]
+```
 
 ---

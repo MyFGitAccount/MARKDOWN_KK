@@ -1,6 +1,6 @@
-# 🚀 Project Stack & Cost Overview
+#  Project Stack & Cost Overview
 
-## 🧱 Tech Stack: MERN
+##  Tech Stack: MERN
 
 | Layer        | Technology               | Notes                                  |
 |--------------|---------------------------|----------------------------------------|
@@ -12,7 +12,7 @@
 
 ---
 
-## 💰 Potential Cost Breakdown
+##  Potential Cost Breakdown
 
 | Category               | Option(s)                                      | Notes                                                                 |
 |------------------------|------------------------------------------------|-----------------------------------------------------------------------|
@@ -25,3 +25,21 @@
 
 ---
 
+### Role Breakdown
+```mermaid
+graph TD
+  A[Project Lead] --> A1[System Architecture]
+  A --> A2[Backend Development]
+  A --> A3[Database Design]
+  A --> A4[Admin Dashboard]
+
+  B[Frontend Developer] --> B1[Login & Registration UI]
+  B --> B2[Course Page Interface]
+  B --> B3[Interactive Tools (Flashcards, Games)]
+  B --> B4[Responsive Design & Accessibility]
+
+  C[Platform Integrator & QA] --> C1[Discourse Forum Integration]
+  C --> C2[Timetable Matching & Groupmate Finder]
+  C --> C3[Testing & Validation]
+  C --> C4[Deployment & Documentation]
+ 

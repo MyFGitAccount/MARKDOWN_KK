@@ -14,14 +14,14 @@
 
 ##  Potential Cost Breakdown
 
-| Category               | Option(s)                                      | Notes                                                                 |
-|------------------------|------------------------------------------------|-----------------------------------------------------------------------|
-| **Server & Hosting**   | DigitalOcean, AWS, Hetzner                     | VPS providers for backend and forum hosting                          |
-| **Database**           | MongoDB Atlas                                  | Free tier: 512 MB; paid plans for scaling                            |
-| **Forum**              | Discourse                                      | Free if self-hosted; paid if hosted by Discourse.org                 |
-| **Email Verification** | Gmail SMTP, SendPulse                          | Gmail: ~500 emails/day; SendPulse: 12,000/month free tier            |
-| **Domain Name**        | Namecheap, Cloudflare                          | Optional, depending on branding needs                                |
-| **Backup & Storage**   | AWS S3, Backblaze, local storage               | For file uploads, student cards, and forum backups                   |
+| Category               | Option(s)                                      | Notes                                                                 |Cost                 |
+|------------------------|------------------------------------------------|-----------------------------------------------------------------------|      |
+| **Server & Hosting**   | DigitalOcean, AWS, Hetzner                     | VPS providers for backend and forum hosting                          |      |
+| **Database**           | MongoDB Atlas                                  | Free tier: 512 MB; paid plans for scaling                            |      |
+| **Forum**              | Discourse                                      | Free if self-hosted; paid if hosted by Discourse.org                 |     |
+| **Email Verification** | Gmail SMTP, SendPulse                          | Gmail: ~500 emails/day; SendPulse: 12,000/month free tier            |      |
+| **Domain Name**        | Namecheap, Cloudflare                          | Optional, depending on branding needs                                |      |
+| **Backup & Storage**   | AWS S3, Backblaze, local storage               | For file uploads, student cards, and forum backups                   |     |
 
 ---
 

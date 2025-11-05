@@ -14,14 +14,19 @@
 
 ##  Potential Cost Breakdown
 
-| Category               | Option(s)                        | Notes                                                                 | Estimated Cost        |
-|------------------------|----------------------------------|-----------------------------------------------------------------------|------------------------|
-| **Server & Hosting**   | DigitalOcean, AWS, Hetzner       | VPS for backend + forum (2GB RAM, 1vCPU)                              | $6–$12/month           |
-| **Database**           | MongoDB Atlas                    | Free tier (512MB); upgrade to M0/M2/M5 as needed                      | Free → $9+/month       |
-| **Forum**              | Discourse                        | Free if self-hosted; $100/month if hosted by Discourse.org           | Free (self-hosted)     |
-| **Email Verification** | Gmail SMTP, SendPulse            | Gmail: ~500/day; SendPulse: 12,000/month free                         | Free (within limits)   |
-| **Domain Name**        | Namecheap, Cloudflare            | .com or .org domain for branding                                      | $10–$15/year           |
-| **Backup & Storage**   | AWS S3, Backblaze, local storage | 5–10 GB for uploads and backups                                       | $0.50–$2/month         |
+| Category               | Option(s)              | Estimated Monthly Cost (USD) | Notes |
+|------------------------|------------------------|------------------------------|-------|
+| **Server & Hosting**   | **DigitalOcean**       | **$12**                      | Basic Droplet: 1 vCPU, 2 GB RAM, 50 GB SSD<br>→ Docker deployment adds **no extra cost**<br>Use `docker-compose.yml` for one-click setup |
+|                        | **Hetzner**            | **$4**                       | CX11 VPS: 1 vCPU, 2 GB RAM, 20 GB SSD<br>Cheapest Docker-compatible option |
+| **Database**           | **MongoDB Atlas**      | **$0** (M0 free)<br>**$9+** (M2/M5) | M0: 512 MB shared<br>M2 ($9/mo): 2 GB<br>M5 ($25/mo): 5 GB |
+|                        | **Supabase**           | **$0** (free)<br>**$25+** (Pro) | Free: 500 MB DB<br>Pro ($25/mo): 8 GB |
+| **Forum**              | **Discourse**          | **$0** (self-hosted)<br>**$100** (hosted) | Official Docker image → `docker pull discourse/discourse`<br>Zero cost when self-hosted on your VPS |
+| **Email Verification** | **Gmail SMTP**         | **$0**                       | ~500 emails/day limit<br>Works perfectly in Docker with environment variables |
+|                        | **SendPulse**          | **$0**                       | 12,000 emails/month free |
+| **Domain Name**        | **Namecheap**          | **$1–$2**                    | `.com` ≈ $10–15/year (first year often $1) |
+|                        | **Cloudflare Registrar**| **$1–$2**                   | `.com` ≈ $10/year + free DNS/security |
+| **Backup & Storage**   | **AWS S3**             | **$0.25** (10 GB)            | $0.023/GB/month |
+|                        | **Backblaze B2**       | **$0.05** (10 GB)            | $0.005/GB/month – **cheapest option** |
 
 ---
 

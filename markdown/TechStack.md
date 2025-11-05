@@ -14,14 +14,14 @@
 
 ##  Potential Cost Breakdown
 
-| Category               | Option(s)                                      | Notes                                                                 |Cost                 |
-|------------------------|------------------------------------------------|-----------------------------------------------------------------------|      |
-| **Server & Hosting**   | DigitalOcean, AWS, Hetzner                     | VPS providers for backend and forum hosting                          |      |
-| **Database**           | MongoDB Atlas                                  | Free tier: 512 MB; paid plans for scaling                            |      |
-| **Forum**              | Discourse                                      | Free if self-hosted; paid if hosted by Discourse.org                 |     |
-| **Email Verification** | Gmail SMTP, SendPulse                          | Gmail: ~500 emails/day; SendPulse: 12,000/month free tier            |      |
-| **Domain Name**        | Namecheap, Cloudflare                          | Optional, depending on branding needs                                |      |
-| **Backup & Storage**   | AWS S3, Backblaze, local storage               | For file uploads, student cards, and forum backups                   |     |
+| Category               | Option(s)                        | Notes                                                                 | Estimated Cost        |
+|------------------------|----------------------------------|-----------------------------------------------------------------------|------------------------|
+| **Server & Hosting**   | DigitalOcean, AWS, Hetzner       | VPS for backend + forum (2GB RAM, 1vCPU)                              | $6–$12/month           |
+| **Database**           | MongoDB Atlas                    | Free tier (512MB); upgrade to M0/M2/M5 as needed                      | Free → $9+/month       |
+| **Forum**              | Discourse                        | Free if self-hosted; $100/month if hosted by Discourse.org           | Free (self-hosted)     |
+| **Email Verification** | Gmail SMTP, SendPulse            | Gmail: ~500/day; SendPulse: 12,000/month free                         | Free (within limits)   |
+| **Domain Name**        | Namecheap, Cloudflare            | .com or .org domain for branding                                      | $10–$15/year           |
+| **Backup & Storage**   | AWS S3, Backblaze, local storage | 5–10 GB for uploads and backups                                       | $0.50–$2/month         |
 
 ---
 

@@ -6,4 +6,4 @@ flowchart TD
     D --> E[Star Rating → Add Points]
     E --> F[Sync User to Discourse via SSO]
     F --> G[Create Course Category in Discourse]
-    G --> H[Threaded Discussions + Replies]x
+    G --> H[Threaded Discussions + Replies]

@@ -70,7 +70,7 @@ graph TD
 ## WorkFlow
 
 ```mermaid
-graph TD
+graph LR
   Start[Setup Environment] --> Setup1[Initialize Database Schema]
   Setup1 --> Setup2[Configure Frontend and Backend Frameworks]
   Progress0 --> Progress1[Develop Login and Registration UI]

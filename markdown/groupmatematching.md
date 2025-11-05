@@ -7,5 +7,5 @@ flowchart TD
     E --> F[Delete Temp Thread]
     B -- Yes --> G[Match with Peers]
     G --> H[Group Chat via Discourse PM]
-    H --> I[Embed: Post-it (Canvas), FullCalendar]
+    H --> I["Embed: Post-it (Canvas), FullCalendar"]
     I --> J[Auto Reminder Email 7 Days Before Deadline]

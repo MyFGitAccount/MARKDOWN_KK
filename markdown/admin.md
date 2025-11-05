@@ -1,3 +1,4 @@
+```mermaid
 flowchart LR
     A[Admin Login] --> B[Role: admin?]
     B -- Yes --> C[Load Admin Dashboard]

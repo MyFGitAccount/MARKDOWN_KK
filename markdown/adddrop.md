@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A[Add-Drop Period Active?] -->|No| B[Feature Disabled]
     A -->|Yes| C[Load Course Catalog]

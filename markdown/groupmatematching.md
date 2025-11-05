@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A[User Joins Group Finder] --> B{Must Upload Sample Work}
     B -- No --> C[Start 48h Timer]

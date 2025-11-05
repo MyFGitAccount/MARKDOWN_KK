@@ -1,3 +1,4 @@
+```mermaid
 flowchart LR
     A[User Selects Course] --> B[Fetch Course Collection from MongoDB]
     B --> C[Render Resources: PDFs, Videos, Slides]

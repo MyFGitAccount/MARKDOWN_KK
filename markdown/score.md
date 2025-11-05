@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A[User Action] --> B{Action Type?}
     B -->|Upload Material| C[Rate Quality 1–5]

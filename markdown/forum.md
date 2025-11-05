@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A[User Clicks Write Article] --> B[Open TipTap Editor]
     B --> C[Save Markdown + Metadata to MongoDB]

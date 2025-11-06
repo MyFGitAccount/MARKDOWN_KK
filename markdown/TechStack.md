@@ -71,14 +71,13 @@ graph TD
 ---
 
 ## WorkFlow
-
 ```mermaid
 gantt
     title EFS Development Schedule (Sep 2025 – Apr 2026)
     dateFormat  YYYY-MM-DD
     axisFormat  %m/%Y
     tickInterval 1month
-    todayMarker off
+    todayMarker stroke-width:3px,stroke:#ff6b6b,opacity:0.8
 
     section Phase 1: Planning & Setup (Oct–Nov)
     Project Planning & Research                 :done, plan1, 2025-10-01, 2025-10-15

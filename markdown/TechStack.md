@@ -104,7 +104,7 @@ gantt
     Full Testing (Cypress + Load Testing)       :test1, 2026-03-10, 20d
     Performance Optimization                    :perf1, after test1, 10d
     Accessibility Audit (WCAG 2.1 AA)           :audit1, after perf1, 7d
-    Deployment + Launch Event                   :launch,milestone , 2026-04-10
+    Deployment + Launch Event                   :milestone, launch, 2026-04-10
     Final Documentation & Handover              :handover1, after launch, 15d
 
     section Final Submission

@@ -77,7 +77,7 @@ gantt
     dateFormat  YYYY-MM-DD
     axisFormat  %m/%Y
     tickInterval 1month
-    todayMarker stroke-width:3px,stroke:#ff6b6b,opacity:0.8
+    todayMarker stroke-width:4px,stroke:#e74c3c,opacity:0.9
 
     section Phase 1: Planning & Setup (Oct–Nov)
     Project Planning & Research                 :done, plan1, 2025-10-01, 2025-10-15
@@ -104,10 +104,10 @@ gantt
     Full Testing (Cypress + Load Testing)       :test1, 2026-03-10, 20d
     Performance Optimization                    :perf1, after test1, 10d
     Accessibility Audit (WCAG 2.1 AA)           :audit1, after perf1, 7d
-    Deployment + Launch Event                   :milestone, launch, 2026-04-10
+    Deployment + Launch Event                   :milestone, launch, 2026-04-10, 1d
     Final Documentation & Handover              :handover1, after launch, 15d
 
     section Final Submission
-    Project Submission to HKU SPACE             :crit, milestone, submit, 2026-04-26
+    Project Submission to HKU SPACE             :crit, milestone, submit, 2026-04-26, 1d
 ```
 ---

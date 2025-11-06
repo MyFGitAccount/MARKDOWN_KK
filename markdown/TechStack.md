@@ -97,7 +97,7 @@ gantt
     section Phase 3: Interactive Tools & Collaboration (Jan–Feb)
     Flashcards, Matching Games, Assessments     :active, tools1, 2026-01-13, 25d
     Articles Section + Markdown Editor          :active, articles1, after tools1, 12d
-    Discourse SSO + Forum Integration           :active, forum1, after articles1, 18d
+    Discourse Forum Integration           :active, forum1, after articles1, 18d
     Timetable Matching & Groupmate Finder       :active, match1, after forum1, 20d
 
     section Phase 4: Finalization & Deployment (Mar–Apr)

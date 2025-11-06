@@ -102,8 +102,7 @@ gantt
 
     section Phase 4: Finalization & Deployment (Mar–Apr)
     Full Testing (Cypress + Load Testing)       :test1, 2026-03-10, 20d
-    Performance Optimization                    :perf1, after test1, 10d
-    Accessibility Audit (WCAG 2.1 AA)           :audit1, after perf1, 7d
+    Performance Optimization                    :perf1, after test1, 17d
     Deployment + Launch Event                   :milestone, launch, 2026-04-10, 1d
     Final Documentation & Handover              :handover1, after launch, 15d
 

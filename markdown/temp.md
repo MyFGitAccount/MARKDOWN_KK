@@ -1,4 +1,4 @@
-``mermaid
+```mermaid
 gantt
     title EFS Development Schedule (Sep 2025 – Apr 2026)
     dateFormat  YYYY-MM-DD

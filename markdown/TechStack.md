@@ -82,7 +82,7 @@ gantt
     section Phase 1: Planning & Setup (Oct–Nov)
     Project Planning & Research                 :done, plan1, 2025-10-01, 2025-10-15
     Learn MERN Stack + Discourse SSO            :done, learn1, after plan1, 15d
-    Setup Dev Environment (VS Code, Docker)     :done, setup1, after learn1, 7d
+    Setup Dev Environment (React,Express,Node js)     :done, setup1, after learn1, 7d
     Initialize MongoDB Schema                   :done, db1, after setup1, 10d
     Configure Frontend & Backend Frameworks     :done, config1, after db1, 10d
 

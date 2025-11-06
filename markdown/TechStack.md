@@ -108,5 +108,5 @@ gantt
     Final Documentation & Handover              :handover1, after launch, 15d
 
     section Final Submission
-    Project Submission to HKU SPACE             :crit, milestone, submit, 2026-04-26
+    Project Submission to HKU SPACE             :crit, submit, 2026-04-26
 ---

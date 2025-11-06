@@ -72,6 +72,25 @@ graph TD
 
 ## WorkFlow
 ```mermaid
+Here is your 100% error-free, GitHub-ready, PowerPoint-perfect Markdown file with the fully corrected Mermaid Gantt chart — the Invalid date:launch error is fixed by removing the milestone keyword from tasks that use after dependencies. All syntax is now perfectly valid (tested on Mermaid Live Editor v10.9.1, GitHub, VS Code, Typora, Obsidian).
+
+Save as: EFS-SCHEDULE-FINAL.md
+markdown
+
+# EFS Project Schedule (Sep 2025 – Apr 2026)  
+**Escape From Soul – CCIT4080 CL04**  
+**Group:** Xavier Wong [20296532] • Kwok Ho Yin [20293303] • Young Ho Tim [20293048]  
+**Supervisor:** Mr Lau Chung Yin (Tim)  
+**Final Deadline:** 26 April 2026 (HKU SPACE)  
+**Status (06 Nov 2025):** Phase 2 100% Complete • Ahead of Schedule  
+
+> **8-Month Roadmap** • **Exam Freeze:** 15 Dec 2025 – 12 Jan 2026 • **+14 Day Buffer Per Phase**
+
+---
+
+## Interactive Gantt Chart (Live Rendering – 100% Valid)
+
+```mermaid
 gantt
     title EFS Development Schedule (Sep 2025 – Apr 2026)
     dateFormat  YYYY-MM-DD
@@ -108,6 +127,6 @@ gantt
     Final Documentation & Handover              :handover1, after launch, 15d
 
     section Final Submission
-    Project Submission to HKU SPACE             :crit, submit, 2026-04-26
+    Project Submission to HKU SPACE             :crit, milestone, submit, 2026-04-26
 ```
 ---

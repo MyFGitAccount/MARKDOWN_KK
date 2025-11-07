@@ -7,7 +7,7 @@ gantt
     todayMarker stroke-width:1px,stroke:#e74c3c,opacity:0.9,font-size:small
 
 
-    section Phase 1: Setup (Nov–Dec 2025)
+    section Phase 1: Setup (Nov–Dec)
     Re-scoping & Planning                     :done, plan1, 2025-11-01, 2025-11-07
     MERN Stack Setup                          :done, setup1, after plan1, 2d
     Secure Login + Photo Verification         :done, auth1, after setup1, 2d

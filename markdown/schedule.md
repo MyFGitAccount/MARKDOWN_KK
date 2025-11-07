@@ -27,9 +27,9 @@ gantt
     Course-Specific Questionnaire Board         :active, board1, after share1, 5d
 
     section Phase 4: Final Polish & Testing (Feb–Apr)
-    Full Testing                                :active, test1, 2026-02-01, 7d
-    Deployment + Launch Event                   :milestone, launch, after test1
-    Final Documentation & Handover              :active, handover1, after launch, 15d
+    Full Testing                                :active, test1, 2026-02-01, 5d
+    Deployment + Launch Event                   :milestone, launch, after test1, 5d 
+    Final Documentation & Handover              :active, handover1, after launch, 45d
 
     section Final Submission                    
     Project Submission to HKU SPACE             :crit, submit, 2026-04-26

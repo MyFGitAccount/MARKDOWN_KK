@@ -3,8 +3,8 @@ gantt
     title EFS Revised Schedule – 3 Features Only (Nov 2025 – Apr 2026)
     dateFormat  YYYY-MM-DD
     axisFormat  %m/%Y
-    tickInterval 1month
-    todayMarker stroke-width:5px,stroke:#e74c3c,opacity:0.9
+    tickInterval 2month
+    todayMarker stroke-width:1px,stroke:#e74c3c,opacity:0.9
 
 
     section Phase 1: Setup (Nov–Dec 2025)

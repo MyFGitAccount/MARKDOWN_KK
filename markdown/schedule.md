@@ -28,8 +28,8 @@ gantt
 
     section Phase 4: Final Polish & Testing (Feb–Apr)
     Full Testing                                :test1, 2026-02-1, 7d
-    Deployment + Launch Event                   :milestone, test, 5d
-    Final Documentation & Handover              :handover1, after test, 15d
+    Deployment + Launch Event                   :milestone, after test1, 5d
+    Final Documentation & Handover              :handover1, after milestone, 15d
 
     section Final Submission
     Project Submission to HKU SPACE             :crit, milestone, submit, 2026-04-26

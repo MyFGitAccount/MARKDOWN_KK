@@ -8,7 +8,7 @@
 | *Backend*  | Express.js                      | Lightweight Node.js framework         |
 | *Frontend* | React                           | Component-based UI library            |
 | *Runtime*  | Node.js                         | Fast, event-driven JavaScript runtime |
-| *Forum*    | Discourse (self-hosted or paid) | Robust community platform             |
+
 
 ---
 

@@ -15,7 +15,7 @@ gantt
     Clash Detection                           :active, clash1, after timetable1, 10d
     Save/Export Timetable                     :active, export1, after clash1, 1d
 
-    Examination Break
+    Examination Break: (Dec-Jan)
     Semester Exam Period – NO DEVELOPMENT     :crit, exam, 2025-12-15, 2026-01-12
 
     Phase 2: Find Groupmate System (Jan 2026)

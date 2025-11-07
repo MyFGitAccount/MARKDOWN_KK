@@ -33,7 +33,7 @@
 
 ## Role Breakdown
 
-mermaid
+```mermaid
 graph TD
   Root[HKU SPACE Learning Platform Project]
 

@@ -17,7 +17,7 @@
 | Category               | Option(s)                | Estimated Monthly Cost (USD)/(HKD)        | Notes(USD)                                                                                                                               |
 | ---------------------- | ------------------------ | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
 | *Computers*          | Three laptops            | *$848/$6592*                            | Lenovo IdeaPad 3 (282.85*3)                                                                                                              |
-| *Server & Hosting*   | *DigitalOcean*         | *$12/$93*                               | Basic Droplet: 1 vCPU, 2 GB RAM, 50 GB SSD<br>→ Docker deployment adds *no extra cost*<br>Use docker-compose.yml for one-click setup |
+| *Server & Hosting*   | *DigitalOcean*         | *$12/$93*                               | Basic Droplet: 1 vCPU, 2 GB RAM, 50 GB SSD<br>→ Docker deployment adds *no extra cost*<br>Use docker-compose.yml |
 |                        | *Hetzner*              | *$4/$31*                                | CX11 VPS: 1 vCPU, 2 GB RAM, 20 GB SSD<br>Cheapest Docker-compatible option                                                               |
 | *Database*           | *MongoDB Atlas*        | *$0* (M0 free)<br>*$9+/$70+* (M2/M5)  | M0: 512 MB shared<br>M2 ($9/mo): 2 GB<br>M5 ($25/mo): 5 GB                                                                               |
 |                        | *Supabase*             | *$0* (free)<br>*$25+/$194+* (Pro)     | Free: 500 MB DB<br>Pro ($25/mo): 8 GB                                                                                
@@ -107,3 +107,21 @@ gantt
     Project Submission to HKU SPACE             :crit, milestone, submit, 2026-04-26, 1d
 ```
 ---
+
+| Problem                                                               | EFS Solution                                                                                          |
+|------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| **1. Add-Drop Period Complexity**                                      | EFS provides a drag-and-drop timetable planner that replaces handwritten scheduling and speeds up planning. |
+| - Course documents are too long                                        | Students can filter and visualize course blocks instead of reading lengthy PDFs.                      |
+| - Too much irrelevant info                                             | Only essential course data is shown in the planner.                                                   |
+| - Manual time slot writing is inefficient                              | Timetable blocks are interactive and auto-arranged.                                                   |
+| - Hard to find your own class                                          | Search and filter by course code, semester, or weekday.                                               |
+|                                                                        |                                                                                                        |
+| **2. Lack of Learning Resources**                                      | EFS promotes clarity through peer-shared notes, mock papers, slides, and searchable repositories.     |
+|                                                                        | Students can upload and browse materials by topic, format, or popularity.                             |
+|                                                                        |                                                                                                        |
+| **3. High Demand for Questionnaire Respondents**                       | EFS includes a token-based questionnaire exchange: view requires 3 tokens, earned by completing others. |
+|                                                                        | This creates a fair, incentive-driven system for survey sharing.                                      |
+|                                                                        |                                                                                                        |
+| **4. Freeriding & Uneven Group Ability**                               | EFS forms groups based on contribution and academic input (e.g., DSE/GPA scores).                      |
+|                                                                        | Students must upload a sample before joining; short discussions finalize group selection.             |
+|                                                                        | Group pages include deadlines, calendar integration, and reminders via email.                         |

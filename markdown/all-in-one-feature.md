@@ -3,17 +3,14 @@
 
 ---
 
-## ✅ 7 Core Features 
+## ✅ 3 Core Features 
 
 | Feature | Description |
 |--------|-------------|
-| **1. Centralized Learning Resource Repository** | Upload notes, past papers, videos, and slides. Browse and search material by course code, file type, or popularity. Download or view online |
-| **2. Interactive Study Tools for Active Learning** | Flashcards, matching games, quizzes, and assessments.. |
-| **3. Zero Free-Riding Group Formation** | Group matching requires contribution. And EFS will solve this issue by it group formation module |
-| **4. Gamification – Get Rewarded for Helping Others** | Earn points and tokens for uploading files, creating tools, and filling surveys. Unlock avatars, badges, and leaderboard status. |
-| **5. Professional Forum with One-Click Access** | External link to a Discourse forum . Course-specific forums for  discussion. |
-| **6. Questionnaire Sharing – No More Telegram Begging** | Share surveys in a dedicated section. View requires 3 tokens. Earn tokens by completing others’ surveys. |
-| **7. Smart Timetable Planner (Drag & Drop)** | Drag courses into a weekly grid to plan your own time table |
+| **1. Centralized Learning Resource Repository** | EFS will upload it own notes, mock papers, and slides. Browse and search material by course code, file type. Download or view online |
+| **2. Zero Free-Riding Group Formation** | Group matching requires contribution. And EFS will solve this issue by it group formation module |
+| **3. Questionnaire Sharing – No More Telegram Begging** | Share surveys in a dedicated section. View requires 3 tokens. Earn tokens by completing others’ surveys. |
+| **4. Smart Timetable Planner (Drag & Drop)** | Drag courses into a weekly grid to plan your own time table |
 
 ---
 

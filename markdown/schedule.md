@@ -1,4 +1,4 @@
-``mermaid
+```mermaid
 gantt
     title EFS Revised Schedule – 3 Features Only (Nov 2025 – Apr 2026)
     dateFormat  YYYY-MM-DD
@@ -37,3 +37,4 @@ gantt
 
     section Final Submission
     Project Submission to HKU SPACE           :crit, milestone, submit, 2026-04-26, 1d
+```

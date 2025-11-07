@@ -32,10 +32,7 @@
 | User Login + Photo Verification     | ✅ Complete |
 | Admin Approval Dashboard UI         | ✅ Complete |
 | File Upload & Repository            | ✅ Complete |
-| Interactive Tools                   | ⏳ Pending |
-| Points & Leaderboard                | ⏳ Pending |
 | Token System                        | ⏳ Pending |
-| Discourse Forum               | ⏳ Pending |
 | Group Formation (Anti-Free-Ride)    | ⏳ Pending |
 | Questionnaire Sharing               | ⏳ Pending |
 | Timetable Planner                   | ⏳ Pending |

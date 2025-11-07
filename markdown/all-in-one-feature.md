@@ -3,7 +3,7 @@
 
 ---
 
-## ✅ 3 Core Features 
+## ✅ 4 Core Features 
 
 | Feature | Description |
 |--------|-------------|

@@ -15,8 +15,8 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A[Setup Environment]-->B[INtitialize Database Schema]
-    B-->[Coinfigure FRontend and Backend Framework]
+    A[Setup Environment]-->B[Intitialize Database Schema]
+    B-->C[Coinfigure FRontend and Backend Framework]
 ```
 
 ```mermaid

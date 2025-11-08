@@ -1,7 +1,3 @@
-Title:
-Database Schema Overview
-
-Content (Insert Table):
 
 | Collection         | Key Fields                                                               | Purpose |
 |--------------------|--------------------------------------------------------------------------|---------|

@@ -5,7 +5,7 @@ flowchart TD
     A[User Opens Login Page] --> B{Valid JWT in Cookies?}
     B -- Yes --> C[Load Protected Dashboard]
     B -- No --> D[Show Login Form]
-    D --> E[Submit Email + Password]
+    D --> E[Submit SID + Password]
     E --> F[Backend: Verify Credentials]
     F -- Success --> G[Generate JWT + Set HttpOnly Cookie]
     F -- Fail --> H[Show Inline Error]

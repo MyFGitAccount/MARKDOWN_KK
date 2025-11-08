@@ -1,6 +1,6 @@
 ```mermaid
 gantt
-    title EFS Revised Schedule – 3 Features Only (Sept 2025 – Apr 2026)
+    title EFS Revised Schedule – 4 Features Only (Sept 2025 – Apr 2026)
     dateFormat YYYY-MM-DD
     axisFormat %m/%Y
     tickInterval 1month

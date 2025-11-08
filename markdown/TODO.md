@@ -2,7 +2,7 @@
 
 ```mermaid
 graph TD
-  st[Login Start] --> op0[Enter course code]
+  st[Login Start] --> op0{Enter course code}
   op0-->op1[Enter User name]
   op1-->op2[Enter password]
   op2 --> cond{First time user?}

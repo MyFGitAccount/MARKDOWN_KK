@@ -21,7 +21,7 @@ gantt
     Save/Export Timetable :active, export1, after clash1, 1d
 
     section Examination Break
-    Semester Exam Period :crit, exam, 2025-12-15, 2026-01-12
+    Semester Exam Period Stop development:crit, exam, 2025-12-15, 2026-01-12
 
     section Phase 2: Find Groupmate System (Dec–Jan)
     Contribution-Gated Matching :active, group1, 2025-12-01, 5d

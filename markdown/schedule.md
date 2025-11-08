@@ -5,21 +5,23 @@ gantt
     axisFormat  %m/%Y
     tickInterval 1month
     todayMarker stroke-width:1px,stroke:#e74c3c,opacity:0.9,font-size:small
+    
+    section Pharse 0: Planning(Sept-Nov)
+    Re-scoping & Planning                     :done, plan1, 2025-9-13, 2025-11-01
+    MERN Stack Setup                          :done, setup1, after plan1, 1d
 
     section Phase 1: Timetable <br>System<br>(Nov–Dec 2025)
-    Re-scoping & Planning                     :done, plan1, 2025-11-01, 2025-11-07
-    MERN Stack Setup                          :done, setup1, after plan1, 2d
-    Secure Login + Photo Verification         :done, auth1, after setup1, 2d
-    Admin Dashboard                           :done, admin1, after auth1, 2d
+    Secure Login + Photo Verification         :done,  auth1, 2025-11-03, 2025-11-05
+    Admin Dashboard                           :done, admin1, after auth1, 1d
     Timetable Grid (Drag & Drop)              :active, timetable1, after admin1, 10d
     Clash Detection                           :active, clash1, after timetable1, 10d
     Save/Export Timetable                     :active, export1, after clash1, 1d
 
     section Examination Break
-    Semester Exam Period – NO DEVELOPMENT     :crit, exam, 2025-12-15, 2026-01-12
+    Semester Exam Period                      :crit, exam, 2025-12-15, 2026-01-12
 
-    section Phase 2: Find Groupmate System (Jan 2026)
-    Contribution-Gated Matching               :active, group1, 2026-01-13, 20d
+    section Phase 2: Find Groupmate System (Dec-Jan)
+    Contribution-Gated Matching               :active, group1, 2025-12-1, d
     Sample Upload + Auto-Match                :active, timer1, after group1, 10d
     Private Group Chat                        :active, chat1, after timer1, 7d
 

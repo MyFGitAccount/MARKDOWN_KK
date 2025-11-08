@@ -5,7 +5,7 @@ flowchart TD
     A[User Opens Login Page] --> B{Valid JWT in Cookies?}
     B -- Yes --> C[Load Protected Dashboard]
     B -- No --> D[Show Login Form]
-    D --> E[Submit Email + Password]
+    D --> E[Submit SID + Password]
     E --> F[Backend: Verify Credentials]
     F -- Success --> G[Generate JWT + Set HttpOnly Cookie]
     F -- Fail --> H[Show Inline Error]
@@ -15,8 +15,8 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A[Setup Environment]-->B[INtitialize Database Schema]
-    B-->[Coinfigure FRontend and Backend Framework]
+    A[Setup Environment]-->B[Intitialize Database Schema]
+    B-->C[Coinfigure FRontend and Backend Framework]
 ```
 
 ```mermaid
@@ -25,5 +25,9 @@ flowchart TD
     Dev-->course[Implement Course Page and Material Repository]
     course-->dashb[Create Admin dashboard]
     dashb-->timetable[Develop Timetable matching and Groupmate Finder]
-    dashb-->finish[Testing,Optimization,Deployment]
+    timetable-->finish[Testing,Optimization,Deployment]
+    testResult{Is it perfect?}
+    finish-->testResult
+    testResult-->|Yes| complete[complete]
+    testResult-->|No| finish
 ```

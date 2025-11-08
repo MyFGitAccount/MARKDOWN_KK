@@ -24,7 +24,7 @@ flowchart TD
     Progress[Progress]-->Dev[Develop Login and Registration UI]
     Dev-->course[Implement Course Page and Material Repository]
     course-->dashb[Create Admin dashboard]
-    dashb-->timetable[Develop Timetable matching and Groupmate Finder]
+    dashb-->timetable[Develop Timetable matching, Groupmate Finder, Learning Resource Repository, and Questionnair Sharing Model]
     timetable-->finish[Testing,Optimization,Deployment]
     testResult{Is it perfect?}
     finish-->testResult

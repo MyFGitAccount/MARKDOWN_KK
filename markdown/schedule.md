@@ -9,7 +9,7 @@ gantt
     %% Timestamp milestone (bold red, highly visible)
     09/2025 :milestone, crit, ts, 2025-09-15, 0d
 
-    section Phase 0: Planning (Sept–Nov)
+    section Phase 0: <br>Planning (Sept–Nov)
     Re-scoping & Planning :done, plan1, 2025-09-13, 2025-11-01
     MERN Stack Setup :done, setup1, after plan1, 1d
 

@@ -27,13 +27,16 @@ gantt
     Contribution-Gated Matching :active, group1, 2025-12-01, 5d
     Sample Upload + Auto-Match :active, timer1, after group1, 10d
     Private Group Chat :active, chat1, after timer1, 7d
-
+    
     section Phase 3: Questionnaire System (Jan–Feb 2026)
     Token System :token1, 2026-01-20, 10d
     Share Questionnaire :share1, after token1, 5d
     Response Board :board1, after share1, 5d
-
-    section Phase 4: Polish & Launch (Feb–Apr 2026)
+    
+    section Phase 4: Resource Repository (Jan-Feb 2026)
+    Resource System:r1,2026-01-7,14d
+    
+    section Phase 5: Polish & Launch (Feb–Apr 2026)
     Full Testing (Cypress + Load) :test1, 2026-02-10, 10d
     Mobile Optimization :mobile1, after test1, 7d
     Performance + Accessibility (WCAG 2.1 AA) :perf1, after mobile1, 7d

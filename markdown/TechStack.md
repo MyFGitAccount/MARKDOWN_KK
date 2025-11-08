@@ -4,11 +4,11 @@
 
 | Layer        | Technology                      | Notes                                 |
 | ------------ | ------------------------------- | ------------------------------------- |
-| **Database** | MongoDB (Atlas)                 | Cloud-hosted, scalable NoSQL database |
-| **Backend**  | Express.js                      | Lightweight Node.js framework         |
-| **Frontend** | React                           | Component-based UI library            |
-| **Runtime**  | Node.js                         | Fast, event-driven JavaScript runtime |
-| **Forum**    | Discourse (self-hosted or paid) | Robust community platform             |
+| *Database* | MongoDB (Atlas)                 | Cloud-hosted, scalable NoSQL database |
+| *Backend*  | Express.js                      | Lightweight Node.js framework         |
+| *Frontend* | React                           | Component-based UI library            |
+| *Runtime*  | Node.js                         | Fast, event-driven JavaScript runtime |
+
 
 ---
 
@@ -20,7 +20,8 @@
 | **Server & Hosting**   | **DigitalOcean**         | **$12/$93**                               | Basic Droplet: 1 vCPU, 2 GB RAM, 50 GB SSD<br>→ Docker deployment adds **no extra cost**<br>Use `docker-compose.yml` for one-click setup |
 |                        | **Hetzner**              | **$4/$31**                                | CX11 VPS: 1 vCPU, 2 GB RAM, 20 GB SSD<br>Cheapest Docker-compatible option                                                               |
 | **Database**           | **MongoDB Atlas**        | **$0** (M0 free)<br>**$9+/$70+** (M2/M5)  | M0: 512 MB shared<br>M2 ($9/mo): 2 GB<br>M5 ($25/mo): 5 GB                                                                               |
-|                        | **Supabase**             | **$0** (free)<br>**$25+/$194+** (Pro)     | Free: 500 MB DB<br>Pro ($25/mo): 8 GB                                                                                
+|                        | **Supabase**             | **$0** (free)<br>**$25+/$194+** (Pro)     | Free: 500 MB DB<br>Pro ($25/mo): 8 GB                                                                                                    |
+| **Forum**              | **Discourse**            | **$0** (self-hosted)<br>**$100** (hosted) | Official Docker image → `docker pull discourse/discourse`<br>Zero cost when self-hosted on your VPS                                      |
 | **Email Verification** | **Gmail SMTP**           | **$0**                                    | ~500 emails/day limit<br>Works perfectly in Docker with environment variables                                                            |
 |                        | **SendPulse**            | **$0**                                    | 12,000 emails/month free                                                                                                                 |
 | **Domain Name**        | **Namecheap**            | **$1–$2/$8-$16**                          | `.com` ≈ $10–15/year (first year often $1)                                                                                               |
@@ -66,6 +67,7 @@ graph TD
  
 ---
 
+
 ## WorkFlow
 ```mermaid
 gantt
@@ -106,3 +108,21 @@ gantt
     Project Submission to HKU SPACE             :crit, milestone, submit, 2026-04-26, 1d
 ```
 ---
+
+| Problem                                                               | EFS Solution                                                                                          |
+|------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| **1. Add-Drop Period Complexity**                                      | EFS provides a drag-and-drop timetable planner that replaces handwritten scheduling and speeds up planning. |
+| - Course documents are too long                                        | Students can filter and visualize course blocks instead of reading lengthy PDFs.                      |
+| - Too much irrelevant info                                             | Only essential course data is shown in the planner.                                                   |
+| - Manual time slot writing is inefficient                              | Timetable blocks are interactive and auto-arranged.                                                   |
+| - Hard to find your own class                                          | Search and filter by course code, semester, or weekday.                                               |
+|                                                                        |                                                                                                        |
+| **2. Lack of Learning Resources**                                      | EFS promotes clarity through peer-shared notes, mock papers, slides, and searchable repositories.     |
+|                                                                        | Students can upload and browse materials by topic, format, or popularity.                             |
+|                                                                        |                                                                                                        |
+| **3. High Demand for Questionnaire Respondents**                       | EFS includes a token-based questionnaire exchange: view requires 3 tokens, earned by completing others. |
+|                                                                        | This creates a fair, incentive-driven system for survey sharing.                                      |
+|                                                                        |                                                                                                        |
+| **4. Freeriding & Uneven Group Ability**                               | EFS forms groups based on contribution and academic input (e.g., DSE/GPA scores).                      |
+|                                                                        | Students must upload a sample before joining; short discussions finalize group selection.             |
+|                                                                        | Group pages include deadlines, calendar integration, and reminders via email.                         |

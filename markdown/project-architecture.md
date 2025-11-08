@@ -25,5 +25,9 @@ flowchart TD
     Dev-->course[Implement Course Page and Material Repository]
     course-->dashb[Create Admin dashboard]
     dashb-->timetable[Develop Timetable matching and Groupmate Finder]
-    dashb-->finish[Testing,Optimization,Deployment]
+    timetable-->finish[Testing,Optimization,Deployment]
+    testResult{Is it perfect?}
+    finish-->testResult
+    testResult-->|Yes| complete[complete]
+    testResult-->|No| finish
 ```

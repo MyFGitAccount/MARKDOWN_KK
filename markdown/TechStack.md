@@ -38,7 +38,7 @@
 graph TD
   Root[HKU SPACE Learning Platform Project]
 
-  Root --> A[Member A - Backend & Infrastructure]
+  Root --> A[Young Ho Tim - Backend & Infrastructure]
   A --> A1[Authentication System]
   A1 --> A1a[Login with Course Code Validation]
   A1 --> A1b[First-Time User Registration Flow]
@@ -47,7 +47,7 @@ graph TD
   A --> A4[Timetable Matching & Groupmate Finder]
   A --> A5[API for Material Upload & Retrieval]
 
-  Root --> B[Member B - Frontend & User Experience]
+  Root --> B[Kwok Ho Yin - Frontend & User Experience]
   B --> B1[Login & Registration UI]
   B --> B2[Course Page Interface]
   B2 --> B2a[Material Repository Viewer]
@@ -57,7 +57,7 @@ graph TD
   B --> B6[User Profile & Avatar System]
   B --> B7[Contact with supervisor]
 
-  Root --> C[Member C - Integration, Testing & Admin Tools]
+  Root --> C[Xavier Wong - Integration, Testing & Admin Tools]
   C --> C1[Email Verification System]
   C --> C2[Admin Dashboard Interface]
   C --> C3[Search & Filter Tools]

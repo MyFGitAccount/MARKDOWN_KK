@@ -2,12 +2,12 @@
 
 ##  Tech Stack: MERN
 
-| Layer        | Technology                      | Notes                                 |
-| ------------ | ------------------------------- | ------------------------------------- |
-| *Database* | MongoDB (Atlas)                 | Cloud-hosted, scalable NoSQL database |
-| *Backend*  | Express.js                      | Lightweight Node.js framework         |
-| *Frontend* | React                           | Component-based UI library            |
-| *Runtime*  | Node.js                         | Fast, event-driven JavaScript runtime |
+| Layer      | Technology      | Notes                                 |
+| ---------- | --------------- | ------------------------------------- |
+| *Database* | MongoDB (Atlas) | Cloud-hosted, scalable NoSQL database |
+| *Backend*  | Express.js      | Lightweight Node.js framework         |
+| *Frontend* | React           | Component-based UI library            |
+| *Runtime*  | Node.js         | Fast, event-driven JavaScript runtime |
 
 
 ---
@@ -109,20 +109,20 @@ gantt
 ```
 ---
 
-| Problem                                                               | EFS Solution                                                                                          |
-|------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| **1. Add-Drop Period Complexity**                                      | EFS provides a drag-and-drop timetable planner that replaces handwritten scheduling and speeds up planning. |
-| - Course documents are too long                                        | Students can filter and visualize course blocks instead of reading lengthy PDFs.                      |
-| - Too much irrelevant info                                             | Only essential course data is shown in the planner.                                                   |
-| - Manual time slot writing is inefficient                              | Timetable blocks are interactive and auto-arranged.                                                   |
-| - Hard to find your own class                                          | Search and filter by course code, semester, or weekday.                                               |
-|                                                                        |                                                                                                        |
-| **2. Lack of Learning Resources**                                      | EFS promotes clarity through peer-shared notes, mock papers, slides, and searchable repositories.     |
-|                                                                        | Students can upload and browse materials by topic, format, or popularity.                             |
-|                                                                        |                                                                                                        |
-| **3. High Demand for Questionnaire Respondents**                       | EFS includes a token-based questionnaire exchange: view requires 3 tokens, earned by completing others. |
-|                                                                        | This creates a fair, incentive-driven system for survey sharing.                                      |
-|                                                                        |                                                                                                        |
-| **4. Freeriding & Uneven Group Ability**                               | EFS forms groups based on contribution and academic input (e.g., DSE/GPA scores).                      |
-|                                                                        | Students must upload a sample before joining; short discussions finalize group selection.             |
-|                                                                        | Group pages include deadlines, calendar integration, and reminders via email.                         |
+| Problem                                          | EFS Solution                                                                                                |
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
+| **1. Add-Drop Period Complexity**                | EFS provides a drag-and-drop timetable planner that replaces handwritten scheduling and speeds up planning. |
+| - Course documents are too long                  | Students can filter and visualize course blocks instead of reading lengthy PDFs.                            |
+| - Too much irrelevant info                       | Only essential course data is shown in the planner.                                                         |
+| - Manual time slot writing is inefficient        | Timetable blocks are interactive and auto-arranged.                                                         |
+| - Hard to find your own class                    | Search and filter by course code, semester, or weekday.                                                     |
+|                                                  |                                                                                                             |
+| **2. Lack of Learning Resources**                | EFS promotes clarity through extra notes, mock papers, slides, and searchable repositories.                 |
+|                                                  | Students can upload and browse materials by topic, format, or popularity.                                   |
+|                                                  |                                                                                                             |
+| **3. High Demand for Questionnaire Respondents** | EFS includes a token-based questionnaire exchange: view requires 3 tokens, earned by completing others.     |
+|                                                  | This creates a fair, incentive-driven system for survey sharing.                                            |
+|                                                  |                                                                                                             |
+| **4. Freeriding & Uneven Group Ability**         | EFS forms groups based on contribution and academic input (e.g., DSE/GPA scores).                           |
+|                                                  | Students must upload a sample before joining; short discussions finalize group selection.                   |
+|                                                  | Group pages include deadlines, calendar integration, and reminders via email.                               |

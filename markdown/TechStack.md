@@ -29,7 +29,7 @@
 |                        | **IDrive**               | **$0** (10 GB)                            | **cheapest option (free!)**  | **$0** |
 | **AI token**           | **Cursor Pro**           | **$20/$155**                              | $20 USD per month            | In  reality we have free user token so we are not going to count this | 
 |                        | **Windsurf**             | **$16/$124**                              | $16 USD per month            | In  reality we have free user token so we are not going to count this | 
-|                        |                          |                                           | **total: $853-987<br> (The first month)    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: $5-145 (per month)**                  | **total: $21-59 (per month)** |
+|                        |                          |                                           | **total: $869-916<br> (The first month)    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: $21-68 (per month)**                  | **total: $21-59 (per month)** |
 
 ---
 

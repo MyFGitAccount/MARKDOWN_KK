@@ -14,20 +14,21 @@
 
 ##  Potential Cost Breakdown
 
-| Category               | Option(s)                | Estimated Monthly Cost (USD)/(HKD)        | Notes(USD)                                                                                                                               |
-| ---------------------- | ------------------------ | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| **Computers**          | Three laptops            | **$848/$6592**                            | Lenovo IdeaPad 3 (282.85*3)                                                                                                              |
-| **Server & Hosting**   | **DigitalOcean**         | **$12/$93**                               | Basic Droplet: 1 vCPU, 2 GB RAM, 50 GB SSD<br>→ Docker deployment adds **no extra cost**<br>Use `docker-compose.yml` for one-click setup |
-|                        | **Hetzner**              | **$4/$31**                                | CX11 VPS: 1 vCPU, 2 GB RAM, 20 GB SSD<br>Cheapest Docker-compatible option                                                               |
-| **Database**           | **MongoDB Atlas**        | **$0** (M0 free)<br>**$9+/$70+** (M2/M5)  | M0: 512 MB shared<br>M2 ($9/mo): 2 GB<br>M5 ($25/mo): 5 GB                                                                               |
-|                        | **Supabase**             | **$0** (free)<br>**$25+/$194+** (Pro)     | Free: 500 MB DB<br>Pro ($25/mo): 8 GB                                                                                                    |
-| **Forum**              | **Discourse**            | **$0** (self-hosted)<br>**$100** (hosted) | Official Docker image → `docker pull discourse/discourse`<br>Zero cost when self-hosted on your VPS                                      |
-| **Email Verification** | **Gmail SMTP**           | **$0**                                    | ~500 emails/day limit<br>Works perfectly in Docker with environment variables                                                            |
-|                        | **SendPulse**            | **$0**                                    | 12,000 emails/month free                                                                                                                 |
-| **Domain Name**        | **Namecheap**            | **$1–$2/$8-$16**                          | `.com` ≈ $10–15/year (first year often $1)                                                                                               |
-|                        | **Cloudflare Registrar** | **$1–$2/$8-$16**                          | `.com` ≈ $10/year + free DNS/security                                                                                                    |
-| **Backup & Storage**   | **AWS S3**               | **$0.005/$0.04** <br>(10 GB)              | $0.005/GB/month                                                                                                                          |
-|                        | **IDrive**               | **$0** (10 GB)                            | **cheapest option (free!)**                                                                                                              |
+| Category               | Option(s)                | Estimated Monthly Cost (USD)/(HKD)        | Notes(USD)    | Budget |
+| ---------------------- | ------------------------ | ----------------------------------------- |---------------|--------| ---------------------------------------------------------------------------------------------------------------------------------------- 
+| **Computers**          | Three laptops            | **$848/$6592**                            | Lenovo IdeaPad 3 (282.85*3) |Due to we already have three laptops, in reality we don't need to count it on budget|
+| **Server & Hosting**   | **DigitalOcean**         | **$12/$93**                               | Basic Droplet: 1 vCPU, 2 GB RAM, 50 GB SSD<br>→ Docker deployment adds **no extra cost**<br>Use `docker-compose.yml` for one-click setup | $4-12 USD |
+|                        | **Hetzner**              | **$4/$31**                                | CX11 VPS: 1 vCPU, 2 GB RAM, 20 GB SSD<br>Cheapest Docker-compatible option       |                        |
+| **Database**           | **MongoDB Atlas**        | **$0** (M0 free)<br>**$9+/$70+** (M2/M5)  | M0: 512 MB shared<br>M2 ($9/mo): 2 GB<br>M5 ($25/mo): 5 GB  | **$0-70**                |
+|                        | **Supabase**             | **$0** (free)<br>**$25+/$194+** (Pro)     | Free: 500 MB DB<br>Pro ($25/mo): 8 GB         | **$0-194**  | 
+| **Email Verification** | **Gmail SMTP**           | **$0**                                    | ~500 emails/day limit<br>Works perfectly in Docker with environment variables     | **$0** |
+|                        | **SendPulse**            | **$0**                                    | 12,000 emails/month free    | **$0** |
+| **Domain Name**        | **Namecheap**            | **$1–$2/$8-$16**                          | `.com` ≈ $10–15/year (first year often $1)        | **$1-16**   |
+|                        | **Cloudflare Registrar** | **$1–$2/$8-$16**                          | `.com` ≈ $10/year + free DNS/security   | **$1-16**   |
+| **Backup & Storage**   | **AWS S3**               | **$0.005/$0.04** <br>(10 GB)              | $0.005/GB/month     | **$0.005-0.04** |
+|                        | **IDrive**               | **$0** (10 GB)                            | **cheapest option (free!)**  | **$0** |
+| **AI token**           | **Cursor Pro**           | **$20/$155**                              | $20 USD per month            | In  reality we have free user token so we are not going to count this | 
+|                        | **Windsurf**             | **$16/$124**                              | $16 USD per month            | In  reality we have free user token so we are not going to count this | 
 |                        |                          |                                           | **total: $853-987<br> (The first month)    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: $5-145 (per month)**                          |
 
 ---

@@ -15,7 +15,7 @@
 ##  Potential Cost Breakdown
 
 | Category               | Option(s)                | Estimated Monthly Cost (USD)/(HKD)        | Notes(USD)    | Budget |
-| ---------------------- | ------------------------ | ----------------------------------------- |---------------|--------| ---------------------------------------------------------------------------------------------------------------------------------------- 
+| ---------------------- | ------------------------ | ----------------------------------------- |---------------|--------| 
 | **Computers**          | Three laptops            | **$848/$6592**                            | Lenovo IdeaPad 3 (282.85*3) |Due to we already have three laptops, in reality we don't need to count it on budget|
 | **Server & Hosting**   | **DigitalOcean**         | **$12/$93**                               | Basic Droplet: 1 vCPU, 2 GB RAM, 50 GB SSD<br>→ Docker deployment adds **no extra cost**<br>Use `docker-compose.yml` for one-click setup | $4-12 USD |
 |                        | **Hetzner**              | **$4/$31**                                | CX11 VPS: 1 vCPU, 2 GB RAM, 20 GB SSD<br>Cheapest Docker-compatible option       |                        |

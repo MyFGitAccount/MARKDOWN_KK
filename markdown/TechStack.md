@@ -22,7 +22,7 @@
 | **Database**           | **MongoDB Atlas**        | **$0** (M0 free)<br>**$9+/$70+** (M2/M5)  | M0: 512 MB shared<br>M2 ($9/mo): 2 GB<br>M5 ($25/mo): 5 GB  | **$0-9**                |
 |                        | **Supabase**             | **$0** (free)<br>**$25+/$194+** (Pro)     | Free: 500 MB DB<br>Pro ($25/mo): 8 GB         | **$0-25**  | 
 | **Email Verification** | **Gmail SMTP**           | **$0**                                    | ~500 emails/day limit<br>Works perfectly in Docker with environment variables     | **$0** |
-|                        | **SendPulse**            | **$0**                                    | 12,000 emails/month free    | **$0** |
+|                        | **Brevo**            | **$0-9/$0-70**                                    | 300-100k emails/day free    | **$0** |
 | **Domain Name**        | **Namecheap**            | **$1–$2/$8-$16**                          | `.com` ≈ $10–15/year (first year often $1)        | **$1-2**   |
 |                        | **Cloudflare Registrar** | **$1–$2/$8-$16**                          | `.com` ≈ $10/year + free DNS/security   | **$1-2**   |
 | **Backup & Storage**   | **AWS S3**               | **$0.005/$0.04** <br>(10 GB)              | $0.005/GB/month     | **$0.005** |

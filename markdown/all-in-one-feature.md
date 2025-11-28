@@ -29,10 +29,11 @@
 
 | Feature                             | Status    |
 |-------------------------------------|-----------|
-| User Login + Photo Verification     | ✅ Complete |
-| Admin Approval Dashboard UI         | ✅ Complete |
-| File Upload & Repository            | ✅ Complete |
+| User Login + Photo Verification     | ✅ Complete|
+| Admin Approval Dashboard UI         | ✅ Complete|
+| Timnetable Planner                  | ✅ Complete|
+| File Upload & Repository            | ⏳ Pending |
 | Token System                        | ⏳ Pending |
-| Group Formation (Anti-Free-Ride)    | ⏳ Pending |
+| Group Formation                     | ⏳ Pending |
 | Questionnaire Sharing               | ⏳ Pending |
-| Timetable Planner                   | ⏳ Pending |
+

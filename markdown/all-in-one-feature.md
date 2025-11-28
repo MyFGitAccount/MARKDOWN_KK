@@ -25,13 +25,13 @@
 
 ---
 
-## 📅 What’s Already Working Today (10 Nov 2025)
+## 📅 What’s Already Working Today (28 Nov 2025)
 
 | Feature                             | Status    |
 |-------------------------------------|-----------|
 | User Login + Photo Verification     | ✅ Complete|
 | Admin Approval Dashboard UI         | ✅ Complete|
-| Timnetable Planner                  | ✅ Complete|
+| Timetable Planner                   | ✅ Complete|
 | File Upload & Repository            | ⏳ Pending |
 | Token System                        | ⏳ Pending |
 | Group Formation                     | ⏳ Pending |

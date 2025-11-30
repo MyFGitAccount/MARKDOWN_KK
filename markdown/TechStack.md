@@ -110,20 +110,19 @@ gantt
 ```
 ---
 
-| Problem                                          | EFS Solution                                                                                                |
+| The reason Problem                                          | EFS Solution                                                                                                |
 | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
 | **1. Add-Drop Period Complexity**                | EFS provides a drag-and-drop timetable planner that replaces handwritten scheduling and speeds up planning. |
 | - Course documents are too long                  | Students can filter and visualize course blocks instead of reading lengthy PDFs.                            |
-| - Too much irrelevant info                       | Only essential course data is shown in the planner.                                                         |
-| - Manual time slot writing is inefficient        | Timetable blocks are interactive and auto-arranged.                                                         |
+| - Too much irrelevant info                       | Only searched course data is shown in the list planner.                                                         |
+| - Manual time slot writing is inefficient        | Timetable blocks are interactive                                                         |
 | - Hard to find your own class                    | Search and filter by course code, semester, or weekday.                                                     |
 |                                                  |                                                                                                             |
-| **2. Lack of Learning Resources**                | EFS promotes clarity through extra notes, mock papers, slides, and searchable repositories.                 |
+| **2. Lack of Learning Resources**                | EFS promotes clarity through extra notes, mock papers, slides, and searchable repositories. (Celendro, 2023)                 |
 |                                                  | Students can upload and browse materials by topic, format, or popularity.                                   |
 |                                                  |                                                                                                             |
 | **3. High Demand for Questionnaire Respondents** | EFS includes a token-based questionnaire exchange: view requires 3 tokens, earned by completing others.     |
-|                                                  | This creates a fair, incentive-driven system for survey sharing.                                            |
+|                                                  | This creates an extra way let students exchange their questionnaire, incentive-driven system for survey sharing.                                            |
 |                                                  |                                                                                                             |
-| **4. Freeriding & Uneven Group Ability**         | EFS forms groups based on contribution and academic input (e.g., DSE/GPA scores).                           |
-|                                                  | Students must upload a sample before joining; short discussions finalize group selection.                   |
-|                                                  | Group pages include deadlines, calendar integration, and reminders via email.                               |
+| **4. Freeriding & Uneven Group Ability**         | EFS forms groups based on contribution and academic input (e.g., DSE/GPA scores).                                                                            
+|                                                  | The function provide a new way for students do group formation, reduce the risk of freeriding and uneven group ability.|

@@ -27,13 +27,12 @@
 
 ## 📅 What’s Already Working Today (28 Nov 2025)
 
-| Feature                             | Status    |
-|-------------------------------------|-----------|
-| User Login + Photo Verification     | ✅ Complete|
-| Admin Approval Dashboard UI         | ✅ Complete|
-| Timetable Planner                   | ✅ Complete|
-| File Upload & Repository            | ⏳ Pending |
-| Token System                        | ⏳ Pending |
-| Group Formation                     | ⏳ Pending |
-| Questionnaire Sharing               | ⏳ Pending |
+| Feature                         |Owner(s)     | Status    |Progress|Estimated time of arrival(ETA)|
+|---------------------------------|-----|-----------|--------------|-----|
+| User Login + Photo Verification  |Adam, Isaac| ✅ Complete|100%|Done|
+| Admin Approval Dashboard UI      |Adam, Isaac| ✅ Complete|100%|Done|
+| Timetable Planner                |Adam, Isaac| ✅ Almost complete|95%|27 Dec|
+| File Upload & Repository         |Adam, Isaac, Xavier| ⏳ Pending |0%|17 Jan|
+| Group Formation                  |Adam, Isaac, Xavier| ⏳ Pending |0%|3 Jan |
+| Questionnaire Sharing            |Adam, Isaac, Xavier| ⏳ Pending |0%|10 Jan|
 

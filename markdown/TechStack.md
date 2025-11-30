@@ -110,7 +110,7 @@ gantt
 ```
 ---
 
-| The reason Problem                                          | EFS Solution                                                                                                |
+| The reasons which cause problem                                          | EFS Solution                                                                                                |
 | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
 | **1. Add-Drop Period Complexity**                | EFS provides a drag-and-drop timetable planner that replaces handwritten scheduling and speeds up planning. |
 | - Course documents are too long                  | Students can filter and visualize course blocks instead of reading lengthy PDFs.                            |

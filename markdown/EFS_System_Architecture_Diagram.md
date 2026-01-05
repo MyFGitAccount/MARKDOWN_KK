@@ -1,3 +1,4 @@
+```mermaid
 graph TB
     subgraph "Client Layer (Frontend)"
         CL[Client Browser]

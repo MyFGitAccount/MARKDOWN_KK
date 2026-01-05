@@ -45,3 +45,6 @@ graph TB
     DB --> GF
     API -->|SMTP| GMAIL
     EXP -->|Deploy| VERCEL
+
+    API -->|SMTP| GMAIL
+    EXP -->|Deploy| VERCEL

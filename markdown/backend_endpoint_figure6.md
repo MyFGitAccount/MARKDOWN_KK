@@ -158,3 +158,4 @@ graph TB
     class MaterialsRouter,MaterialsUpload,MaterialsDownload,MaterialsList fill:#ede7f6,stroke:#4527a0,color:#000000,font-size:16px
     class AdminRouter,AdminPendingAccounts,AdminApproveAccount,AdminRejectAccount,AdminUsers,AdminStats fill:#fce4ec,stroke:#880e4f,color:#000000,font-size:16px
     class ProfileRouter,ProfileMe,ProfileUpdate,ProfileBySid,MeRouter,MeCredits fill:#e8eaf6,stroke:#1a237e,color:#000000,font-size:16px
+```

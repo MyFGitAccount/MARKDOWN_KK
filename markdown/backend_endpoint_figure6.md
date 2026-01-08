@@ -103,30 +103,8 @@ graph TB
         MeRouter --> MeCredits
     end
 
-    %% ====================
-    %% Database Collections
-    %% ====================
-    subgraph "MongoDB Collections"
-        UsersCollection["users<br/>User accounts"]
-        PendingAccountsCollection["pending_accounts<br/>Registration queue"]
-        GroupRequestsCollection["group_requests<br/>Study group requests"]
-        UserTimetablesCollection["user_timetables<br/>Personal schedules"]
-        QuestionnairesCollection["questionnaires<br/>Survey management"]
-        MaterialsCollection["materials<br/>File metadata"]
-        CoursesCollection["courses<br/>Course catalog"]
-        UploadsFilesCollection["uploads.files<br/>GridFS metadata"]
-        UploadsChunksCollection["uploads.chunks<br/>GridFS binary data"]
-    end
 
-    %% ====================
-    %% External Services
-    %% ====================
-    subgraph "External Services"
-        EmailServiceNode["Email Service<br/>Nodemailer"]
-        CryptoService["Crypto Module<br/>Token generation"]
-        BCryptService["BCrypt<br/>Password hashing"]
-        GridFSService["GridFS<br/>File storage"]
-    end
+
 
     %% ====================
     %% Connections

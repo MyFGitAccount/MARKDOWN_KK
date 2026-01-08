@@ -5,7 +5,9 @@ The EFS Platform backend exposes a comprehensive REST API organized around key f
 Each endpoint implements specific business logic with proper authentication, validation, and error handling.
 
 ```mermaid
-classDef default color:#000000
+Absolutely — here’s your **full Mermaid source code** with the font color explicitly set to black (`color:#000000`) for every class definition. This ensures all text is clearly visible against the pastel backgrounds:
+
+```mermaid
 graph TB
     %% ====================
     %% API Endpoint Categories
@@ -240,50 +242,3 @@ graph TB
     APIBase --> MaterialsRouter
     APIBase --> AdminRouter
     APIBase --> ProfileRouter
-    APIBase --> MeRouter
-
-    %% Registration flow
-    AuthRegister -.-> Reg1
-    Reg4 -.-> GridFSService
-    Reg5 -.-> PendingAccountsCollection
-    Reg6 -.-> EmailServiceNode
-
-    %% Login flow
-    AuthLogin -.-> Login1
-    Login2 -.-> UsersCollection
-    Login4 -.-> CryptoService
-    Login3 -.-> BCryptService
-
-    %% Group request flow
-    GroupCreate -.-> GroupReq1
-    GroupReq4 -.-> GroupRequestsCollection
-
-    %% Calendar save flow
-    CalendarSave -.-> CalendarSave1
-    CalendarSave3 -.-> UserTimetablesCollection
-
-    %% Questionnaire flow
-    QuestionnairePost -.-> QPost1
-    QPost3 -.-> UsersCollection
-    QPost5 -.-> UsersCollection
-    QPost6 -.-> QuestionnairesCollection
-
-    %% Materials upload flow
-    MaterialsUpload -.-> MatUpload1
-    MatUpload3 -.-> CoursesCollection
-    MatUpload5 -.-> GridFSService
-    MatUpload6 -.-> MaterialsCollection
-    MatUpload7 -.-> CoursesCollection
-
-    %% Styling
-    classDef category fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
-    classDef endpoint fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef flow fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    classDef database fill:#fff8e1,stroke:#ff8f00,stroke-width:2px
-    classDef service fill:#e0f2f1,stroke:#00695c,stroke-width:2px
-
-    class AuthRouter,GroupRouter,CalendarRouter,QuestionnaireRouter,MaterialsRouter,AdminRouter,ProfileRouter,MeRouter category
-    class AuthRegister,AuthLogin,AuthCheck,GroupList,GroupCreate,GroupInvite,GroupDelete,CalendarCourses,CalendarEvents,CalendarSave,CalendarMyTimetable,QuestionnaireList,QuestionnairePost,QuestionnaireFill,QuestionnaireMy,MaterialsUpload,MaterialsDownload,MaterialsList,AdminPendingAccounts,AdminApproveAccount,AdminRejectAccount,AdminUsers,AdminStats,ProfileMe,ProfileUpdate,ProfileBySid,MeCredits endpoint
-    class Reg1,Reg2,Reg3,Reg4,Reg5,Reg6,Reg7,Login1,Login2,Login3,Login4,Login5,Login6,Login7,GroupReq1,GroupReq2,GroupReq3,GroupReq4,GroupReq5,CalendarSave1,CalendarSave2,CalendarSave3,CalendarSave4,CalendarSave5,QPost1,QPost2,QPost3,QPost4,QPost5,QPost6,QPost7,MatUpload1,MatUpload2,MatUpload3,MatUpload4,MatUpload5,MatUpload6,MatUpload7,MatUpload8 flow
-    class UsersCollection,PendingAccountsCollection,GroupRequestsCollection,UserTimetablesCollection,QuestionnairesCollection,MaterialsCollection,CoursesCollection,UploadsFilesCollection,UploadsChunksCollection database
-    class EmailServiceNode,CryptoService,BCryptService,GridFSService service

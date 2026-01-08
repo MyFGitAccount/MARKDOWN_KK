@@ -3,8 +3,8 @@
 ## API Endpoints Overview
 The EFS Platform backend exposes a comprehensive REST API organized around key functional domains.  
 Each endpoint implements specific business logic with proper authentication, validation, and error handling.
-
-```mermaid
+```
+mermaid
 graph TB
     %% ====================
     %% API Endpoint Categories
@@ -105,106 +105,6 @@ graph TB
     end
 
     %% ====================
-    %% Detailed Endpoint Flows
-    %% ====================
-
-    subgraph "Endpoint: POST /api/auth/register"
-        Reg1["1. Request Validation<br/>Check required fields"]
-        Reg2["2. Duplicate Check<br/>Verify unique SID/email"]
-        Reg3["3. Password Hashing<br/>bcrypt with salt 12"]
-        Reg4["4. Student Card Processing<br/>Base64 → Buffer → GridFS"]
-        Reg5["5. Create Pending Account<br/>Store in pending_accounts"]
-        Reg6["6. Admin Notification<br/>Email to administrator"]
-        Reg7["7. Response<br/>{ok: true, message: 'Awaiting approval'}"]
-
-        Reg1 --> Reg2
-        Reg2 --> Reg3
-        Reg3 --> Reg4
-        Reg4 --> Reg5
-        Reg5 --> Reg6
-        Reg6 --> Reg7
-    end
-
-    subgraph "Endpoint: POST /api/auth/login"
-        Login1["1. Credential Validation<br/>Check email/password"]
-        Login2["2. User Lookup<br/>Find by email in users collection"]
-        Login3["3. Password Verification<br/>bcrypt.compare()"]
-        Login4["4. Token Generation<br/>crypto.randomBytes(16)"]
-        Login5["5. Token Formatting<br/>'SID-randomToken'"]
-        Login6["6. Update User<br/>Set new token in database"]
-        Login7["7. Response<br/>{ok: true, data: {user, token}}"]
-
-        Login1 --> Login2
-        Login2 --> Login3
-        Login3 --> Login4
-        Login4 --> Login5
-        Login5 --> Login6
-        Login6 --> Login7
-    end
-
-    subgraph "Endpoint: POST /api/group/requests"
-        GroupReq1["1. Authentication<br/>Bearer token validation"]
-        GroupReq2["2. Validation<br/>Major field required"]
-        GroupReq3["3. Duplicate Check<br/>Only one active request per user"]
-        GroupReq4["4. Create Request<br/>Store in group_requests collection"]
-        GroupReq5["5. Response<br/>{ok: true, data: request}"]
-
-        GroupReq1 --> GroupReq2
-        GroupReq2 --> GroupReq3
-        GroupReq3 --> GroupReq4
-        GroupReq4 --> GroupReq5
-    end
-
-    subgraph "Endpoint: POST /api/calendar/save"
-        CalendarSave1["1. Authentication<br/>Bearer token validation"]
-        CalendarSave2["2. Validation<br/>SID required"]
-        CalendarSave3["3. Upsert Operation<br/>Create or update user_timetable"]
-        CalendarSave4["4. Data Structure<br/>Store courses array with timestamps"]
-        CalendarSave5["5. Response<br/>{ok: true, message: 'Timetable saved'}"]
-
-        CalendarSave1 --> CalendarSave2
-        CalendarSave2 --> CalendarSave3
-        CalendarSave3 --> CalendarSave4
-        CalendarSave4 --> CalendarSave5
-    end
-
-    subgraph "Endpoint: POST /api/questionnaire/post"
-        QPost1["1. Authentication<br/>Bearer token validation"]
-        QPost2["2. Validation<br/>Description and link required"]
-        QPost3["3. Credit Check<br/>Verify user has ≥ 3 credits"]
-        QPost4["4. Duplicate Check<br/>Only one active questionnaire per user"]
-        QPost5["5. Credit Deduction<br/>Subtract 3 credits from user"]
-        QPost6["6. Create Questionnaire<br/>Store in questionnaires collection"]
-        QPost7["7. Response<br/>{ok: true, data: questionnaire, message: '3 credits deducted'}"]
-
-        QPost1 --> QPost2
-        QPost2 --> QPost3
-        QPost3 --> QPost4
-        QPost4 --> QPost5
-        QPost5 --> QPost6
-        QPost6 --> QPost7
-    end
-
-    subgraph "Endpoint: POST /api/materials/upload"
-        MatUpload1["1. Admin Authentication<br/>Bearer token + admin role"]
-        MatUpload2["2. Validation<br/>File data and filename required"]
-        MatUpload3["3. Course Verification<br/>Check course exists"]
-        MatUpload4["4. File Processing<br/>Base64 → Buffer conversion"]
-        MatUpload5["5. GridFS Storage<br/>Upload to uploads bucket"]
-        MatUpload6["6. Metadata Creation<br/>Store in materials collection"]
-        MatUpload7["7. Course Update<br/>Add material reference to course"]
-        MatUpload8["8. Response<br/>{ok: true, data: material, message: 'Upload successful'}"]
-
-        MatUpload1 --> MatUpload2
-        MatUpload2 --> MatUpload3
-        MatUpload3 --> MatUpload4
-        MatUpload4 --> MatUpload5
-        MatUpload5 --> MatUpload6
-        MatUpload6 --> MatUpload7
-        MatUpload7 --> MatUpload8
-    end
-
-    %% ====================
     %% Database Collections
     %% ====================
     subgraph "MongoDB Collections"
@@ -239,3 +139,22 @@ graph TB
     APIBase --> MaterialsRouter
     APIBase --> AdminRouter
     APIBase --> ProfileRouter
+    APIBase --> MeRouter
+
+    %% ====================
+    %% Styling
+    %% ====================
+    classDef category fill:#e3f2fd,stroke:#1565c0,stroke-width:3px,color:#000000,font-size:16px
+    classDef endpoint fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px,color:#000000,font-size:16px
+    classDef flow fill:#e8f5e8,stroke:#2e7d32,stroke-width:3px,color:#000000,font-size:16px
+    classDef database fill:#fff8e1,stroke:#ff8f00,stroke-width:3px,color:#000000,font-size:16px
+    classDef service fill:#e0f2f1,stroke:#00695c,stroke-width:3px,color:#000000,font-size:16px
+
+    %% Different colors for each API block
+    class AuthRouter,AuthRegister,AuthLogin,AuthCheck fill:#ffe0e0,stroke:#b71c1c,color:#000000,font-size:16px
+    class GroupRouter,GroupList,GroupCreate,GroupInvite,GroupDelete fill:#e0f7fa,stroke:#006064,color:#000000,font-size:16px
+    class CalendarRouter,CalendarCourses,CalendarEvents,CalendarSave,CalendarMyTimetable fill:#f1f8e9,stroke:#33691e,color:#000000,font-size:16px
+    class QuestionnaireRouter,QuestionnaireList,QuestionnairePost,QuestionnaireFill,QuestionnaireMy fill:#fff3e0,stroke:#e65100,color:#000000,font-size:16px
+    class MaterialsRouter,MaterialsUpload,MaterialsDownload,MaterialsList fill:#ede7f6,stroke:#4527a0,color:#000000,font-size:16px
+    class AdminRouter,AdminPendingAccounts,AdminApproveAccount,AdminRejectAccount,AdminUsers,AdminStats fill:#fce4ec,stroke:#880e4f,color:#000000,font-size:16px
+    class ProfileRouter,ProfileMe,ProfileUpdate,ProfileBySid,MeRouter,MeCredits fill:#e8eaf6,stroke:#1a237e,color:#000000,font-size:16px

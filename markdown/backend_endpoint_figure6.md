@@ -5,9 +5,6 @@ The EFS Platform backend exposes a comprehensive REST API organized around key f
 Each endpoint implements specific business logic with proper authentication, validation, and error handling.
 
 ```mermaid
-Absolutely — here’s your **full Mermaid source code** with the font color explicitly set to black (`color:#000000`) for every class definition. This ensures all text is clearly visible against the pastel backgrounds:
-
-```mermaid
 graph TB
     %% ====================
     %% API Endpoint Categories

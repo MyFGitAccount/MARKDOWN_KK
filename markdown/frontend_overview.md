@@ -101,7 +101,7 @@ flowchart TD
     style J fill:#fcc,stroke:#333
     
     %% Apply larger font size to all nodes
-    classDef bigFont font-size:18px;
+    classDef bigFont font-size:28px;
     class A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,AA,BB,CC bigFont;
     
     subgraph "Core Application Structure"

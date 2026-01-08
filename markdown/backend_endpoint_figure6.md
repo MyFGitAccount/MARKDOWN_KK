@@ -5,6 +5,7 @@ The EFS Platform backend exposes a comprehensive REST API organized around key f
 Each endpoint implements specific business logic with proper authentication, validation, and error handling.
 
 ```mermaid
+classDef default color:#000000
 graph TB
     %% ====================
     %% API Endpoint Categories

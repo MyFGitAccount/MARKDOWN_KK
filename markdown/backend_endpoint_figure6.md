@@ -3,8 +3,7 @@
 ## API Endpoints Overview
 The EFS Platform backend exposes a comprehensive REST API organized around key functional domains.  
 Each endpoint implements specific business logic with proper authentication, validation, and error handling.
-```
-mermaid
+```mermaid
 graph TB
     %% ====================
     %% API Endpoint Categories

@@ -30,3 +30,22 @@ graph TB
     I --> J
     J --> F
 ```
+# User Registration & Authentication Flow
+
+```mermaid
+flowchart TD
+    Start[User Registration] --> Upload[Upload Student Card Photo]
+    Upload --> Form[Fill Registration Form]
+    Form --> Submit[Submit to Backend]
+    Submit --> Store[Store as Pending User]
+    Store --> Notify[Notify Admin]
+    Notify --> Approve{Admin Approval}
+    Approve -->|Yes| Activate[Activate Account]
+    Activate --> Login[User Can Login]
+    Approve -->|No| Reject[Account Rejected]
+    Reject --> NotifyUser[Notify User via Email]
+    
+    Login --> Auth[JWT Token Issued]
+    Auth --> Access[Access Platform Features]
+```
+

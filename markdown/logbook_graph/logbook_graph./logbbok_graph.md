@@ -170,18 +170,14 @@ graph TD
 # Technology Stack Visualization
 
 ```mermaid
-quadrantChart
-    title Technology Stack Comparison
-    x-axis "Learning Curve" --> "Production Readiness"
-    y-axis "Performance" --> "Ease of Use"
-    
-    "React": [0.8, 0.7]
-    "Express.js": [0.6, 0.8]
-    "MongoDB": [0.5, 0.9]
-    "Node.js": [0.7, 0.8]
-    "PyMuPDF": [0.4, 0.6]
-    "Vercel": [0.9, 0.9]
-    "Gmail SMTP": [1.0, 0.5]
+pie title Technology Stack Comparison (Learning Curve vs Production Readiness)
+    "React (0.8, 0.7)" : 1
+    "Express.js (0.6, 0.8)" : 1
+    "MongoDB (0.5, 0.9)" : 1
+    "Node.js (0.7, 0.8)" : 1
+    "PyMuPDF (0.4, 0.6)" : 1
+    "Vercel (0.9, 0.9)" : 1
+    "Gmail SMTP (1.0, 0.5)" : 1
 ```
 
 # Deployment Architecture

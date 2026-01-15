@@ -170,23 +170,14 @@ graph TD
 # Technology Stack Visualization
 
 ```mermaid
-flowchart TD
-    subgraph TechStack["Technology Stack Comparison"]
-        React["React\nLearning Curve: 0.8\nProduction Readiness: 0.7"]
-        Express["Express.js\nLearning Curve: 0.6\nProduction Readiness: 0.8"]
-        MongoDB["MongoDB\nLearning Curve: 0.5\nProduction Readiness: 0.9"]
-        Node["Node.js\nLearning Curve: 0.7\nProduction Readiness: 0.8"]
-        PyMuPDF["PyMuPDF\nLearning Curve: 0.4\nProduction Readiness: 0.6"]
-        Vercel["Vercel\nLearning Curve: 0.9\nProduction Readiness: 0.9"]
-        Gmail["Gmail SMTP\nLearning Curve: 1.0\nProduction Readiness: 0.5"]
-    end
-
-    React --> Express
-    Express --> MongoDB
-    MongoDB --> Node
-    Node --> PyMuPDF
-    PyMuPDF --> Vercel
-    Vercel --> Gmail
+pie title Technology Stack Comparison
+    "React (Learning Curve: 0.8, Prod Readiness: 0.7)" : 1
+    "Express.js (Learning Curve: 0.6, Prod Readiness: 0.8)" : 1
+    "MongoDB (Learning Curve: 0.5, Prod Readiness: 0.9)" : 1
+    "Node.js (Learning Curve: 0.7, Prod Readiness: 0.8)" : 1
+    "PyMuPDF (Learning Curve: 0.4, Prod Readiness: 0.6)" : 1
+    "Vercel (Learning Curve: 0.9, Prod Readiness: 0.9)" : 1
+    "Gmail SMTP (Learning Curve: 1.0, Prod Readiness: 0.5)" : 1
 ```
 
 # Deployment Architecture

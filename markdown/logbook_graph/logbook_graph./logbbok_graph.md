@@ -1,3 +1,5 @@
+# System Architecture Diagram
+
 ```mermaid
 graph TB
     subgraph "Client Layer"

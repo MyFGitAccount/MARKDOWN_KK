@@ -1,3 +1,4 @@
+```mermaid
 graph TB
     subgraph "Client Layer"
         A[React Frontend] --> B[Browser]
@@ -26,3 +27,4 @@ graph TB
     E --> H
     I --> J
     J --> F
+```

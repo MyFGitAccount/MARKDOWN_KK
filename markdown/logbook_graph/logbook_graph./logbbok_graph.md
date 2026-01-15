@@ -180,6 +180,13 @@ flowchart TD
         Vercel["Vercel\nLearning Curve: 0.9\nProduction Readiness: 0.9"]
         Gmail["Gmail SMTP\nLearning Curve: 1.0\nProduction Readiness: 0.5"]
     end
+
+    React --> Express
+    Express --> MongoDB
+    MongoDB --> Node
+    Node --> PyMuPDF
+    PyMuPDF --> Vercel
+    Vercel --> Gmail
 ```
 
 # Deployment Architecture

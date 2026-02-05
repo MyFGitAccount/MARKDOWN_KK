@@ -373,7 +373,7 @@ For managing large binary files, such as uploaded learning resources or student 
 
 A diagram of a company
 
-AI-generated content may be incorrect.
+
 
 Figure1 : Flow of request
 
@@ -383,7 +383,7 @@ Key design principles underpinning EFS include modularity, security, and superio
 
 A diagram of a company
 
-AI-generated content may be incorrect.
+
 
 Figure 2 : Frontend Component Hierarchy
 
@@ -391,7 +391,7 @@ The frontend component hierarchy, depicted in Figure 2, showcases how root compo
 
 A screenshot of a computer screen
 
-AI-generated content may be incorrect.
+
 
 Figure 3: Backend API Endpoint Structure
 
@@ -407,7 +407,7 @@ The group formation module features a dual-interface design: a request creation 
 
 A diagram of a company
 
-AI-generated content may be incorrect.
+
 
  Figure 4: Questionnaire Exchange Flowchart
 
@@ -461,7 +461,7 @@ Similarly, the GroupFormation component manages requests through dynamic fetchin
 
 A diagram of a network
 
-AI-generated content may be incorrect.
+
 
 Figure 5: Overview of Frontend Components
 

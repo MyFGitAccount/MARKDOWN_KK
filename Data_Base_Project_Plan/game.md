@@ -1,20 +1,10 @@
 # PROJECT: Esports Tournament & Player Statistics Database
 
-## TRANSFORMING SPEEDRUN TO ESPORTS
 
-**Esports Tournament Organization Database** - it has:
-
-✅ **Real-life organization** (Esports organizations exist as formal companies)
-✅ **Business context** (Sponsorships, prize money, team management)
-✅ **Real examples** (Hong Kong Esports Association, Cyber Games Arena, Talon Esports)
-✅ **Complex business rules** (Contracts, tournament brackets, prize distribution)
-✅ **Input forms available** (Tournament registration forms, player contracts, sponsor agreements)
 
 ---
 
 # ESPORTS TOURNAMENT & PLAYER MANAGEMENT SYSTEM
-
-## SUITABILITY ASSESSMENT: ⭐⭐⭐⭐ (4/5)
 
 **Why This Works:**
 - **Real organizations**: Hong Kong Esports Association (HKESA), Cyber Games Arena (CGA), Talon Esports, PSG Talon

@@ -1,320 +1,466 @@
- STUDENT TRANSCRIPT DATABASE - Complete Project Design
+# University Student Transcript Database System
 
-## 1. DATABASE SCHEMA OVERVIEW
+## 1. ORGANIZATION INFORMATION
 
-### Complete Table Structure with Sample Data
+### About the Institution
 
-| **Table Name** | **Field Name** | **Data Type** | **Constraints** | **Description** | **Sample Data** |
-|----------------|----------------|---------------|-----------------|-----------------|-----------------|
-| **Students** | student_id | INTEGER | PRIMARY KEY AUTOINCREMENT | Unique system ID | 10001 |
-| | hkid | TEXT | UNIQUE NOT NULL | Hong Kong ID Card | Y1234567 |
-| | full_name | TEXT | NOT NULL | Student full name | CHAN Tai Man |
-| | english_name | TEXT | | English preferred name | Tommy Chan |
-| | date_of_birth | DATE | NOT NULL | Date of birth | 2003-05-15 |
-| | gender | TEXT | CHECK('M','F','Other') | Gender | M |
-| | email | TEXT | UNIQUE NOT NULL | University email | tmchan@student.hku.hk |
-| | phone | TEXT | | Contact number | 91234567 |
-| | address | TEXT | | Residential address | Flat A, 123 Nathan Rd, HK |
-| | enrollment_date | DATE | NOT NULL | First enrollment date | 2022-09-01 |
-| | status | TEXT | DEFAULT 'Active' | Active/Graduated/Suspended | Active |
-| | nationality | TEXT | | Nationality | Chinese (HK) |
-| | previous_institution | TEXT | | High school/previous uni | Queen's College |
+**University Name:** Metropolitan University of Hong Kong (MUHK)
 
-| **Table Name** | **Field Name** | **Data Type** | **Constraints** | **Description** | **Sample Data** |
-|----------------|----------------|---------------|-----------------|-----------------|-----------------|
-| **Programs** | program_id | INTEGER | PRIMARY KEY AUTOINCREMENT | Unique program code | 101 |
-| | program_code | TEXT | UNIQUE NOT NULL | Official program code | BBA-ACCT |
-| | program_name | TEXT | NOT NULL | Full program name | Bachelor of Business Administration in Accounting |
-| | degree_level | TEXT | NOT NULL | Bachelor/Master/PhD | Bachelor |
-| | department | TEXT | NOT NULL | Offering department | School of Business |
-| | faculty | TEXT | NOT NULL | Faculty name | Faculty of Business and Economics |
-| | total_credits_required | INTEGER | NOT NULL | Credits to graduate | 120 |
-| | duration_years | INTEGER | NOT NULL | Normal study period | 4 |
-| | medium_of_instruction | TEXT | | English/Cantonese/Mandarin | English |
-| | accreditation_body | TEXT | | Professional accreditation | HKICPA |
-| | program_leader | TEXT | | Program director name | Prof. Wong Siu Ming |
+**Background:** Metropolitan University of Hong Kong is a publicly funded tertiary institution established in 1991. The university serves approximately 18,000 students across 6 faculties. The university offers 85 undergraduate programs, 120 postgraduate programs, and various professional diplomas and certificates.
 
-| **Table Name** | **Field Name** | **Data Type** | **Constraints** | **Description** | **Sample Data** |
-|----------------|----------------|---------------|-----------------|-----------------|-----------------|
-| **Courses** | course_code | TEXT | PRIMARY KEY | Official course code | ACCT3101 |
-| | course_title | TEXT | NOT NULL | Full course name | Intermediate Financial Accounting |
-| | course_description | TEXT | | Detailed description | This course covers... |
-| | credit_hours | DECIMAL(3,1) | NOT NULL | Credit value | 3.0 |
-| | level | INTEGER | | Year 1/2/3/4 | 3 |
-| | department | TEXT | | Offering department | Accounting |
-| | instructor | TEXT | | Lecturer name | Dr. Lee Ka Ho |
-| | semester | TEXT | | Fall/Spring/Summer | Fall |
-| | academic_year | TEXT | | e.g., 2024-25 | 2024-25 |
-| | max_capacity | INTEGER | | Class size limit | 80 |
-| | current_enrollment | INTEGER | DEFAULT 0 | Enrolled students | 65 |
-| | available_seats | INTEGER | | Calculated field | 15 |
-| | status | TEXT | DEFAULT 'Active' | Active/Archived/Cancelled | Active |
-| | syllabus_url | TEXT | | Link to syllabus | /syllabi/ACCT3101.pdf |
+**Organizational Structure:**
+- **Academic Registry**: Responsible for student records, enrollment, and transcript generation
+- **Information Technology Services**: Manages the university's database systems
+- **Faculty Offices**: Handle program-specific academic matters
+- **Examinations Office**: Manages grade processing and academic standing
 
-| **Table Name** | **Field Name** | **Data Type** | **Constraints** | **Description** | **Sample Data** |
-|----------------|----------------|---------------|-----------------|-----------------|-----------------|
-| **Prerequisites** | prerequisite_id | INTEGER | PRIMARY KEY AUTOINCREMENT | Auto ID | 1 |
-| | course_code | TEXT | FOREIGN KEY | Advanced course | ACCT3101 |
-| | required_course_code | TEXT | FOREIGN KEY | Prerequisite course | ACCT2101 |
-| | minimum_grade | TEXT | | Minimum grade required | C+ |
-| | is_corequisite | BOOLEAN | DEFAULT 0 | Can take together? | 0 |
-
-| **Table Name** | **Field Name** | **Data Type** | **Constraints** | **Description** | **Sample Data** |
-|----------------|----------------|---------------|-----------------|-----------------|-----------------|
-| **Student_Programs** | student_program_id | INTEGER | PRIMARY KEY AUTOINCREMENT | Auto ID | 5001 |
-| | student_id | INTEGER | FOREIGN KEY REFERENCES Students | Student | 10001 |
-| | program_id | INTEGER | FOREIGN KEY REFERENCES Programs | Program | 101 |
-| | admission_date | DATE | NOT NULL | Program start date | 2022-09-01 |
-| | graduation_date | DATE | | Expected/actual graduation | 2026-06-30 |
-| | status | TEXT | NOT NULL | Active/Completed/Dropped | Active |
-| | current_year_of_study | INTEGER | | 1/2/3/4/5 | 3 |
-| | academic_advisor | TEXT | | Staff assigned | Dr. Chan Mei Ling |
-| | scholarship_holder | BOOLEAN | DEFAULT 0 | Scholarship status | 1 |
-| | exchange_program | TEXT | | Outbound exchange details | N/A |
-
-| **Table Name** | **Field Name** | **Data Type** | **Constraints** | **Description** | **Sample Data** |
-|----------------|----------------|---------------|-----------------|-----------------|-----------------|
-| **Enrollments** | enrollment_id | INTEGER | PRIMARY KEY AUTOINCREMENT | Unique ID | 50001 |
-| | student_id | INTEGER | FOREIGN KEY REFERENCES Students | Student | 10001 |
-| | course_code | TEXT | FOREIGN KEY REFERENCES Courses | Course | ACCT3101 |
-| | program_id | INTEGER | FOREIGN KEY REFERENCES Programs | Program enrolled under | 101 |
-| | enrollment_date | DATE | NOT NULL | Date registered | 2025-01-10 |
-| | enrollment_status | TEXT | NOT NULL | Enrolled/Dropped/Withdrawn | Enrolled |
-| | grade_letter | TEXT | | A+, A, A-, B+, etc. | B+ |
-| | grade_points | DECIMAL(3,2) | | 4.0, 3.7, 3.3, etc. | 3.3 |
-| | percentage_score | DECIMAL(5,2) | | 0-100 | 78.5 |
-| | is_repeat | BOOLEAN | DEFAULT 0 | Previously failed? | 0 |
-| | previous_grade | TEXT | | If repeating | NULL |
-| | semester | TEXT | NOT NULL | Semester taken | Fall |
-| | academic_year | TEXT | NOT NULL | Year taken | 2025-26 |
-| | instructor | TEXT | | Course instructor | Dr. Lee Ka Ho |
-| | remarks | TEXT | | Additional notes | Good performance |
-
-| **Table Name** | **Field Name** | **Data Type** | **Constraints** | **Description** | **Sample Data** |
-|----------------|----------------|---------------|-----------------|-----------------|-----------------|
-| **Grade_Scale** | grade_scale_id | INTEGER | PRIMARY KEY AUTOINCREMENT | 1 |
-| | grade_letter | TEXT | UNIQUE NOT NULL | A+ |
-| | grade_points | DECIMAL(3,2) | NOT NULL | 4.3 (HK system) / 4.0 (US) | 4.3 |
-| | minimum_percentage | INTEGER | | 85 |
-| | maximum_percentage | INTEGER | | 100 |
-| | description | TEXT | | Excellent |
-| | is_passing | BOOLEAN | DEFAULT 1 | 1 |
-
-| **Table Name** | **Field Name** | **Data Type** | **Constraints** | **Description** | **Sample Data** |
-|----------------|----------------|---------------|-----------------|-----------------|-----------------|
-| **Transcripts** | transcript_id | INTEGER | PRIMARY KEY AUTOINCREMENT | Auto ID | 1001 |
-| | student_id | INTEGER | FOREIGN KEY REFERENCES Students | Student | 10001 |
-| | generated_date | DATE | NOT NULL | Issue date | 2026-01-15 |
-| | generated_by | TEXT | | Staff who generated | Registrar Office |
-| | cumulative_gpa | DECIMAL(3,2) | | Overall GPA | 3.45 |
-| | total_credits_attempted | INTEGER | | Sum of credits | 90 |
-| | total_credits_earned | INTEGER | | Passed credits | 87 |
-| | transcript_type | TEXT | | Official/unofficial | Official |
-| | purpose | TEXT | | Job application, further study | Job application |
-| | pdf_file_path | TEXT | | Storage location | /transcripts/2026/1001.pdf |
-| | verification_code | TEXT | UNIQUE | For authentication | TR-2026-1001-ABCD |
-| | is_sealed | BOOLEAN | DEFAULT 0 | Official seal | 1 |
-
-| **Table Name** | **Field Name** | **Data Type** | **Constraints** | **Description** | **Sample Data** |
-|----------------|----------------|---------------|-----------------|-----------------|-----------------|
-| **Transcript_Items** | transcript_item_id | INTEGER | PRIMARY KEY AUTOINCREMENT | Auto ID | 500001 |
-| | transcript_id | INTEGER | FOREIGN KEY REFERENCES Transcripts | Parent transcript | 1001 |
-| | enrollment_id | INTEGER | FOREIGN KEY REFERENCES Enrollments | Enrollment record | 50001 |
-| | course_code | TEXT | | Denormalized for efficiency | ACCT3101 |
-| | course_title | TEXT | | Denormalized | Intermediate Financial Accounting |
-| | credits | DECIMAL(3,1) | | Denormalized | 3.0 |
-| | grade_letter | TEXT | | Grade at transcript time | B+ |
-| | grade_points | DECIMAL(3,2) | | Grade points at transcript time | 3.3 |
-| | semester | TEXT | | When taken | Fall |
-| | academic_year | TEXT | | Year taken | 2025-26 |
-| | sequence_order | INTEGER | | Display order | 1 |
-
-| **Table Name** | **Field Name** | **Data Type** | **Constraints** | **Description** | **Sample Data** |
-|----------------|----------------|---------------|-----------------|-----------------|-----------------|
-| **Users** | user_id | INTEGER | PRIMARY KEY AUTOINCREMENT | System user | 100 |
-| | username | TEXT | UNIQUE NOT NULL | Login ID | rchan |
-| | password_hash | TEXT | NOT NULL | Encrypted | 5f4dcc3b5aa765d61d8327deb882cf99 |
-| | role | TEXT | NOT NULL | Admin/Registrar/Instructor/Student | Registrar |
-| | staff_id | TEXT | | If staff | S-2024-001 |
-| | student_id | INTEGER | FOREIGN KEY | If student | 10001 |
-| | last_login | TIMESTAMP | | Audit | 2026-01-15 09:30:00 |
-| | account_status | TEXT | DEFAULT 'Active' | Active/Locked | Active |
-
-| **Table Name** | **Field Name** | **Data Type** | **Constraints** | **Description** | **Sample Data** |
-|----------------|----------------|---------------|-----------------|-----------------|-----------------|
-| **Audit_Log** | log_id | INTEGER | PRIMARY KEY AUTOINCREMENT | Auto ID | 5000001 |
-| | user_id | INTEGER | FOREIGN KEY REFERENCES Users | Who performed action | 100 |
-| | action_type | TEXT | | INSERT/UPDATE/DELETE/VIEW | UPDATE |
-| | table_name | TEXT | | Affected table | Enrollments |
-| | record_id | INTEGER | | Primary key of record | 50001 |
-| | old_value | TEXT | | JSON of old data | {"grade":null} |
-| | new_value | TEXT | | JSON of new data | {"grade":"B+"} |
-| | ip_address | TEXT | | User IP | 10.12.34.56 |
-| | timestamp | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | When | 2026-01-15 14:23:45 |
+**Current Challenge:** The university currently manages student transcripts using a combination of spreadsheets and an outdated legacy system from 2005. Staff spend approximately 15 hours per week manually verifying data, correcting errors, and generating official transcripts. Students frequently report delays in receiving their academic records.
 
 ---
 
-## 2. USER REQUIREMENTS
+## 2. BUSINESS NEEDS
 
-### A. Functional Requirements
+### Primary Objectives
 
-#### Student Requirements:
-1. **View Transcript**: Generate and view unofficial transcript anytime
-2. **Check GPA**: Calculate current semester GPA and cumulative GPA
-3. **Course Registration**: View available courses and register
-4. **Graduation Audit**: Check progress toward degree completion
-5. **Grade Viewing**: Access individual course grades when released
-6. **Academic History**: View complete enrollment history
-7. **Personal Info**: Update contact information
+The university requires a comprehensive database system to manage student academic records and generate accurate transcripts. The system must:
 
-#### Instructor Requirements:
-1. **Grade Entry**: Input final grades for courses taught
-2. **Roster Management**: View enrolled students list
-3. **Grade Modification**: Change grades with approval workflow
-4. **Course Management**: Submit course syllabi and materials
-5. **Student Progress**: View academic standing of advisees
+1. **Record student personal information** including Student Name, Student Number, Identification Number (HKID/Passport), and Date of Birth
 
-#### Registrar/Admin Requirements:
-1. **Transcript Generation**: Produce official transcripts with verification
-2. **Enrollment Management**: Override registration restrictions
-3. **Academic Standing**: Identify at-risk students (GPA < 2.0)
-4. **Graduation Processing**: Verify completion for graduation
-5. **Course Creation**: Add/modify course catalog
-6. **Program Management**: Define/update program requirements
-7. **Grade Scale Maintenance**: Update grading policies
-8. **Reporting**: Generate institutional reports (enrollment trends, grade distribution)
-9. **Data Import**: Batch import student records and grades
-10. **Audit Trail**: Review all grade changes and transcript requests
+2. **Record academic program information** including Theme of Study (Program Name) and Year of Study for each student
 
-### B. Non-Functional Requirements
+3. **Record course enrollment and completion** including:
+   - Course Code and Course Title for each course taken
+   - Academic Year when the course was taken
+   - Credits Attempted and Credits Gained for each course
+   - Grade achieved and corresponding Grade Point
 
-1. **Accuracy**: GPA calculations must be 100% accurate
-2. **Security**: Student data must be protected; role-based access control
-3. **Auditability**: All grade changes must be logged
-4. **Performance**: Transcript generation < 5 seconds
-5. **Scalability**: Support 20,000+ students, 1M+ enrollment records
-6. **Availability**: System available 24/7 (except maintenance)
-7. **Data Integrity**: No orphaned records; referential integrity
-8. **Compliance**: Meet HK PDPO (Personal Data Privacy Ordinance)
-9. **Backup**: Daily automated backups
+4. **Generate official transcripts** that include all the above information with a clear Issue Date
+
+5. **Calculate GPA** accurately based on credits and grade points
+
+6. **Track academic progress** across multiple years and programs
+
+7. **List students** who have not yet completed any courses (similar to "staff who have not taken any vaccines")
+
+8. **Determine eligibility** for progression to next year of study based on completed credits
+
+9. **Provide status summary** including total credits attempted, total credits gained, and cumulative GPA for each student
 
 ---
 
-## 3. DATABASE DESIGN DOCUMENT
+## 3. ASSUMPTIONS AND LIMITATIONS
 
-### Entity-Relationship Model Description
+### Business Process Assumptions
 
+1. **Timely Grade Entry**: All grades will be entered within 30 days after the end of each semester. This ensures that the status summary (transcripts and progress reports) reflects the current academic standing of students at any time.
+
+2. **Student Record Retention**: If a student withdraws from the university or graduates, their records remain in the STUDENT table but their status is updated to "Withdrawn" or "Graduated". Records are NOT deleted because:
+   - Alumni require transcripts for job applications and further studies
+   - The university must maintain academic records for accreditation purposes
+   - Deleting records would create gaps in institutional data
+
+3. **Grading Scale Consistency**: The university uses a consistent grading scale across all faculties. If the grading scale changes (e.g., introduction of new grade points), old grades remain calculated according to the scale in effect at that time.
+
+4. **Program Changes**: Students may change their program of study. When this happens:
+   - A new STUDENT_PROGRAM record is created for the new program
+   - The old STUDENT_PROGRAM record status is updated to "Completed" or "Dropped"
+   - Previously completed courses are credited toward the new program according to transfer credit policies
+
+5. **Course Repeat Policy**: When a student repeats a course, both the original and repeat enrollments are retained. The GPA calculation may include both attempts or only the higher grade, depending on university policy at the time.
+
+6. **Academic Year Definition**: The academic year runs from September 1 to August 31. Academic Year is stored in format "YYYY-YY" (e.g., "2024-25") to standardize reporting.
+
+7. **Transcript Generation**: Official transcripts can only be generated by authorized Academic Registry staff. Unofficial transcripts can be viewed by students online at any time.
+
+8. **Data Entry Authorization**: Only authorized faculty and registry staff can enter or modify grades. All grade changes require proper approval and are logged.
+
+### System Design Assumptions to Avoid Data Anomalies
+
+1. **Student Number Reuse Prevention**: Student numbers, once assigned, will NEVER be reused, even after a student graduates or withdraws. This prevents the confusion that would occur if a new student received a former student's number and their academic history became mixed.
+
+2. **Identification Number Uniqueness Across Time**: The Identification Number (HKID/Passport) must be unique across ALL students, past and present, in the system. This ensures that if a former student re-enrolls after many years, they can be matched to their existing record rather than creating a duplicate.
+
+3. **Program Code Stability**: Program codes will not be reused for different programs. If a program is discontinued, its code is retired permanently. This prevents confusion when viewing historical transcripts where a program code might otherwise refer to a different program.
+
+4. **Course Code Permanence**: Once a course code is assigned, it remains with that course permanently even if the course is no longer offered. New versions of similar courses receive new course codes. This ensures that historical enrollment records always reference the correct course.
+
+5. **Grade Scale Historical Tracking**: When grading policies change, the old grade scale is preserved with effective dates rather than being deleted or overwritten. This ensures that GPA calculations for historical records remain accurate.
+
+6. **Transcript Snapshot Preservation**: Once a transcript is generated as "Official", the grades and course information at that moment are preserved in the TRANSCRIPT_ITEM table. Future grade changes do NOT affect previously issued official transcripts, preventing the anomaly where a student's record would show different grades on different copies of the same transcript.
+
+7. **Semester Value Standardization**: Semester values are limited to "Fall", "Spring", and "Summer" only. This prevents data inconsistency where "Fall 2024", "F2024", and "Fall-2024" might otherwise be entered as different values.
+
+8. **Credit Hour Consistency Across Enrollments**: The credit hours for a course are stored in the COURSE table and copied to ENROLLMENT.credits_attempt at enrollment time. This prevents the anomaly where changing a course's credit hours would retroactively change the credit value of previously completed enrollments.
+
+9. **Null Grade Handling**: A NULL grade in the ENROLLMENT table indicates that the course is in progress or grades are not yet entered. This is distinct from a failing grade "F", which has a grade point of 0.0. This prevents misinterpretation of incomplete versus failed courses.
+
+10. **Composite Unique Constraint Prevention**: The combination of student_no, course_code, and semester could potentially allow the same student to enroll in the same course twice in one semester. The system prevents this unless the "is_repeat" flag indicates an approved repeat enrollment.
+
+11. **Graduation Date Logic**: A graduation date cannot be entered unless the student has met all program requirements (total credits_required and completed all required courses). This prevents premature graduation flags.
+
+12. **Program Enrollment Status Tracking**: When a student completes a program, their STUDENT_PROGRAM status is updated to "Completed", but their enrollments remain. This prevents the loss of academic history while accurately reflecting current status.
+
+13. **Deletion Restrictions**: The system will prevent deletion of:
+    - Any student with enrollment records (ON DELETE RESTRICT)
+    - Any course with enrollment records (ON DELETE RESTRICT)
+    - Any program with student enrollments (ON DELETE RESTRICT)
+    - Any grade scale that has been used for grades (ON DELETE RESTRICT)
+    
+    This ensures referential integrity and prevents orphaned records.
+
+14. **Audit Trail for Grade Changes**: Every grade change is logged with:
+    - Previous grade value
+    - New grade value
+    - User who made the change
+    - Date and time of change
+    - Reason for change
+    
+    This prevents unauthorized or unexplained grade modifications.
+
+15. **Academic Year Rollover**: At the start of each new academic year, the system automatically increments current_year_of_study for active students who have met progression requirements. This prevents manual errors in year assignment.
+
+16. **Credit Gained Calculation Rule**: Credits Gained can only be either:
+    - Equal to Credits Attempted (if grade is passing)
+    - Zero (if grade is failing or incomplete)
+    
+    This prevents partial credit anomalies.
+
+17. **Transcript Verification Uniqueness**: Each official transcript receives a unique verification code that is NEVER reused, even for reissued transcripts. This prevents confusion between different versions of a student's transcript and helps detect forgeries.
+
+18. **Foreign Student Identification**: For students without a Hong Kong ID, a passport number is accepted as Identification Number, but the system flags these for review to prevent duplicate entries for the same person using different documents.
+
+19. **Transfer Credit Handling**: Transfer credits from other institutions are recorded with a special flag and do not have associated grades or grade points. They are included in Credits Gained but not in GPA calculation.
+
+20. **Incomplete Grade Resolution**: If a grade remains NULL for more than 60 days after the semester ends, the system flags the record for review to prevent indefinite "incomplete" status.
+
+---
+
+## 4. DATABASE SCHEMA DESIGN
+
+### Entity Relationship Diagram
+
+```mermaid
+erDiagram
+    STUDENT ||--o{ STUDENT_PROGRAM : enrolls_in
+    STUDENT ||--o{ ENROLLMENT : completes
+    STUDENT ||--o{ TRANSCRIPT : requests
+    STUDENT {
+        int student_no PK
+        string identification_no UK
+        string student_name
+        date date_of_birth
+        string email
+        string phone
+        date enrollment_date
+        string status
+    }
+    
+    PROGRAM ||--o{ STUDENT_PROGRAM : includes
+    PROGRAM ||--o{ COURSE : offers
+    PROGRAM {
+        int program_id PK
+        string program_code UK
+        string program_name
+        string degree_level
+        int total_credits_required
+        int duration_years
+        string department
+        string status
+    }
+    
+    STUDENT_PROGRAM }o--|| PROGRAM : belongs_to
+    STUDENT_PROGRAM {
+        int student_program_id PK
+        int student_no FK
+        int program_id FK
+        date admission_date
+        int current_year_of_study
+        string academic_advisor
+        string status
+        date graduation_date
+    }
+    
+    COURSE ||--o{ ENROLLMENT : has
+    COURSE {
+        string course_code PK
+        string course_title
+        decimal credit_hours
+        int level
+        string department
+        string status
+    }
+    
+    ENROLLMENT }o--|| COURSE : for
+    ENROLLMENT {
+        int enrollment_id PK
+        int student_no FK
+        string course_code FK
+        int program_id FK
+        string semester
+        string academic_year
+        string grade FK
+        int credits_attempt
+        int credits_gained
+        date grade_entry_date
+        string enrollment_status
+        boolean is_repeat
+    }
+    
+    GRADE_SCALE ||--o{ ENROLLMENT : defines
+    GRADE_SCALE {
+        string grade_letter PK
+        decimal grade_points
+        int min_percentage
+        int max_percentage
+        string description
+        boolean is_passing
+        date effective_date
+        date end_date
+    }
+    
+    TRANSCRIPT ||--o{ TRANSCRIPT_ITEM : contains
+    TRANSCRIPT {
+        int transcript_id PK
+        int student_no FK
+        date issue_date
+        decimal cumulative_gpa
+        int total_credits_attempted
+        int total_credits_earned
+        string transcript_type
+        string generated_by
+        string verification_code UK
+        string purpose
+    }
+    
+    TRANSCRIPT_ITEM }o--|| TRANSCRIPT : belongs_to
+    TRANSCRIPT_ITEM }o--|| ENROLLMENT : snapshots
+    TRANSCRIPT_ITEM {
+        int transcript_item_id PK
+        int transcript_id FK
+        int enrollment_id FK
+        string course_code
+        string course_title
+        decimal credits
+        string grade
+        decimal grade_point
+        string semester
+        string academic_year
+        int sequence_order
+    }
 ```
-Students (1) -----< (M) Student_Programs >----- (1) Programs
-   |                                                |
-   |                                                |
-   +-------< (M) Enrollments >---------------------+
-   |                 |
-   |                 +----< (M) Transcript_Items
-   |                 |
-   +--------------< (M) Transcripts
-                       |
-                       +----< (M) Transcript_Items
-
-Courses (1) -----< (M) Enrollments
-   |
-   +-----< (M) Prerequisites >----- (1) Courses (as required course)
-
-Grade_Scale (1) -----< (M) Enrollments (via grade_letter reference)
-```
-
-### Business Rules
-
-1. **Student Identity**: Each student has unique HKID and student email
-2. **Program Enrollment**: Student must be enrolled in at least one program
-3. **Course Registration**: Student can only register for courses if prerequisites met with minimum grade
-4. **Grade Assignment**: Each enrollment must have NULL grade until finalized, then assigned valid grade letter from Grade_Scale
-5. **GPA Calculation**: GPA = Σ(credit_hours × grade_points) / Σ(credit_hours) for courses with grades
-6. **Graduation**: Student can graduate when:
-   - Completed all required courses
-   - Earned ≥ total_credits_required
-   - Cumulative GPA ≥ minimum requirement (typically 2.0)
-   - No outstanding academic obligations
-
-7. **Transcript Integrity**: Once transcript is generated as "Official", the grade snapshot is preserved even if grades later changed
-8. **Audit Requirement**: All grade changes require audit trail with reason code
-9. **Academic Standing**: 
-   - Good Standing: GPA ≥ 2.0
-   - Academic Warning: GPA 1.7-1.99
-   - Probation: GPA 1.5-1.69
-   - Required to Withdraw: GPA < 1.5 for two consecutive semesters
-
-### Data Dictionary Summary
-
-| **Entity** | **Description** | **Volumetrics** | **Growth Rate** |
-|------------|-----------------|-----------------|-----------------|
-| Students | All enrolled persons | 15,000 | +3,000/year |
-| Programs | Academic programs offered | 150 | +5/year |
-| Courses | Course catalog | 2,500 | +100/year |
-| Enrollments | Course registrations | 150,000/year | 10%/year |
-| Transcripts | Generated official transcripts | 5,000/year | 5%/year |
 
 ---
 
-## 4. IMPLEMENTATION NOTES
+## 5. DETAILED TABLE STRUCTURES
 
-### Critical Queries to Implement
+### Table 1: STUDENT
 
-1. **Calculate Cumulative GPA**
+| **Field Name** | **Data Type** | **Constraints** | **PK/FK** | **Optional/Mandatory** |
+|----------------|---------------|-----------------|-----------|------------------------|
+| student_no | INTEGER | PRIMARY KEY AUTOINCREMENT | PK | Mandatory |
+| identification_no | TEXT | UNIQUE NOT NULL | - | Mandatory |
+| student_name | TEXT | NOT NULL | - | Mandatory |
+| date_of_birth | DATE | NOT NULL | - | Mandatory |
+| email | TEXT | UNIQUE | - | Optional |
+| phone | TEXT | - | - | Optional |
+| enrollment_date | DATE | NOT NULL | - | Mandatory |
+| status | TEXT | DEFAULT 'Active' | - | Mandatory |
+
+### Table 2: PROGRAM
+
+| **Field Name** | **Data Type** | **Constraints** | **PK/FK** | **Optional/Mandatory** |
+|----------------|---------------|-----------------|-----------|------------------------|
+| program_id | INTEGER | PRIMARY KEY AUTOINCREMENT | PK | Mandatory |
+| program_code | TEXT | UNIQUE NOT NULL | - | Mandatory |
+| program_name | TEXT | NOT NULL | - | Mandatory |
+| degree_level | TEXT | NOT NULL | - | Mandatory |
+| total_credits_required | INTEGER | NOT NULL | - | Mandatory |
+| duration_years | INTEGER | NOT NULL | - | Mandatory |
+| department | TEXT | NOT NULL | - | Mandatory |
+| status | TEXT | DEFAULT 'Active' | - | Mandatory |
+
+### Table 3: STUDENT_PROGRAM
+
+| **Field Name** | **Data Type** | **Constraints** | **PK/FK** | **Optional/Mandatory** |
+|----------------|---------------|-----------------|-----------|------------------------|
+| student_program_id | INTEGER | PRIMARY KEY AUTOINCREMENT | PK | Mandatory |
+| student_no | INTEGER | FOREIGN KEY REFERENCES STUDENT(student_no) ON DELETE RESTRICT | FK | Mandatory |
+| program_id | INTEGER | FOREIGN KEY REFERENCES PROGRAM(program_id) ON DELETE RESTRICT | FK | Mandatory |
+| admission_date | DATE | NOT NULL | - | Mandatory |
+| current_year_of_study | INTEGER | NOT NULL | - | Mandatory |
+| academic_advisor | TEXT | - | - | Optional |
+| status | TEXT | NOT NULL | - | Mandatory |
+| graduation_date | DATE | - | - | Optional |
+
+### Table 4: COURSE
+
+| **Field Name** | **Data Type** | **Constraints** | **PK/FK** | **Optional/Mandatory** |
+|----------------|---------------|-----------------|-----------|------------------------|
+| course_code | TEXT | PRIMARY KEY | PK | Mandatory |
+| course_title | TEXT | NOT NULL | - | Mandatory |
+| credit_hours | DECIMAL(3,1) | NOT NULL | - | Mandatory |
+| level | INTEGER | - | - | Optional |
+| department | TEXT | NOT NULL | - | Mandatory |
+| status | TEXT | DEFAULT 'Active' | - | Mandatory |
+
+### Table 5: ENROLLMENT
+
+| **Field Name** | **Data Type** | **Constraints** | **PK/FK** | **Optional/Mandatory** |
+|----------------|---------------|-----------------|-----------|------------------------|
+| enrollment_id | INTEGER | PRIMARY KEY AUTOINCREMENT | PK | Mandatory |
+| student_no | INTEGER | FOREIGN KEY REFERENCES STUDENT(student_no) | FK | Mandatory |
+| course_code | TEXT | FOREIGN KEY REFERENCES COURSE(course_code) | FK | Mandatory |
+| program_id | INTEGER | FOREIGN KEY REFERENCES PROGRAM(program_id) | FK | Mandatory |
+| semester | TEXT | NOT NULL CHECK(semester IN ('Fall','Spring','Summer')) | - | Mandatory |
+| academic_year | TEXT | NOT NULL | - | Mandatory |
+| grade | TEXT | FOREIGN KEY REFERENCES GRADE_SCALE(grade_letter) | - | Optional |
+| credits_attempt | INTEGER | NOT NULL | - | Mandatory |
+| credits_gained | INTEGER | - | - | Optional |
+| grade_entry_date | DATE | - | - | Optional |
+| enrollment_status | TEXT | DEFAULT 'Enrolled' | - | Mandatory |
+| is_repeat | BOOLEAN | DEFAULT 0 | - | Mandatory |
+
+### Table 6: GRADE_SCALE
+
+| **Field Name** | **Data Type** | **Constraints** | **PK/FK** | **Optional/Mandatory** |
+|----------------|---------------|-----------------|-----------|------------------------|
+| grade_letter | TEXT | PRIMARY KEY | PK | Mandatory |
+| grade_points | DECIMAL(3,2) | NOT NULL | - | Mandatory |
+| min_percentage | INTEGER | - | - | Optional |
+| max_percentage | INTEGER | - | - | Optional |
+| description | TEXT | - | - | Optional |
+| is_passing | BOOLEAN | DEFAULT 1 | - | Mandatory |
+| effective_date | DATE | NOT NULL | - | Mandatory |
+| end_date | DATE | - | - | Optional |
+
+### Table 7: TRANSCRIPT
+
+| **Field Name** | **Data Type** | **Constraints** | **PK/FK** | **Optional/Mandatory** |
+|----------------|---------------|-----------------|-----------|------------------------|
+| transcript_id | INTEGER | PRIMARY KEY AUTOINCREMENT | PK | Mandatory |
+| student_no | INTEGER | FOREIGN KEY REFERENCES STUDENT(student_no) | FK | Mandatory |
+| issue_date | DATE | NOT NULL | - | Mandatory |
+| cumulative_gpa | DECIMAL(3,2) | NOT NULL | - | Mandatory |
+| total_credits_attempted | INTEGER | NOT NULL | - | Mandatory |
+| total_credits_earned | INTEGER | NOT NULL | - | Mandatory |
+| transcript_type | TEXT | NOT NULL | - | Mandatory |
+| generated_by | TEXT | NOT NULL | - | Mandatory |
+| verification_code | TEXT | UNIQUE NOT NULL | - | Mandatory |
+| purpose | TEXT | - | - | Optional |
+
+### Table 8: TRANSCRIPT_ITEM
+
+| **Field Name** | **Data Type** | **Constraints** | **PK/FK** | **Optional/Mandatory** |
+|----------------|---------------|-----------------|-----------|------------------------|
+| transcript_item_id | INTEGER | PRIMARY KEY AUTOINCREMENT | PK | Mandatory |
+| transcript_id | INTEGER | FOREIGN KEY REFERENCES TRANSCRIPT(transcript_id) ON DELETE CASCADE | FK | Mandatory |
+| enrollment_id | INTEGER | FOREIGN KEY REFERENCES ENROLLMENT(enrollment_id) | FK | Mandatory |
+| course_code | TEXT | NOT NULL | - | Mandatory |
+| course_title | TEXT | NOT NULL | - | Mandatory |
+| credits | DECIMAL(3,1) | NOT NULL | - | Mandatory |
+| grade | TEXT | - | - | Optional |
+| grade_point | DECIMAL(3,2) | - | - | Optional |
+| semester | TEXT | NOT NULL | - | Mandatory |
+| academic_year | TEXT | NOT NULL | - | Mandatory |
+| sequence_order | INTEGER | NOT NULL | - | Mandatory |
+
+---
+
+## 6. BUSINESS NEEDS MAPPING
+
+| **Business Need** | **How It Is Fulfilled** |
+|-------------------|------------------------|
+| Record student personal information | STUDENT table stores name, student_no, identification_no, date_of_birth |
+| Record Theme of Study (Program) | PROGRAM table stores program_name; STUDENT_PROGRAM links student to program |
+| Record Year of Study | STUDENT_PROGRAM.current_year_of_study tracks current year |
+| Record Course Code and Title | COURSE table stores course_code and course_title |
+| Record Academic Year | ENROLLMENT.academic_year stores when course was taken |
+| Record Credits Attempted and Gained | ENROLLMENT.credits_attempt and ENROLLMENT.credits_gained |
+| Record Grade and Grade Point | ENROLLMENT.grade links to GRADE_SCALE for grade_points |
+| Generate transcript with Issue Date | TRANSCRIPT table with issue_date and TRANSCRIPT_ITEM for course details |
+| Calculate GPA | cumulative_gpa stored in TRANSCRIPT at generation time |
+| Track academic progress | STUDENT_PROGRAM.status and current_year_of_study |
+| List students with no completed courses | Query STUDENT left join ENROLLMENT where no completed enrollments |
+| Determine progression eligibility | Compare completed credits against program requirements |
+| Status summary | TRANSCRIPT table provides snapshot; ENROLLMENT provides current status |
+
+---
+
+## 7. KEY BUSINESS QUERIES
+
+### Generate Student Transcript
 ```sql
-SELECT s.student_id, s.full_name,
-       SUM(e.credit_hours * g.grade_points) / SUM(e.credit_hours) AS cumulative_gpa,
-       SUM(e.credit_hours) AS total_credits_attempted,
-       SUM(CASE WHEN g.is_passing = 1 THEN e.credit_hours ELSE 0 END) AS credits_earned
-FROM Students s
-JOIN Enrollments e ON s.student_id = e.student_id
-JOIN Grade_Scale g ON e.grade_letter = g.grade_letter
-WHERE s.student_id = 10001
-AND e.enrollment_status = 'Enrolled'
-AND e.grade_letter IS NOT NULL;
+SELECT 
+    s.student_name,
+    t.issue_date,
+    s.student_no,
+    s.identification_no,
+    s.date_of_birth,
+    ti.academic_year,
+    p.program_name AS theme_of_study,
+    sp.current_year_of_study,
+    ti.course_code,
+    ti.course_title,
+    ti.credits AS credits_attempt,
+    CASE WHEN g.is_passing = 1 THEN ti.credits ELSE 0 END AS credits_gained,
+    ti.grade,
+    ti.grade_point
+FROM TRANSCRIPT t
+JOIN STUDENT s ON t.student_no = s.student_no
+JOIN TRANSCRIPT_ITEM ti ON t.transcript_id = ti.transcript_id
+JOIN ENROLLMENT e ON ti.enrollment_id = e.enrollment_id
+JOIN STUDENT_PROGRAM sp ON s.student_no = sp.student_no AND e.program_id = sp.program_id
+JOIN PROGRAM p ON sp.program_id = p.program_id
+LEFT JOIN GRADE_SCALE g ON ti.grade = g.grade_letter
+WHERE t.transcript_id = ?;
 ```
 
-2. **Check Graduation Eligibility**
+### List Students Who Have Not Completed Any Courses
 ```sql
--- Complex query checking program requirements vs completed courses
+SELECT s.student_no, s.student_name, s.identification_no, s.enrollment_date
+FROM STUDENT s
+LEFT JOIN ENROLLMENT e ON s.student_no = e.student_no 
+    AND e.enrollment_status = 'Completed'
+    AND e.grade IS NOT NULL
+WHERE e.enrollment_id IS NULL
+AND s.status = 'Active';
 ```
 
-### Suggested Project Timeline
+### Calculate Current GPA for a Student
+```sql
+SELECT 
+    s.student_no,
+    s.student_name,
+    SUM(e.credits_attempt * g.grade_points) / SUM(e.credits_attempt) AS current_gpa,
+    SUM(e.credits_attempt) AS total_credits_attempted,
+    SUM(CASE WHEN g.is_passing = 1 THEN e.credits_attempt ELSE 0 END) AS total_credits_earned
+FROM STUDENT s
+JOIN ENROLLMENT e ON s.student_no = e.student_no
+JOIN GRADE_SCALE g ON e.grade = g.grade_letter
+WHERE s.student_no = ?
+AND e.enrollment_status = 'Completed'
+AND e.grade IS NOT NULL;
+```
 
-| **Week** | **Tasks** |
-|----------|----------|
-| 1-2 | Collect real forms from university registrar; identify exact data fields |
-| 3-4 | Create ER diagram; define all tables and relationships |
-| 5-6 | Implement SQLite database; create all tables with constraints |
-| 7-8 | Populate with sample data (minimum 10 students, 20 courses, 50 enrollments) |
-| 9-10 | Develop key queries; implement views for transcript generation |
-| 11-12 | Create report formats; prepare presentation |
-| 13 | Final testing and submission |
-
-### Sample Input Form References
-
-You should collect these forms from your university:
-1. **Course Add/Drop Form** - shows what fields needed for enrollment
-2. **Transcript Request Form** - shows information needed for transcript generation
-3. **Graduation Application Form** - shows graduation requirements
-4. **Grade Appeal Form** - shows audit trail requirements
-5. **Student Registration Form** - shows personal information needed
-
----
-
-## 5. DELIVERABLES CHECKLIST
-
-| **Deliverable** | **Status** | **Notes** |
-|-----------------|-----------|----------|
-| ER Diagram | ✅ | Include cardinalities and constraints |
-| Table Creation Scripts | ✅ | SQLite compatible |
-| Sample Data Population | ✅ | 10+ students with realistic data |
-| GPA Calculation Function | ✅ | Accurate with HK grading scale |
-| Transcript Generation View | ✅ | Format similar to real transcript |
-| Enrollment Validation Triggers | ✅ | Check prerequisites, capacity |
-| Audit Log Triggers | ✅ | For grade modifications |
-| Graduation Audit Query | ✅ | Check degree completion |
-| User Interface/Forms | Optional | If required by instructor |
-| Presentation Slides | ✅ | 20-30 minutes |
-| Project Report | ✅ | 1500-2000 words |
-
+### Check Graduation Eligibility
+```sql
+SELECT 
+    s.student_no,
+    s.student_name,
+    p.program_name,
+    p.total_credits_required,
+    SUM(CASE WHEN g.is_passing = 1 THEN e.credits_attempt ELSE 0 END) AS credits_earned,
+    CASE 
+        WHEN SUM(CASE WHEN g.is_passing = 1 THEN e.credits_attempt ELSE 0 END) >= p.total_credits_required 
+        THEN 'Eligible' 
+        ELSE 'Not Eligible' 
+    END AS graduation_status
+FROM STUDENT s
+JOIN STUDENT_PROGRAM sp ON s.student_no = sp.student_no
+JOIN PROGRAM p ON sp.program_id = p.program_id
+LEFT JOIN ENROLLMENT e ON s.student_no = e.student_no
+LEFT JOIN GRADE_SCALE g ON e.grade = g.grade_letter
+WHERE s.student_no = ?
+AND sp.status = 'Active'
+GROUP BY s.student_no;
+```

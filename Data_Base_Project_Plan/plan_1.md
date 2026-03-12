@@ -367,37 +367,6 @@ A logical view that displays the complete transcript for a student
 
  
 
-| Field Name | Source | 
-
-|------------|--------| 
-
-| student_name | STUDENT table | 
-
-| issue_date | TRANSCRIPT table | 
-
-| student_no | STUDENT table | 
-
-| identification_no | STUDENT table | 
-
-| date_of_birth | STUDENT table | 
-
-| academic_year | TRANSCRIPT_ITEM table | 
-
-| theme_of_study | PROGRAM table | 
-
-| year_of_study | STUDENT_PROGRAM table | 
-
-| course_code | TRANSCRIPT_ITEM table | 
-
-| course_title | TRANSCRIPT_ITEM table | 
-
-| credits_attempt | TRANSCRIPT_ITEM table | 
-
-| credits_gained | Derived from grade | 
-
-| grade | TRANSCRIPT_ITEM table | 
-
-| grade_point | TRANSCRIPT_ITEM table | 
 ---
 
 ## 6. BUSINESS NEEDS MAPPING

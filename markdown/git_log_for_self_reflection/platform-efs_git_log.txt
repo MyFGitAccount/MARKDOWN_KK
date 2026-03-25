@@ -1,0 +1,179 @@
+commit 66a53472ecdbe1569f6a24a2037bdac5a4851520
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Mon Jan 5 14:42:19 2026 +0800
+
+    add catch all route for SPA in server.js
+
+commit b14efb773f218e3fec5691c8258204c01428a96f
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Mon Jan 5 14:36:38 2026 +0800
+
+    update express regex from 5 to6 in server and add serverlesshttp to api/index.js
+
+commit 422db42744195e27929e8276bca9db3d3045e2ee
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 02:25:02 2025 +0800
+
+    add env var to vercel dashboard
+
+commit 976e71f13a84debbca9cae431cf018e6d2cfd9fb
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 02:01:59 2025 +0800
+
+    update
+
+commit 7dfd65f045a07544c5930cd1c5f4c9a09b5d3c30
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 02:00:00 2025 +0800
+
+    update
+
+commit 1cd48e273d0f2945878f8f37706d90db9c8bff28
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 01:58:27 2025 +0800
+
+    update
+
+commit 097d0b572dfdd026aaf2c0067812970763d915a3
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 01:54:37 2025 +0800
+
+    update
+
+commit 021550b2a9ad7a81bed469821f6b5c48077bf601
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 01:53:39 2025 +0800
+
+    update
+
+commit 01236e4ff9ad501edcb8a4b6a9307942cc1f727e
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 01:46:47 2025 +0800
+
+    server.js update
+
+commit c2b6aca60a4de299c04d58c598e3c82a4d44c362
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 01:44:39 2025 +0800
+
+    server.js update
+
+commit d4a7fdae7547832bab99777e8306ee65c240bd9f
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 01:41:24 2025 +0800
+
+    server.js update
+
+commit 848cfa839368bd5e82dcbc80e76d5771ce6e3db8
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 01:37:27 2025 +0800
+
+    vercel.json setup update
+
+commit 7ff34c3aad260584ef2c04e7921a64e1d18f1d5e
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 01:35:02 2025 +0800
+
+    vercel.json setup update
+
+commit 8f74ce9557151ce75643ea344d17c38a920751a0
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 01:32:50 2025 +0800
+
+    vercel.json setup update
+
+commit 36dd4dd409b63bf9d70b870d350533f29e69c92f
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 01:29:57 2025 +0800
+
+    vercel.json setup update
+
+commit 4558672d08e1ec3d0aed3f2d8433755581a774d6
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 01:23:30 2025 +0800
+
+    update build
+
+commit f07e32e3d5a2fe5c28aa423a35b1457d512e0337
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 01:19:36 2025 +0800
+
+    update expression
+
+commit e2c1fd524d97fd202272215a1db239df1133f031
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 01:16:18 2025 +0800
+
+    improve 404 handle
+
+commit 95fdc61ad1ed7db1c4069fe0001f0f9047b93347
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 01:03:26 2025 +0800
+
+    fix routing
+
+commit 885923083b6cc75417be980a529cbdfcc7fc6946
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 00:56:50 2025 +0800
+
+    correct path
+
+commit 77f508013d0b26ce53ae298811d0ac279962bcb3
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Dec 30 00:50:23 2025 +0800
+
+    server.js right cors
+
+commit ec90af230604927f2de1e6e604429339e1a5ee17
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Mon Dec 29 21:33:44 2025 +0800
+
+    fix vercel 404x0
+
+commit badaaceb102918f282fa681dc69544329383f99a
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Mon Dec 29 20:49:11 2025 +0800
+
+    update vercel.json
+
+commit ef0ecc3ea6f7455842f0cde4237f7296072331bc
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Mon Dec 29 20:42:38 2025 +0800
+
+    update index.js
+
+commit b93c6067456b0b70dcac07668f68c88f97e3875a
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Mon Dec 29 20:26:28 2025 +0800
+
+    back to efs-platform build script
+
+commit 156a8bd0d83e9d513ce2785cfc2c6e36a47e98a2
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Mon Dec 29 20:21:28 2025 +0800
+
+    change index.js to esm module and update vercel-build.js to use the correct api
+
+commit 18584d6f3d943cdc84ab7e72c5be5cc9f2846b5e
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Mon Dec 29 20:09:11 2025 +0800
+
+    add health check at vercel-build.js
+
+commit c2cb01a4945bd20156ae168c737b990215ba47c9
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Mon Dec 29 20:01:21 2025 +0800
+
+    delte function in vercel.json and use builds instead
+
+commit 5be0d3082f90335b9266fe64f722deec6856f805
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Mon Dec 29 19:57:07 2025 +0800
+
+    init project
+
+commit 2a2c13246d09244ecf300b434b4c651afac351c8
+Author: MyFGitAccount <coherentlaserbeam@gmail.com>
+Date:   Mon Dec 29 02:50:20 2025 +0800
+
+    Initial commit

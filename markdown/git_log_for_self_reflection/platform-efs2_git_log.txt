@@ -1,0 +1,266 @@
+commit 6903576bfd2c7c8f6b89e849110ddd399ea8d6f5
+Author: MyFGitAccount <coherentlaserbeam@gmail.com>
+Date:   Tue Feb 24 21:42:04 2026 +0800
+
+    fix routing issue
+
+commit 63a67657fb0ab52f665ad90a9ba6a1919f28e361
+Author: MyFGitAccount <coherentlaserbeam@gmail.com>
+Date:   Tue Feb 24 21:32:10 2026 +0800
+
+    fix file path not found error for css at Dashboard.jsx
+
+commit 2235885c65578538abcb1bd92223c5f452993bb3
+Author: MyFGitAccount <coherentlaserbeam@gmail.com>
+Date:   Tue Feb 24 21:26:35 2026 +0800
+
+    add mobile optimized designx2
+
+commit 07d719bfe981d7ceee6a22ea6984a2b267278618
+Author: MyFGitAccount <coherentlaserbeam@gmail.com>
+Date:   Mon Feb 23 12:50:35 2026 +0800
+
+    updated css file to make the layout at mobile browser will be better
+
+commit 4b64d57aaa3b85f46393bfe7bfee807b58ec37fe
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 18 19:31:14 2026 +0800
+
+    fix timetable planner only render one course problem
+
+commit becef448e87580c81c8c1197242d73f2c307e1b7
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 18 19:10:22 2026 +0800
+
+    fix weekday not match issue by changing the array index
+
+commit ea89a8caf2b53ed63932a16f08bc8e0020ae8b91
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 18 18:36:47 2026 +0800
+
+    fix weekday issue
+
+commit 8b4acd4b2adbab714abe76cd5d5315144abe43ab
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 18 18:03:06 2026 +0800
+
+    merge two course time
+
+commit 89670077910f6ec9d48daadebd57b0e8af979638
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Jan 17 02:10:27 2026 +0800
+
+    update Calendar to accomodate the new timetable
+
+commit 9973b56ad83ad74e3e9a0ad48f8d3ea83ce31af3
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Jan 16 16:51:23 2026 +0800
+
+    change regex pattern for new domain anme
+
+commit 43b1eca7b054e33057f064c517c6942a0be71ff0
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Jan 16 16:44:23 2026 +0800
+
+    just one is enough
+
+commit c1f5b0b4a5086f1344160eaff7237172dba7a8bb
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Jan 16 16:40:33 2026 +0800
+
+    add more cors origin into server.js
+
+commit 09ecd749e186fa74b8aea7f96e333f1249e941f8
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Jan 16 16:29:26 2026 +0800
+
+    add hku.wiki into cors option
+
+commit dfac76af1ddfa44cc13ea3f3b65606f47870593f
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Thu Jan 15 23:53:48 2026 +0800
+
+    update max file size limit in Materials.jsx and add more info regarding about this product at README.md
+
+commit f59cfa7b0e270dcddb99f367733252c54f788dd7
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Thu Jan 15 18:58:50 2026 +0800
+
+    add missing file
+
+commit 051c3351856c2bb38c7b13afc1f2953b2aefe6d5
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Wed Jan 14 01:02:18 2026 +0800
+
+    update json
+
+commit 7cec85b74b10ec4d05222672b217205495428525
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Wed Jan 14 00:50:14 2026 +0800
+
+    add missing dependency
+
+commit e565bdf7b2e7674009469618f0642d30266c09de
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Wed Jan 14 00:40:41 2026 +0800
+
+    1Login error because of database not reach—>database connection get blocked by hkuspace firewall
+
+    2fix login blank screen problem —>turn MainLayout.jsx into a React component because the original MainLayout.jsx contain API configuration code instead of a React component and as it try to render the API configuration it will be going to fail
+    3 Add data into the courses collection—>fix no data issue in calendar
+    4 Add MainLayout.css to make the main page look better
+    5 fix smtp issue by changing the App password to the correct one and add missing.env variable in sever.js
+    6 fix can not load login screen by adjusting the port number in server and client to 5173 and 3000 respectively
+    7 fix api end point not reach by adjust the api end point at server and the request thingy at utils/api.js
+    8 fix routing issue at App.jsx which some of the url just redirects to a 404 page
+    9 add missing env file in client which is the main culprit of login screen not working on local environment
+
+commit e0e21c3cde767a08409b79069aa29f7b47e6443c
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 11 02:07:46 2026 +0800
+
+    big update
+
+commit e677043ea085429a459a26d4d5f1439fc0a2a690
+Author: Pro/ial <proial@Xaviers-MacBook-Pro.local>
+Date:   Mon Jan 5 21:41:56 2026 +0800
+
+    init project
+
+commit e23a314938332eaf3cf88b1dabc1101090854384
+Author: Pro/ial <proial@Xaviers-MacBook-Pro.local>
+Date:   Mon Jan 5 21:06:45 2026 +0800
+
+    update README with I am here
+
+commit b303765a416dcd5c7c38fbaedd1157ef25624020
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 22:00:40 2026 +0800
+
+    update Login.jsx AccountCreate.jsx form handling
+
+commit 34f113c9a205a54cbd2fdbb2320632f0409876ad
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 21:39:15 2026 +0800
+
+    change from commjs to module
+
+commit 08e98dfd79dda91df62d60ea357c00a6fd95bee2
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 21:37:20 2026 +0800
+
+    back to origin x2
+
+commit c8ee5fc98cdbc57d91b79ebd216088f45125a41a
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 21:35:53 2026 +0800
+
+    add serverless header to api/index.js
+
+commit cfbe9a2e5c1d10f0aa7be098f484585f6fe40398
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 21:30:20 2026 +0800
+
+    remove stuff
+
+commit 500acb43ec8784059343baef5f0bcce56a79ba42
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 21:27:03 2026 +0800
+
+    update vercel.json
+
+commit f028de7d92881c9fda241d45c4474767d019bc54
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 21:22:20 2026 +0800
+
+    update vercel.json
+
+commit b820f01807f16b8bcc57e0039e5a16f2e1c09dd1
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 21:16:33 2026 +0800
+
+    update regex syntax x3
+
+commit 5f29b5cb9049fc9d7d64b47af9e2cda9447eddd9
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 21:14:13 2026 +0800
+
+    update regex syntax x3
+
+commit 89856ca7f5215fba049470aa836eb49446fdc071
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 21:11:20 2026 +0800
+
+    update regex syntax x2
+
+commit 38831a47ee083307809f27faf1b152ecbf0272c7
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 21:08:43 2026 +0800
+
+    update regex syntax
+
+commit 75c40bd858c0be1ee556715a24f8d70266c1bbe0
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 21:00:24 2026 +0800
+
+    back to origin
+
+commit 750958e1420e007a961cb71a0d35f1dc9740c0a3
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 20:53:46 2026 +0800
+
+    back to normal
+
+commit 81ff4652d1c1e7b841f657372ba3d1083c5957fc
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 20:52:22 2026 +0800
+
+    change vercel.json
+
+commit fd3547155210b4f8ed0f43fbdf48bf6efe707cda
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 20:47:11 2026 +0800
+
+    uncomment comment
+
+commit 28cde54060f207d6833ec0f81b22fe4be1272535
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 20:35:34 2026 +0800
+
+    commenty out regex to test if it work fine
+
+commit 15e1b95800764879569a98a49b6fe02110e10dba
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 20:20:42 2026 +0800
+
+    cors origin update
+
+commit c825b034a8b8ae644df25f938c1eaa0809dcc836
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 17:35:56 2026 +0800
+
+    fix cannot find express error by updating the vercel.json and package.json
+
+commit ef06619f6e1a61ca31aab5d49c266641c586cc06
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 17:16:05 2026 +0800
+
+    add css file
+
+commit 0c3de6254df2c7f6e85e0e53fb7f0763c7aab525
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 17:00:14 2026 +0800
+
+    update vercel.json
+
+commit 96eedeec5f3d385ec29b04c5e6ab59b07544cacc
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 16:06:36 2026 +0800
+
+    init project
+
+commit 09b2c3d9ff0ae5f237d3527a84ac31d841a02704
+Author: MyFGitAccount <coherentlaserbeam@gmail.com>
+Date:   Sun Jan 4 15:37:02 2026 +0800
+
+    Initial commit

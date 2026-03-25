@@ -1,0 +1,811 @@
+commit 23a56b02b3423d9d7561fa8cd3c8e266bbe4ee0a
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Dec 27 19:49:04 2025 +0800
+
+    fix configuration issue in vercel.json and vite.config.js
+
+commit d77809d3d409aa92889da9ba59e44477cd0c9a3c
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Dec 27 19:41:47 2025 +0800
+
+    fix config issue for vite.config.js and vercel.json
+
+commit 3bff33380f81ededdd2d6a9145b66eb0a0fe40f8
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Dec 27 19:32:56 2025 +0800
+
+    fix invalid vercel.json probelm
+
+commit 3b6d4cbf82cc939298c74c212487bd0ca1521712
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Dec 27 19:31:36 2025 +0800
+
+    fix database not reach and login session fail problem
+
+commit 6a448a6b2d44f06ae5352bd8d6bbc42a55ba9dc1
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Dec 27 18:28:29 2025 +0800
+
+    fix backend sever not reach by modifying the vercel.json config
+
+commit f9bf6c5cf159b5839f889901a8371dc21267cff4
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Dec 27 18:21:57 2025 +0800
+
+    fix login session fail issue at group-formation
+
+commit acb1e3ae791505708c22eea2a27e5b09e17b8384
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Dec 27 17:33:52 2025 +0800
+
+    add profile editor that allow user to type in their own info
+
+commit 0b72a24840b074b7bfa8078e5f63eaa1ebc0fdf3
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Dec 27 16:50:23 2025 +0800
+
+    make the login from index.html carry over to the group formation page by adding localStorage.setItem('sid', sid) right after a successful auth and add validation in App.jsx to ensure the stored sid is still valid (e.g., in case of expiration or changes), add a validation check in the useEffect hook.
+
+commit b5147bbf912bb5681f127054b8f50ee465fa0dd3
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Dec 27 16:33:35 2025 +0800
+
+    mv calendar.css and Mainpage.css to public to fit the config in vite.config.js
+
+commit 6784e0c67ee6e2df8715ad6b1b617014a0001638
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Dec 27 16:15:26 2025 +0800
+
+    fix css not applying to index.html and calendar.html by changing the base: './' to base: '/' for absolute asset paths ijn vite.config.js also add a script type=module src=src/main.jsx to groupFormation.html to fix the rendering issue in groupFormation.html
+
+commit 143b6af89fa5d5291d4de4dedba224e65b13a66f
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Dec 27 15:20:40 2025 +0800
+
+    change the Mainpage.html in RAEDME.md to index.html
+
+commit 55e6675d6ec99852cd3061bbbdc76ccfdbd91d2d
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 03:43:13 2025 +0800
+
+    good nighx2
+
+commit e6c6d41c19bb3a199ec387f025c9f1b86296d11f
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 03:38:58 2025 +0800
+
+    good night
+
+commit c05cf6ff3737a97ae31c3a2a7afcb2a336f811ce
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 03:24:31 2025 +0800
+
+    fix routing issue
+
+commit 6259e1a8366eac3a78c5d095848fb69b0900e2e6
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 03:11:06 2025 +0800
+
+    remove link to supa base
+
+commit 917ea62ba95b9fb75f80d9f6ee162262879a788a
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 03:04:30 2025 +0800
+
+    add script to grouopFormation.html to fix the not rendering issue as I forget to add <script type=module src=/src/main.jsx></script>
+
+commit 349408a4083fa09966753f803061812318c9d1c6
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 02:58:12 2025 +0800
+
+    change App.jsx fetch call to using relative path
+
+commit 4fbc2165bfb8f095644a44219c8d4b3f38e7e44b
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 02:50:45 2025 +0800
+
+    fix routing issue in server.js
+
+commit cd094af7334d3a80f94edcb55b094301e40a49aa
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 02:45:32 2025 +0800
+
+    fix typo in main.jsx
+
+commit cbb3b06f684968c47d0e94694efc955d210c2a67
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 02:41:12 2025 +0800
+
+    fix groupFormation.html nothing render issue
+
+commit e3b3a7e7317281fbde4392b2116bd44f3499ecdf
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 02:09:10 2025 +0800
+
+    fixing vercel build issuex2
+
+commit cb8b0eb5cd9f133465a844ed7a5302488391ad9c
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 02:02:54 2025 +0800
+
+    fix Invalid vercel.json file provided
+
+commit 665bf6fd07f645972406d9bfedb5917a62ae0a82
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 02:01:41 2025 +0800
+
+    fix build issue in vercel
+
+commit e2139355f89a7f96d05e3b1d9449587485f4d207
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 01:52:01 2025 +0800
+
+    fixing the Loading module from “https://kp-dproject-learning-plat-form-18tzj5v0j.vercel.app/src/main.jsx” was blocked because of a disallowed MIME type issue
+
+commit 4aa8ac6f6004df9468a8e0c911e44b672de35e9e
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 01:36:28 2025 +0800
+
+    fix Loading module from https://kp-dproject-learning-plat-form-18tzj5v0j.vercel.app/src/main.jsx was blocked because of a disallowed MIME type
+
+commit b87ef84772dd27aadc04db8e2c33b3119e2c0ef8
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 01:15:58 2025 +0800
+
+    delte Mainpage.html at dist which should fix the issue of can not find Mainpage.html for vercel
+
+commit 02ff0da57681c48763f0543803deac3ba2c0e88d
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 00:59:41 2025 +0800
+
+    delte all failed build in vercel and recreate project
+
+commit c95360da183292546ae954669cc39a72f2eb555f
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 00:47:04 2025 +0800
+
+    fix Mainpage.html not found by cleaning the cachex2
+
+commit 48ebf4dc90bf8e6a97d78b7d3063b4243c769f99
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 00:45:32 2025 +0800
+
+    fix Mainpage.html not found by cleaning the cache
+
+commit 2f2ea6320b3f2d730a54e1272914836315350c73
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 00:40:05 2025 +0800
+
+    Force fresh deploy - bypass Vercel cache
+
+commit 2cf9339b7db78fc884f662e09370e0a80d88c796
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 00:31:43 2025 +0800
+
+    Remove old references of Mainpage.html entirely to avoid vercel build bug for can not find Mainpage.html
+
+commit 305ec4eb78e855e2bde1e3557115c0197b390260
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 00:24:22 2025 +0800
+
+    Force clean deploy - clear Vercel cache
+
+commit 5f4f5b6499416621c0dc4e8ff53b9290ec542a14
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 00:09:31 2025 +0800
+
+    fixing Error: ENOENT: no such file or directory
+
+commit 56345e78f8fc011daf42a393f3ea248a8fee22e9
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 00:03:53 2025 +0800
+
+    fixing Invalid vercel.json file providedx1
+
+commit c74a230f15c50c0f1fe000b104303c8f75d44478
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Dec 26 00:01:27 2025 +0800
+
+    tell vercel how to build the fronteend solve Build src is vite.config.js but expected package.json or build.sh issue
+
+commit 0093c9575b4d43aa4e273d9229f3282d77b1b74e
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Thu Dec 25 23:52:58 2025 +0800
+
+    fix crash after update
+
+commit 6832d9f54c2513f5527803880b6b443733063147
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Thu Dec 25 23:30:25 2025 +0800
+
+    why more work after exam
+
+commit 4f396351f94d661b703013d30bc5bd7a681121a8
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Nov 28 17:30:01 2025 +0800
+
+    make admin reject button redx3
+
+commit 7009f69bf734effbd76a29b0e44a0c47d4fda268
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Nov 28 17:28:01 2025 +0800
+
+    make admin reject button redx2
+
+commit c984f53bad8527116112f05ca3f41e97dc26b8be
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Nov 28 17:26:53 2025 +0800
+
+    make admin reject button red
+
+commit 1c5aa2dcc432b88348eec21e76cbc3f4323741be
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Nov 28 17:23:27 2025 +0800
+
+    fix photo again
+
+commit 21c522d1a4f4f25fadc5a66e8cd1991b598f16dc
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Nov 28 17:10:35 2025 +0800
+
+    make the admin page sid photo bigger
+
+commit 08d6da5364e4361812dd7b4aadb4d3da834fa427
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Nov 28 17:01:07 2025 +0800
+
+    make the picture bigger in the notification for admin email
+
+commit 1ab08c3c7cd96832921fd343df625bdf1af02456
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Nov 28 16:27:16 2025 +0800
+
+    add credits schema to mongoDB
+
+commit 314fd8fcd73bf670f204bc7882f91d56e4e24e61
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Thu Nov 27 16:10:12 2025 +0800
+
+    fix email notification again
+
+commit e6a7fac95b0237ca22818defc373ae8015cb3775
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Wed Nov 26 01:21:52 2025 +0800
+
+    fix css style that the time of the couse get cut off as the course block is not found and download button is not working because the id is not find
+
+commit 7e94d60ca1ffea23462441db7460320d37585d5e
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Wed Nov 26 00:58:29 2025 +0800
+
+    update pw in nodemail so it work fine againx4
+
+commit 5761065d309ea737b8cf9035f18906534a82b68c
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Wed Nov 26 00:51:30 2025 +0800
+
+    update pw in nodemail so it work fine againx3
+
+commit 0483e85f2804889582a4d606306dfd9194dbb982
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Wed Nov 26 00:36:08 2025 +0800
+
+    update pw in nodemail so it work fine againx2
+
+commit 161375b5dcea7fc7a8a17aa39f0896529c2666d5
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Wed Nov 26 00:32:27 2025 +0800
+
+    update pw in nodemail so it work fine
+
+commit a0c65e47a7afc3d5d00c2cfb1d5ad4f6c91f920a
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Wed Nov 26 00:19:25 2025 +0800
+
+    update admin email to test the function
+
+commit 4c9345b0e470f45339e8460ac9e630a5ef0304ad
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Wed Nov 26 00:01:56 2025 +0800
+
+    update admin email
+
+commit f5adc98ff3eb67cab93ce11dd2f3b5b9752b209c
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Nov 25 23:46:11 2025 +0800
+
+    fix admin pannel no endpoint and add email field to insert database
+
+commit a1034097c0ad417a96f8b46d54df995b6d87c88e
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Nov 25 23:15:43 2025 +0800
+
+    update the mainpage and add email enter
+
+commit 493542050c04b43b9fd1ed17b7fbf6173ed4e4eb
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Nov 25 19:34:16 2025 +0800
+
+    fix email error
+
+commit 0783a3daffe04727d66f9587727cf3a1a8ceb886
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Nov 25 18:59:14 2025 +0800
+
+    change goto address for admin notification
+
+commit e708ec206b5bd8ae016e57a7c7c8f854b20d7773
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Nov 25 18:57:36 2025 +0800
+
+    change to admin email
+
+commit a1b3ab6fd3920c74b1544bc10da2e6b9996edcbb
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Nov 25 18:41:47 2025 +0800
+
+    fix email name misspell
+
+commit e113e20aba2f2e80be7700cf951b7e2562629393
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Nov 25 18:38:35 2025 +0800
+
+    add notification to admin
+
+commit c2feb36bdc932aec512b5ad0eb25435a09b38ac9
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Nov 25 18:01:26 2025 +0800
+
+    add approve users function to admin
+
+commit 928ee55e8379273c3d6ea6e75e05671f8f617c49
+Author: h1appy0418 <khyhs0418@gmail.com>
+Date:   Sat Nov 15 20:32:54 2025 +0800
+
+    almost complete the calendar feature while it still have a bug need to fix
+
+commit 82979070760ec685b74bfc2309e636a38363a07c
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Nov 15 16:57:41 2025 +0800
+
+    change timeslot layout
+
+commit c14f819f55b4c2dd5aaaf9128e827aaad9f1faaf
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Nov 14 21:39:40 2025 +0800
+
+    fix database not reach
+
+commit da89739c4892b9fc92a013e6224498dc1a921a4e
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Nov 14 21:30:14 2025 +0800
+
+    fix: lazy DB + cached connection
+
+commit 3495b48402a7e36e6e007a63d5eb5d559125b245
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Nov 14 21:23:01 2025 +0800
+
+    crush
+
+commit 1951b77f8298d0c5d058a2bec34471cafe21285c
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Nov 14 20:47:16 2025 +0800
+
+    add nothing
+
+commit 018e1748a3f7432c7f09143c194df8bcb8d1b952
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Nov 14 18:33:36 2025 +0800
+
+    fix ( big
+
+commit 141e7123ee27bbb88ea5a6aae53ac6cf1e3b0606
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Nov 14 17:58:49 2025 +0800
+
+    update to use mongoDB
+
+commit ed51ee706c9dcf211afec2571a5be67a372c4d07
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Thu Nov 13 16:23:20 2025 +0800
+
+    add supabase
+
+commit 87e0b4a6a15f2d41c75ab8816e08ac1a97204413
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Thu Nov 13 16:22:29 2025 +0800
+
+    add supabase
+
+commit ae92233d4ebb328e3b913028b40d27c406fd57b3
+Author: h1appy0418 <khyhs0418@gmail.com>
+Date:   Thu Nov 13 15:46:15 2025 +0800
+
+    fix 2 bugs of calendar website while still occur one bug
+
+commit 231f1b61c0d7b3f2a78f1acf2b6568dbc8ed46e1
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Thu Nov 13 13:23:17 2025 +0800
+
+    WIP: save local changes before rebase
+
+commit 37caf000e4f423c513c724e26b5cf7acb262fb42
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Thu Nov 13 13:10:05 2025 +0800
+
+    add cal
+
+commit 4038c4b380aec69007bb65895fd7b08bc3ca71d9
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Thu Nov 13 12:12:03 2025 +0800
+
+    add cal
+
+commit 5809410c9987df4c0deab8de89bb88a29326f495
+Merge: 3137023d 3731b13e
+Author: h1appy0418 <khyhs0418@gmail.com>
+Date:   Wed Nov 12 21:03:11 2025 +0800
+
+    Merge branch 'main' of https://github.com/MyFGitAccount/KPDproject-Learning-PlatForm
+
+commit 3137023db38d9cd54c368700a7691157c4d6949d
+Author: h1appy0418 <khyhs0418@gmail.com>
+Date:   Wed Nov 12 20:56:01 2025 +0800
+
+    idk
+
+commit 3731b13e226effc431c1026ee1c7b0311e256e93
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Wed Nov 12 19:41:25 2025 +0800
+
+    I love savior
+
+commit 3c79885436e3f915774441d1773f89b064209c6f
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Wed Nov 12 16:06:23 2025 +0800
+
+    to 338
+
+commit 22354371b8928814dcb0c61a342e344217d97354
+Merge: e1232ef0 7c700bdb
+Author: h1appy0418 <khyhs0418@gmail.com>
+Date:   Tue Nov 11 13:20:33 2025 +0800
+
+    Merge branch 'main' of https://github.com/MyFGitAccount/KPDproject-Learning-PlatForm
+
+commit e1232ef0d93d2a481e3759ad10cfd729c70dc604
+Author: h1appy0418 <khyhs0418@gmail.com>
+Date:   Tue Nov 11 13:18:53 2025 +0800
+
+    intitialize the timetable function
+
+commit 7c700bdbd9260f540bea5b48242254a92574698a
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Nov 11 11:47:42 2025 +0800
+
+    add cal
+
+commit 0a36a4e680688349895ed4e8b9752bb6e21a1fd0
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Wed Nov 5 18:52:18 2025 +0800
+
+    add supabase url
+
+commit 7cf8d53654fec51c643a670757a2730db8617bad
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Wed Nov 5 18:50:32 2025 +0800
+
+    add supabase url
+
+commit 819304264f2159bf96748b355756e69255b5ab51
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Wed Nov 5 18:21:54 2025 +0800
+
+    add .env.local
+
+commit 59151a7ccefa4f4402cfb548444beb6f187df26d
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Wed Nov 5 18:19:46 2025 +0800
+
+    add .env
+
+commit fcce2c73954a33acedd0bdb6868d96042514eb10
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Nov 1 02:15:23 2025 +0800
+
+    update all
+
+commit 41b950d684c3c1d04411b1c5c94e4f284b79a6c9
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Nov 1 01:50:35 2025 +0800
+
+    Fix: use .vercelignore + clean vercel.json
+
+commit e3b72c7d0fc46bfe6859fadbe7afeaa7d4d7e08c
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Nov 1 01:47:59 2025 +0800
+
+    Fix: include data/ via includeFiles, remove .vercelignore
+
+commit 6a9c040f0513eef3e503a055eba7192bdfc641ab
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Nov 1 01:43:03 2025 +0800
+
+    Fix: hash plain passwords
+
+commit 5c024e2b928a91cc641a0fc8d8fd1780ab9bf946
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Nov 1 01:24:05 2025 +0800
+
+    Fix vercel.json: remove invalid includeFiles
+
+commit a6da9b465046c8df8cfcee4e0c504455959709a1
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Nov 1 01:22:22 2025 +0800
+
+    Load data from JSON + include data/ in Vercel
+
+commit 3741698460544f43fa0f8d6e0b60f6e3ae88cd95
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Nov 1 01:13:39 2025 +0800
+
+    Fix Vercel: add conditional listen
+
+commit 338eb9d805f581417fd35063c74e33f683ab8e6b
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Nov 1 01:09:04 2025 +0800
+
+    Fix /courses handler + init courses
+
+commit 7c1bb65fa8975ec9b0c57f029260070baf9e7496
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Nov 1 01:01:39 2025 +0800
+
+    Fix Vercel: remove scroll.js + use /tmp for uploads
+
+commit 18860da598675a6c2351f7fbc6ba8c1ce17a4bb7
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Nov 1 00:50:29 2025 +0800
+
+    Fix Vercel serverless: static + no listen
+
+commit dc67da281de7c3c3608458f776c0aae543547331
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Nov 1 00:44:35 2025 +0800
+
+    vercel is love vercle is god
+
+commit 232ac4a8c37257060d57852b4b1352dde5292753
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Nov 1 00:27:59 2025 +0800
+
+    FINAL: in-memory DB, no fs, no require, API-only
+
+commit 125550f24fbedd34befe7ce1514fe046c3c2b4ff
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Nov 1 00:21:52 2025 +0800
+
+    FIX: load courses from /courses API, not static file
+
+commit 8fdf237e2c391ca3e60705166e084759044bd1b5
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Nov 1 00:10:52 2025 +0800
+
+    FINAL: no top-level await, IIFE for mkdir
+
+commit 3a1f0c5b281b10cf7f094df7226eaec70acb5c2c
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Nov 1 00:06:08 2025 +0800
+
+    FIX: typo removed, static builds back
+
+commit c9b42777e2ca764cf75f3ae6da399d57d08f79c9
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Sat Nov 1 00:02:19 2025 +0800
+
+    FIX: API first, filesystem, SPA fallback
+
+commit fd0db61fc2b4d6eb2d44395c23ed1838ba270d75
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Oct 31 23:58:27 2025 +0800
+
+    fixing json bug
+
+commit 29eff49e67f3e49710986383695e1b589b866e87
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Oct 31 23:55:09 2025 +0800
+
+    patch*6
+
+commit 052162ff21cfa6a2d7260b07e1f01a122bf8d367
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Oct 31 23:49:44 2025 +0800
+
+    patch patch patch patch patch
+
+commit b358cff36953a1eee70464f678d1bf25840012cd
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Oct 31 23:42:47 2025 +0800
+
+    update server.js
+
+commit 182c757111c231ae50772485bb5aaec99c3c001c
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Oct 31 22:12:07 2025 +0800
+
+    fixing bug
+
+commit bb2a15d01fd58fdac18c0af4dea0fa1a755513d3
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Oct 31 22:04:08 2025 +0800
+
+    fixing bug
+
+commit f1d2ef2d56be33d81d87ff340e1264befefbcdde
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Oct 31 21:47:42 2025 +0800
+
+    update vercel.json
+
+commit ca8914a0af097f9830ddedee2cbe55e7191706ea
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Oct 31 21:44:59 2025 +0800
+
+    update server.js
+
+commit 917a30c29c1be46ae8c77578f3bf2f0f6c83e301
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Oct 31 21:41:04 2025 +0800
+
+    update server.json
+
+commit 3cdd712c8e1ac66f373d99c1adc1911c0b2bd894
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Oct 31 17:25:50 2025 +0800
+
+    update vercel.json
+
+commit cdf823a50e3693b17855239838aad11a322faf47
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Oct 31 17:23:14 2025 +0800
+
+    update vercel.json
+
+commit bdd39cb15357e12146c836f77bdc527c55c40427
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Oct 31 17:17:43 2025 +0800
+
+    update vercel.json
+
+commit 76df05abeafe43c7336dcda001c7ab1f1a9f68cc
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Oct 31 17:14:57 2025 +0800
+
+    update vercel.json
+
+commit 7187a0074b826c4db9ac03a61c04f91228cd068c
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Fri Oct 31 17:12:44 2025 +0800
+
+    add patch
+
+commit 999d4a15855701dc5cbe563b176ea5f48496dcde
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Thu Oct 30 23:24:18 2025 +0800
+
+    fix vercel.json
+
+commit 1c84d0c576a74483fea39f9bcfc14f2cf7c603ae
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Thu Oct 30 23:23:37 2025 +0800
+
+    fix vercel.json
+
+commit a43cd3a68b3d10ca3cefbd11cb862619971ddb1e
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Thu Oct 30 23:22:22 2025 +0800
+
+    fic vercel.json
+
+commit bbaf86cf2c91d808aea1faf5e31ea2770fe98287
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Thu Oct 30 23:20:28 2025 +0800
+
+    Fix vercel.json
+
+commit 29a8fb509de28b7802ffc6943e8b02d92b2b49ce
+Author: h1appy0418 <khyhs0418@gmail.com>
+Date:   Thu Oct 30 21:34:29 2025 +0800
+
+    login system initiated, admin dashboard created
+
+commit 66293b0156ca0399845f0afd35a2134930c98a33
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Oct 28 02:22:36 2025 +0800
+
+    update README
+
+commit 7d9516df806183a4d901c0e79d7cfa5db1b10def
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Oct 28 02:18:53 2025 +0800
+
+    old new is so exciting
+
+commit 8adf7bd1a8078ba3a0efa879451c541ded9a2fdd
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Oct 28 02:17:56 2025 +0800
+
+    add uplaods folder
+
+commit 5cddc2c6e321c8c93176c074759e3851fba39e5a
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Oct 28 02:11:18 2025 +0800
+
+    add css
+
+commit 50babb195cc5429df642672274a56d963edc77dc
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Oct 28 02:10:36 2025 +0800
+
+    add json
+
+commit 5acef5e0aba47a625bf73118bb720364dc046ff4
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Oct 28 02:09:26 2025 +0800
+
+    add python flask
+
+commit 9346f7fa03b3f19636c70e003e54250f13177820
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Oct 28 02:08:45 2025 +0800
+
+    add js
+
+commit 165a1aa6212e662868a7bc628716ef9fa5289e5d
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Oct 28 02:07:42 2025 +0800
+
+    add .html file
+
+commit cf49f19ceecd773b417d50327a890aaf7b348c99
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Oct 28 01:51:55 2025 +0800
+
+    byebye new
+
+commit ac004ded51febddb5b9aef8aef2456bddd1fdc2b
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Oct 28 01:51:22 2025 +0800
+
+    good bye file*2
+
+commit 4ecf26504edb12dc47037e1915d8a31493196d71
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Oct 28 01:50:37 2025 +0800
+
+    goodbye file
+
+commit b436f1f7e8453723feda7cc5865a69522043710d
+Author: MyFGitAccount <Coherentlaserbeam@gmail.com>
+Date:   Tue Oct 28 01:30:30 2025 +0800
+
+    add new
+
+commit 7b823a02038d816ae42ea1e12a4d673cf7bf5449
+Author: h1appy0418 <khyhs0418@gmail.com>
+Date:   Mon Oct 27 20:36:15 2025 +0800
+
+    almost finsih the mainpage and the editor page.
+
+commit 95006e57e6963a10ed9e3e5f14c92b4c64247c1e
+Author: h1appy0418 <khyhs0418@gmail.com>
+Date:   Mon Oct 27 18:29:20 2025 +0800
+
+    test
+
+commit c6018df969b6d49f33ae0fe3264c256be63cd28b
+Author: MyFGitAccount <coherentlaserbeam@gmail.com>
+Date:   Mon Oct 27 12:58:22 2025 +0800
+
+    Initial commit

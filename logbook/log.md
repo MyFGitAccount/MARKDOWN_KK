@@ -85,7 +85,9 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 | Nov 25-27, 2025 | Admin System | Created admin approval workflow for user registration | ✅ Complete |
 | Nov 26, 2025 | Email Notifications | Configured Nodemailer with Gmail SMTP | ✅ Complete |
 
-**Image Placeholder 1:** *[Insert screenshot of MongoDB Atlas cluster showing collections: users, courses, pending_accounts, group_requests, questionnaires, materials, uploads.files]*
+**Image Placeholder 1:** <img src="img/MongoDB_Atlas_cluster_showcase_screenshot.png" width="200" height="200">
+
+*[Insert screenshot of MongoDB Atlas cluster showing collections: users, courses, pending_accounts, group_requests, questionnaires, materials, uploads.files]*
 
 ### Phase 3: Frontend Development (December 2025)
 
@@ -117,9 +119,13 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 | Feb 24, 2026 | Dashboard Mobile Fix | Fixed missing CSS file import in Dashboard.jsx | ✅ Complete |
 | Feb 24, 2026 | Routing Verification | Final routing fixes for production deployment | ✅ Complete |
 
-**Image Placeholder 2:** *[Insert screenshot of the deployed application homepage on desktop browser]*
+**Image Placeholder 2:** <img src="img/deployed_app_homepage_on_desktop_browser_screenshot.png" height="200" width="200">
 
-**Image Placeholder 3:** *[Insert screenshot of the application on mobile device showing responsive layout]*
+*[Insert screenshot of the deployed application homepage on desktop browser]*
+
+**Image Placeholder 3:** <img src="">
+
+*[Insert screenshot of the application on mobile device showing responsive layout]*
 
 ---
 
@@ -155,7 +161,9 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 | Research MongoDB Atlas setup | [Name] | Oct 29 |
 | Design database schema | [Team] | Nov 1 |
 
-**Image Placeholder 4:** *[Insert screenshot of initial database schema design diagram]*
+**Image Placeholder 4:** 
+
+*[Insert screenshot of initial database schema design diagram]*
 
 ---
 
@@ -334,7 +342,9 @@ const connectDB = async () => {
 ```
 | **Result** | Connection established once per cold start, reused for subsequent calls |
 
-**Image Placeholder 7:** *[Insert screenshot of MongoDB Atlas connection metrics showing reduced connection count after fix]*
+**Image Placeholder 7:** <img src="img/MongoDB_Atlas_connection_metrics_showing_reduced_connection_count_after_fix_screenshot.png" width="200" height="200">
+
+*[Insert screenshot of MongoDB Atlas connection metrics showing reduced connection count after fix]*
 
 ### Issue 2: Vercel 404 on API Routes
 
@@ -430,7 +440,9 @@ const getDayString = (weekday) => {
 | **Solution** | 1. Added MongoDB Atlas IP whitelist for Vercel's IP ranges<br>2. Configured connection string with `mongodb+srv` protocol (uses port 443, not blocked)<br>3. Deployed from off-campus network |
 | **Result** | Database accessible from Vercel serverless functions |
 
-**Image Placeholder 9:** *[Insert screenshot of MongoDB Atlas Network Access settings showing whitelisted IPs]*
+**Image Placeholder 9:** <img src="img/MongoDB_Atlas_Network_Access_settings_showing_whitelisted_IPs_screenshot.png" height="30" width="100">
+
+*[Insert screenshot of MongoDB Atlas Network Access settings showing whitelisted IPs]*
 
 ### Issue 8: Combined Classes Not Displaying
 
@@ -514,7 +526,9 @@ uploads.files: (GridFS) { filename, metadata, uploadDate }
 uploads.chunks: (GridFS) { files_id, n, data }
 ```
 
-**Image Placeholder 10:** *[Insert screenshot of MongoDB Atlas Collections view showing all collections]*
+**Image Placeholder 10:** 
+
+*[Insert screenshot of MongoDB Atlas Collections view showing all collections]*
 
 ---
 
@@ -562,7 +576,9 @@ uploads.chunks: (GridFS) { files_id, n, data }
 | Chrome (Android) | ✅ Working |
 | Safari (iOS) | ✅ Working |
 
-**Image Placeholder 11:** *[Insert screenshot of browser developer tools showing successful API response]*
+**Image Placeholder 11:** <img src="/img/screenshot_that_show_successful_api_response.png" width="200" height="200">
+
+*[Insert screenshot of browser developer tools showing successful API response]*
 
 **Image Placeholder 12:** *[Insert photo of mobile device showing the application running]*
 

@@ -161,7 +161,7 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 | Research MongoDB Atlas setup | [Name] | Oct 29 |
 | Design database schema | [Team] | Nov 1 |
 
-**Image Placeholder 4:** 
+**Image Placeholder 4:** <img scr ="img/Database_schema_image.png" height="200" width="200">
 
 *[Insert screenshot of initial database schema design diagram]*
 
@@ -240,7 +240,9 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 | Test on multiple devices | [Name] | Feb 23 |
 | Prepare final documentation | [Name] | Feb 24 |
 
-**Image Placeholder 5:** *[Insert screenshot of combined classes display in timetable - showing "01 (+1)" badge]*
+**Image Placeholder 5:** <img scr="img/screenshot_of_combined_classes_display_in_timetable-showing_01_(+1)_badge.jpeg" height="200" width="200">
+
+*[Insert screenshot of combined classes display in timetable - showing "01 (+1)" badge]*
 
 ---
 
@@ -301,7 +303,9 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 | **Alternatives Considered** | Keep as single entry (confusing for students), Display both class numbers in one block (calendar display issues) |
 | **Trade-offs** | More entries in database; need to handle deletion of all related classes when removing a combined class |
 
-**Image Placeholder 6:** *[Insert screenshot of combined classes being added to timetable - showing class selection UI]*
+**Image Placeholder 6:** <img scr="screenshot_of_combined_classes_being_added_to_timetable-showing_class_selection_UI.jpeg" height="200" width="200">
+
+*[Insert screenshot of combined classes being added to timetable - showing class selection UI]*
 
 ### Decision 6: CORS Configuration
 
@@ -401,7 +405,9 @@ GMAIL_APP_PASSWORD=abcd efgh ijkl mnop
 ```
 | **Result** | Emails sent successfully via Gmail SMTP |
 
-**Image Placeholder 8:** *[Insert screenshot of Gmail App Password generation page]*
+**Image Placeholder 8:** <img scr="img/screenshot_of_Gmail_App_Password_generation_page.jpeg" width="200" height="200">
+
+*[Insert screenshot of Gmail App Password generation page]*
 
 ### Issue 5: Login Blank Screen
 
@@ -526,7 +532,12 @@ uploads.files: (GridFS) { filename, metadata, uploadDate }
 uploads.chunks: (GridFS) { files_id, n, data }
 ```
 
-**Image Placeholder 10:** 
+**Image Placeholder 10:** <img scr="img/MongoDB_course_collection.png" width="200" height="200">
+                          <img scr="img/MongoDB_group_requests_collection.png" width="200" height="200">
+                          <img scr="img/MongoDB_invitaion_collection.png" width="200" height="200">
+                          <img scr="img/MongoDB_materials_collection.png" width="200" height="200">
+                          <img scr="img/MongoDB_questionnaires_collection.png" width="200" height="200">
+                          <img scr="img/MongoDB_users_collection .png" width="200" height="200">
 
 *[Insert screenshot of MongoDB Atlas Collections view showing all collections]*
 
@@ -576,11 +587,13 @@ uploads.chunks: (GridFS) { files_id, n, data }
 | Chrome (Android) | ✅ Working |
 | Safari (iOS) | ✅ Working |
 
-**Image Placeholder 11:** <img src="/img/screenshot_that_show_successful_api_response.png" width="200" height="200">
+**Image Placeholder 11:** <img src="img/screenshot_that_show_successful_api_response.png" width="200" height="200">
 
 *[Insert screenshot of browser developer tools showing successful API response]*
 
-**Image Placeholder 12:** *[Insert photo of mobile device showing the application running]*
+**Image Placeholder 12:** <img scr="">
+
+*[Insert photo of mobile device showing the application running]*
 
 ---
 
@@ -642,7 +655,9 @@ VITE_API_URL=http://localhost:3000/api
 3. In Database Access, create user with read/write permissions
 4. Create database named `efs_platform`
 
-**Image Placeholder 13:** *[Insert screenshot of MongoDB Atlas cluster creation page]*
+**Image Placeholder 13:** <img scr="img/MongoDB_Atlas_cluster_creation_page.jpeg" width="200" height="200">
+
+*[Insert screenshot of MongoDB Atlas cluster creation page]*
 
 #### Step 4: Deploy to Vercel
 
@@ -827,7 +842,9 @@ platform-efs2/
 - [ ] API health check returns `{ ok: true }`
 - [ ] Login flow works end-to-end
 
-**Image Placeholder 14:** *[Insert screenshot of successful Vercel deployment log]*
+**Image Placeholder 14:** <img scr="img/vercel_success_deploy_log.jpeg">
+
+*[Insert screenshot of successful Vercel deployment log]*
 
 ---
 

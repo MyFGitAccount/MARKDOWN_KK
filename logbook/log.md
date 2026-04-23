@@ -303,7 +303,7 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 | **Alternatives Considered** | Keep as single entry (confusing for students), Display both class numbers in one block (calendar display issues) |
 | **Trade-offs** | More entries in database; need to handle deletion of all related classes when removing a combined class |
 
-**Image Placeholder 6:** <img src="screenshot_of_combined_classes_being_added_to_timetable-showing_class_selection_UI.jpeg" height="200" width="200">
+**Image Placeholder 6:** <img src="img/screenshot_of_combined_classes_being_added_to_timetable-showing_class_selection_UI.jpeg" height="200" width="200">
 
 *[Insert screenshot of combined classes being added to timetable - showing class selection UI]*
 

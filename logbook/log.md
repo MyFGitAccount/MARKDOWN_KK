@@ -1,4 +1,4 @@
-# CL??_Group??_Logbook (2nd)
+# CL15_Group7_Logbook (2nd)
 
 > **Note:** Replace `CL??` with your course code (e.g., CL30) and `Group??` with your group number (e.g., Group01).
 
@@ -24,11 +24,14 @@
 | Item | Value |
 |------|-------|
 | **Project Name** | EFS Platform (Educational Facilitation System) |
-| **Course** | CL?? (Replace with your course code) |
-| **Group** | Group?? (Replace with your group number) |
+| **Course** | CL04 (Replace with your course code) |
+| **Group** | Group7 (Replace with your group number) |
 | **Submission Date** | [Insert date] |
-| **Repository** | [Insert GitHub repo URL] |
-| **Live Demo** | https://platform-efs2.vercel.app |
+| **Repository 1** | https://github.com/MyFGitAccount/KPDproject-Learning-PlatForm |
+| **Repository 2** | https://github.com/MyFGitAccount/efs-platform                 |
+| **Repository 3** | https://github.com/MyFGitAccount/platform-efs                 |
+| **Repository 4** | https://github.com/MyFGitAccount/platform-efs2                |
+| **Live Demo** | hku.wiki |
 
 ### 1.2 Executive Summary
 
@@ -711,54 +714,88 @@ const splitCombinedClassNumbers = (classNo) => {
 ### 8.5 Project File Structure
 
 ```
-efs-platform/
-├── server/
-│   ├── db/
-│   │   ├── connection.js
-│   │   └── gridfs.js
-│   ├── routes/
-│   │   ├── admin.js
-│   │   ├── auth.js
-│   │   ├── calendar.js
-│   │   ├── courses.js
-│   │   ├── dashboard.js
-│   │   ├── group.js
-│   │   ├── index.js
-│   │   ├── materials.js
-│   │   ├── me.js
-│   │   ├── profile.js
-│   │   ├── questionnaire.js
-│   │   └── upload.js
-│   ├── .env
-│   ├── package.json
-│   └── server.js
+platform-efs2/
+├── api/
+│   ├── index.js
+│   └── package.json
 ├── client/
-│   ├── src/
-│   │   ├── components/
-│   │   │   └── layout/
-│   │   │       └── MainLayout.jsx
-│   │   ├── pages/
-│   │   │   ├── AccountCreate.jsx
-│   │   │   ├── AdminPanel.jsx
-│   │   │   ├── Calendar.jsx
-│   │   │   ├── CourseEditor.jsx
-│   │   │   ├── CourseViewer.jsx
-│   │   │   ├── Dashboard.jsx
-│   │   │   ├── GroupFormation.jsx
-│   │   │   ├── Login.jsx
-│   │   │   ├── Materials.jsx
-│   │   │   ├── Profile.jsx
-│   │   │   └── Questionnaire.jsx
-│   │   ├── utils/
-│   │   │   └── api.js
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── responsive.css
-│   ├── .env
 │   ├── index.html
 │   ├── package.json
-│   └── vite.config.js
-└── vercel.json
+│   ├── package-lock.json
+│   ├── vite.config.js
+│   ├── vite.svg
+│   ├── node_modules/
+│   └── src/
+│       ├── App.css
+│       ├── App.jsx
+│       ├── index.css
+│       ├── main.jsx
+│       ├── responsive.css
+│       ├── components/
+│       │   └── layout/
+│       │       ├── MainLayout.css
+│       │       └── MainLayout.jsx
+│       ├── pages/
+│       │   ├── AccountCreate.css
+│       │   ├── AccountCreate.jsx
+│       │   ├── AdminPanel.css
+│       │   ├── AdminPanel.jsx
+│       │   ├── Calendar.css
+│       │   ├── Calendar.jsx
+│       │   ├── CourseEditor.css
+│       │   ├── CourseEditor.jsx
+│       │   ├── CourseViewer.css
+│       │   ├── CourseViewer.jsx
+│       │   ├── Dashboard.css
+│       │   ├── Dashboard.jsx
+│       │   ├── GroupFormation.css
+│       │   ├── GroupFormation.jsx
+│       │   ├── Login.css
+│       │   ├── Login.jsx
+│       │   ├── Materials.css
+│       │   ├── Materials.jsx
+│       │   ├── Profile.css
+│       │   ├── Profile.jsx
+│       │   ├── Questionnaire.css
+│       │   └── Questionnaire.jsx
+│       └── utils/
+│           └── api.js
+├── server/
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── server.js
+│   ├── .env
+│   ├── node_modules/
+│   ├── db/
+│   │   ├── .env
+│   │   ├── connection.js
+│   │   ├── gridfs.js
+│   │   └── setup.js
+│   └── routes/
+│       ├── admin.js
+│       ├── auth.js
+│       ├── calendar.js
+│       ├── courses.js
+│       ├── dashboard.js
+│       ├── group.js
+│       ├── index.js
+│       ├── materials.js
+│       ├── me.js
+│       ├── profile.js
+│       ├── questionnaire.js
+│       └── upload.js
+├── node_modules/
+├── .env
+├── .env.local
+├── .gitignore
+├── k6test.js
+├── package.json
+├── package-lock.json
+├── README.md
+├── report.html
+├── test.txt
+├── vercel.json
+└── vercel-build.js
 ```
 
 ### 8.6 Deployment Checklist
@@ -817,8 +854,11 @@ efs-platform/
 
 ## Appendix C: References
 
-- **Live Application:** https://platform-efs2.vercel.app
-- **GitHub Repository:** [Insert repository URL]
+- **Live Application:** <a href="hku.wiki">hku.wiki</a>
+- **GitHub Repository 1:** https://github.com/MyFGitAccount/KPDproject-Learning-PlatForm 
+- **GitHub Repository 2:** https://github.com/MyFGitAccount/efs-platform
+- **GitHub Repository 3:** https://github.com/MyFGitAccount/platform-efs
+- **GitHub Repository 4:** https://github.com/MyFGitAccount/platform-efs2
 - **MongoDB Atlas Documentation:** https://www.mongodb.com/docs/atlas/
 - **Vercel Serverless Functions:** https://vercel.com/docs/functions
 - **Ant Design Components:** https://ant.design/components/overview
@@ -856,7 +896,7 @@ efs-platform/
 # Windows: download from https://pandoc.org/installing.html
 
 # Convert to PDF
-pandoc "CLXX_GroupYY_Logbook (2nd).md" -o "CLXX_GroupYY_Logbook (2nd).pdf" --pdf-engine=xelatex -V geometry:margin=1in
+pandoc "CL15_Group7_Logbook (2nd).md" -o "CL15_Group7_Logbook (2nd).pdf" --pdf-engine=xelatex -V geometry:margin=1in
 ```
 
 ### Method 3: Using Online Converter

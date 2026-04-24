@@ -123,7 +123,7 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 
 *[Insert screenshot of the deployed application homepage on desktop browser]*
 
-**Image Placeholder 3:** <img src="">
+**Image Placeholder 3:** <br><img src="img/screenshot_of_the_application_on_mobile_device_showing_responsive_layout.png" width=70% height="70%">
 
 *[Insert screenshot of the application on mobile device showing responsive layout]*
 
@@ -446,7 +446,7 @@ const getDayString = (weekday) => {
 | **Solution** | 1. Added MongoDB Atlas IP whitelist for Vercel's IP ranges<br>2. Configured connection string with `mongodb+srv` protocol (uses port 443, not blocked)<br>3. Deployed from off-campus network |
 | **Result** | Database accessible from Vercel serverless functions |
 
-**Image Placeholder 9:** <img src="img/MongoDB_Atlas_Network_Access_settings_showing_whitelisted_IPs_screenshot.png" height="30" width="100">
+**Image Placeholder 9:** <img src="img/MongoDB_Atlas_Network_Access_settings_showing_whitelisted_IPs_screenshot.png" height=100 >
 
 *[Insert screenshot of MongoDB Atlas Network Access settings showing whitelisted IPs]*
 
@@ -586,7 +586,7 @@ uploads.chunks: (GridFS) { files_id, n, data }
 
 *[Insert screenshot of browser developer tools showing successful API response]*
 
-**Image Placeholder 12:** <img src="">
+**Image Placeholder 12:** <br> <img src="img/photo_of_mobile_device_showing_the_application_running.png" width=70% height=70%>
 
 *[Insert photo of mobile device showing the application running]*
 

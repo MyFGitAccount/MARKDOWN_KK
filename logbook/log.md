@@ -85,7 +85,7 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 | Nov 25-27, 2025 | Admin System | Created admin approval workflow for user registration | ✅ Complete |
 | Nov 26, 2025 | Email Notifications | Configured Nodemailer with Gmail SMTP | ✅ Complete |
 
-**Image Placeholder 1:** <img src="img/MongoDB_Atlas_cluster_showcase_screenshot.png" width="200" height="200">
+**Image Placeholder 1:** <br><img src="img/MongoDB_Atlas_cluster_showcase_screenshot.png" width="400" height="400">
 
 *[Insert screenshot of MongoDB Atlas cluster showing collections: users, courses, pending_accounts, group_requests, questionnaires, materials, uploads.files]*
 
@@ -119,7 +119,7 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 | Feb 24, 2026 | Dashboard Mobile Fix | Fixed missing CSS file import in Dashboard.jsx | ✅ Complete |
 | Feb 24, 2026 | Routing Verification | Final routing fixes for production deployment | ✅ Complete |
 
-**Image Placeholder 2:** <img src="img/deployed_app_homepage_on_desktop_browser_screenshot.png" height="200" width="200">
+**Image Placeholder 2:** <br><img src="img/deployed_app_homepage_on_desktop_browser_screenshot.png" height="400" width="700">
 
 *[Insert screenshot of the deployed application homepage on desktop browser]*
 
@@ -161,7 +161,7 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 | Research MongoDB Atlas setup | [Name] | Oct 29 |
 | Design database schema | [Team] | Nov 1 |
 
-**Image Placeholder 4:** <img src ="img/Database_schema_image.png" height="200" width="200">
+**Image Placeholder 4:** <br><img src ="img/Database_schema_image.png" height="600" width="800">
 
 *[Insert screenshot of initial database schema design diagram]*
 
@@ -240,7 +240,7 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 | Test on multiple devices | [Name] | Feb 23 |
 | Prepare final documentation | [Name] | Feb 24 |
 
-**Image Placeholder 5:** <img src="img/screenshot_of_combined_classes_display_in_timetable-showing_01_(+1)_badge.jpeg" height="200" width="200">
+**Image Placeholder 5:** <br><img src="img/screenshot_of_combined_classes_display_in_timetable-showing_01_(+1)_badge.jpeg" height="400" width="200">
 
 *[Insert screenshot of combined classes display in timetable - showing "01 (+1)" badge]*
 
@@ -303,7 +303,7 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 | **Alternatives Considered** | Keep as single entry (confusing for students), Display both class numbers in one block (calendar display issues) |
 | **Trade-offs** | More entries in database; need to handle deletion of all related classes when removing a combined class |
 
-**Image Placeholder 6:** <img src="img/screenshot_of_combined_classes_being_added_to_timetable-showing_class_selection_UI.jpeg" height="200" width="200">
+**Image Placeholder 6:** <br><img src="img/screenshot_of_combined_classes_being_added_to_timetable-showing_class_selection_UI.jpeg" height="600" width="600">
 
 *[Insert screenshot of combined classes being added to timetable - showing class selection UI]*
 
@@ -346,7 +346,7 @@ const connectDB = async () => {
 ```
 | **Result** | Connection established once per cold start, reused for subsequent calls |
 
-**Image Placeholder 7:** <img src="img/MongoDB_Atlas_connection_metrics_showing_reduced_connection_count_after_fix_screenshot.png" width="200" height="200">
+**Image Placeholder 7:** <br><img src="img/MongoDB_Atlas_connection_metrics_showing_reduced_connection_count_after_fix_screenshot.png" width="1100" height="800">
 
 *[Insert screenshot of MongoDB Atlas connection metrics showing reduced connection count after fix]*
 
@@ -405,7 +405,7 @@ GMAIL_APP_PASSWORD=abcd efgh ijkl mnop
 ```
 | **Result** | Emails sent successfully via Gmail SMTP |
 
-**Image Placeholder 8:** <img src="img/screenshot_of_Gmail_App_Password_generation_page.jpeg" width="200" height="200">
+**Image Placeholder 8:** <br><img src="img/screenshot_of_Gmail_App_Password_generation_page.jpeg" width="600" height="600">
 
 *[Insert screenshot of Gmail App Password generation page]*
 
@@ -532,12 +532,7 @@ uploads.files: (GridFS) { filename, metadata, uploadDate }
 uploads.chunks: (GridFS) { files_id, n, data }
 ```
 
-**Image Placeholder 10:** <img src="img/MongoDB_course_collection.png" width="200" height="200">
-                          <img src="img/MongoDB_group_requests_collection.png" width="200" height="200">
-                          <img src="img/MongoDB_invitaion_collection.png" width="200" height="200">
-                          <img src="img/MongoDB_materials_collection.png" width="200" height="200">
-                          <img src="img/MongoDB_questionnaires_collection.png" width="200" height="200">
-                          <img src="img/MongoDB_users_collection .png" width="200" height="200">
+**Image Placeholder 10:** <br><img src="img/MongoDB_course_collection.png"><img src="img/MongoDB_group_requests_collection.png" ><img src="img/MongoDB_invitaion_collection.png" ><img src="img/MongoDB_materials_collection.png"><img src="img/MongoDB_questionnaires_collection.png"><img src="img/MongoDB_users_collection .png">
 
 *[Insert screenshot of MongoDB Atlas Collections view showing all collections]*
 
@@ -587,7 +582,7 @@ uploads.chunks: (GridFS) { files_id, n, data }
 | Chrome (Android) | ✅ Working |
 | Safari (iOS) | ✅ Working |
 
-**Image Placeholder 11:** <img src="img/screenshot_that_show_successful_api_response.png" width="200" height="200">
+**Image Placeholder 11:** <br><img src="img/screenshot_that_show_successful_api_response.png" width="600" height="500">
 
 *[Insert screenshot of browser developer tools showing successful API response]*
 
@@ -655,7 +650,7 @@ VITE_API_URL=http://localhost:3000/api
 3. In Database Access, create user with read/write permissions
 4. Create database named `efs_platform`
 
-**Image Placeholder 13:** <img src="img/MongoDB_Atlas_cluster_creation_page.jpeg" width="200" height="200">
+**Image Placeholder 13:** <br><img src="img/MongoDB_Atlas_cluster_creation_page.jpeg">
 
 *[Insert screenshot of MongoDB Atlas cluster creation page]*
 
@@ -795,7 +790,6 @@ platform-efs2/
 │   ├── package.json
 │   ├── package-lock.json
 │   ├── server.js
-│   ├── .env
 │   ├── node_modules/
 │   ├── db/
 │   │   ├── .env

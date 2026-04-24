@@ -46,7 +46,7 @@ Class: CL15 | Group: 07
 |------|-------|-----------|
 | 1 | The Three Problems | Xavier |
 | 2 | Our Solution Overview | Xavier |
-| 3 | How We Built It (Simple Explanation) | Xavier |
+| 3 | How We Built It | Xavier |
 | 4 | Live Demonstration | Kwok |
 | 5 | Testing & User Feedback | Tim |
 | 6 | Lessons Learned & Q&A | All |
@@ -55,189 +55,169 @@ Class: CL15 | Group: 07
 
 ---
 
-## SLIDE 3: OPENING HOOK
+## SLIDE 3: OPENING
 
-**Image Placeholder:** [Cartoon of student surrounded by messy PDF windows, looking confused]
-
-**Text:**
-
-# "I have five PDFs open... and I still don't know if my courses overlap."
-
-**– A real quote from a HKU SPACE student during add/drop week**
-
-**Today we're solving this problem – and two others – with one simple platform.**
-
----
-
-## SLIDE 4: THREE CORE PROBLEMS
-
-**Image Placeholder:** [Three icons: PDF document, People with question mark, Survey form with downward arrow]
+**Image Placeholder:** [Cartoon of student surrounded by messy PDF windows]
 
 **Text:**
 
-# Three Problems. One Solution.
+# A Common Experience at HKU SPACE
 
-| # | Problem | Key Stat |
-|---|---------|----------|
-| 1 | **Inefficient course scheduling** | 79% say PDF checking is time-consuming |
-| 2 | **Fragmented study group formation** | 58% struggle to find study partners |
-| 3 | **Questionnaire demand crisis** | 58% have difficulty getting responses |
+**Every semester, students face three recurring challenges:**
 
-**The data:** Survey of 24 HKU SPACE students
+1. Planning course schedules using PDF timetables
+2. Finding study partners for group projects
+3. Collecting survey responses for courses like EAP II
+
+**Today we present a platform that addresses all three.**
 
 ---
 
-## SLIDE 5: PROBLEM 1 - THE PDF NIGHTMARE
+## SLIDE 4: PROBLEM 1 - COURSE SCHEDULING
 
-**Image Placeholder:** [Screenshot of messy timetable PDF with confusing layout]
+**Image Placeholder:** [Screenshot of a messy timetable PDF with multiple columns and rows]
 
 **Text:**
 
-# Problem 1: Timetable Planning is Broken
+# Problem 1: Course Scheduling is Manual and Difficult
 
-**Current process:**
-1. Download 5+ PDF files
-2. Open each separately
-3. Manually track course times
-4. Check for conflicts by eye
-5. Repeat when schedule changes
+**What students currently do:**
 
-**What students told us:**
-> *"I spent 4 hours on my timetable and still got a conflict."*
+- Download multiple PDF timetable files from the college portal
+- Open each PDF separately for different days or departments
+- Read through rows of course codes, times, and room numbers
+- Compare courses across documents to find available slots
+- Check for time conflicts by scanning manually
+- Track prerequisites and course dependencies separately
+- Repeat the entire process when course selections change during add/drop period
 
-> *"Add/drop week is the most stressful time of the semester."*
+**Why this is a problem:**
 
-**70% of students have made scheduling errors**
+- No visual overview of the weekly schedule
+- No automatic detection of overlapping courses
+- No easy way to experiment with different course combinations
+- The add/drop period is limited to a few days, adding pressure
+- Students must rely on manual checking, which is prone to human error
 
 ---
 
-## SLIDE 6: WHY EXISTING TOOLS FAIL
+## SLIDE 5: WHY EXISTING TOOLS ARE INSUFFICIENT
 
-**Image Placeholder:** [Four logos with X marks: Moodle, Google Calendar, PDF, Excel]
+**Image Placeholder:** [Four icons: Moodle logo, Google Calendar logo, PDF icon, spreadsheet icon]
 
 **Text:**
 
-# No Existing Tool Solves This
+# Existing Tools Each Have Limitations
 
-| Tool | What's Missing |
-|------|----------------|
-| Moodle Calendar | No drag-and-drop, no conflict detection |
-| Google Calendar | Not connected to HKU SPACE course data |
-| PDF files | Static, no interaction, manual only |
-| Excel/Paper | Manual entry, error-prone |
+| Tool | What It Does | What's Missing |
+|------|--------------|----------------|
+| Moodle Calendar | Shows course events | No drag-and-drop planning, no conflict detection, not designed for schedule building |
+| Google Calendar | Visual scheduling interface | No connection to HKU SPACE course data, requires manual entry of every course |
+| PDF Files | Display timetable as document | Static format, no interaction, no automation |
+| Spreadsheet | Manual schedule tracking | Requires full manual data entry, error-prone, no conflict detection |
 
-**The Gap:** Institutional course data + visual scheduling + automatic conflict detection = None exist
+**The gap:** A tool that combines institutional course data with a visual, interactive scheduling interface.
 
 ---
 
-## SLIDE 7: PROBLEM 2 - STUDY GROUP CHAOS
+## SLIDE 6: PROBLEM 2 - STUDY GROUP FORMATION
 
-**Image Placeholder:** [WhatsApp screenshot showing group formation request with multiple replies]
+**Image Placeholder:** [Screenshot of WhatsApp group chat with study group requests]
 
 **Text:**
 
-# Problem 2: Finding Study Partners is Random
+# Problem 2: Finding Study Partners Is Unstructured
 
-**Current method:** Post on WhatsApp/Telegram and hope
+**What students currently do:**
 
-**Problems with this approach:**
-- No way to know someone's major or skill level
-- No filter for compatibility
-- Free-riding is common (people don't contribute)
-- Contact information exposed publicly
+- Post messages in WhatsApp or Telegram class groups asking for study partners
+- Receive replies from people they may not know
+- Exchange contact information publicly in the group chat
+- Manually coordinate meeting times and availability
+- Have no way to know if potential partners have similar academic backgrounds
+- Risk forming groups where participation is unequal
+- Cannot filter or search for partners with specific skills or majors
 
-> *"I've joined groups where one person does all the work."*
+**Why this is a problem:**
 
-**81% of students would use a structured matching system**
+- No structure or organization to the formation process
+- Personal contact information is exposed publicly
+- No way to assess compatibility before committing
+- Groups formed through informal channels often have mismatched ability levels
+- Some group members may contribute less than others, affecting learning outcomes
+- Students with smaller social networks have fewer opportunities to find partners
 
 ---
 
-## SLIDE 8: WHAT RESEARCH TELLS US
+## SLIDE 7: PROBLEM 3 - QUESTIONNAIRE RESPONSES
 
-**Image Placeholder:** [Simple diagram showing matching criteria: Skills + Availability + Goals]
+**Image Placeholder:** [Illustration showing many students sending survey links to a small group of recipients]
 
 **Text:**
 
-# Research-Backed Design
+# Problem 3: Collecting Survey Responses Is Competitive
 
-**Massah (2018):** Free-riding is a persistent challenge in group work. Structured formation reduces unequal participation.
+**What students currently do:**
 
-**Srba & Bielikova (2014):** Dynamic group formation based on student profiles significantly improves collaboration outcomes.
+- Create surveys using Google Forms or similar tools for courses like EAP II
+- Share survey links repeatedly in class group chats and personal messages
+- Ask friends and classmates to fill out their surveys
+- Hope that enough people will respond to meet course requirements
+- Compete with dozens of other students who need responses from the same pool of people
+- Send follow-up reminders when response targets are not met
 
-**Our conclusion:** Need profile-based matching with privacy controls.
+**Why this is a problem:**
 
-**Key insight:** Students need compatibility across multiple dimensions – skills, availability, goals.
+- Many students need responses from the same limited group of people
+- Recipients receive multiple requests from different students, leading to request fatigue
+- Students with larger friend networks have an advantage over those with smaller networks
+- Significant time is spent chasing responses rather than analyzing data
+- Course requirements may be difficult to complete fairly across all students
 
 ---
 
-## SLIDE 9: PROBLEM 3 - SURVEY FATIGUE
+## SLIDE 8: SUMMARY OF THE THREE PROBLEMS
 
-**Image Placeholder:** [Graph showing declining response rates as requests increase]
+**Image Placeholder:** [Three icons arranged horizontally: PDF document, people icon, survey form]
 
 **Text:**
 
-# Problem 3: Too Many Surveys, Too Few Respondents
+# Three Problems. One Missing Solution.
 
-**The math for EAP II:**
-- 40 students × 30 responses each = 1,200 responses needed
-- Available respondents: ~200-300 students
-- **Demand is 4-6x higher than supply**
+| Problem | Current State |
+|---------|----------------|
+| Course Scheduling | Manual PDF checking, no visual overview, no conflict detection |
+| Study Group Formation | Unstructured WhatsApp posts, no filtering, public contact exposure |
+| Survey Response Collection | Competition for limited respondents, request fatigue, unfair advantage based on network size |
 
-**Response rates decline with each request:**
-| Requests | Expected Response Rate |
-|----------|----------------------|
-| 0-5 | 85% |
-| 6-10 | 65% |
-| 11-15 | 42% |
-| 16-20 | 23% |
+**Our observation:** No single platform at HKU SPACE addresses all three problems together, yet these are recurring challenges that affect most students.
 
-*Source: De Koning et al., 2021*
+**Our goal:** Build one integrated platform that solves all three.
 
 ---
 
-## SLIDE 10: THE SYSTEM GAP
-
-**Image Placeholder:** [Five disconnected tools: Moodle, WhatsApp, Google Forms, PDF, LinkedIn with X marks]
-
-**Text:**
-
-# No Single Platform Does It All
-
-| Need | Current Tool | Problem |
-|------|--------------|---------|
-| Timetable | Moodle + PDFs | Basic only, no visuals |
-| Group formation | WhatsApp | No structure, no filtering |
-| Surveys | Google Forms | No respondent finding |
-| Materials | Scattered | No central location |
-
-**Students patch together 5+ different tools.**
-
-**Our goal:** One platform that does everything.
-
----
-
-## SLIDE 11: WHAT IS EFS?
+## SLIDE 9: WHAT IS EFS?
 
 **Image Placeholder:** [Four module icons arranged in a circle with central dashboard]
 
 **Text:**
 
-# Meet EFS: Your Academic Command Center
+# EFS: Educational Facilitation System
 
-**Four modules. One login. Zero switching.**
+**A web-based platform that addresses all three problems through four integrated modules.**
 
-| Module | Solves |
-|--------|--------|
-| Timetable Planner | PDF nightmare |
-| Group Formation | Finding study partners |
-| Questionnaire Exchange | Survey fatigue |
-| Materials Repository | Scattered resources |
+| Module | Problem It Solves |
+|--------|-------------------|
+| Timetable Planner | First problem - course scheduling |
+| Group Formation | Second problem - finding study partners |
+| Questionnaire Exchange | Third problem - survey response collection |
+| Materials Repository | Additional feature - centralizing learning resources |
 
-**Built specifically for HKU SPACE students with real course data.**
+**One login. One dashboard. Four solutions.**
 
 ---
 
-## SLIDE 12: MODULE 1 - TIMETABLE PLANNER
+## SLIDE 10: MODULE 1 - TIMETABLE PLANNER
 
 **Image Placeholder:** [Screenshot of visual calendar with colored course blocks]
 
@@ -245,368 +225,464 @@ Class: CL15 | Group: 07
 
 # Timetable Planner: From PDFs to Visual Calendar
 
-**What you can do:**
-- Search for courses by code or title
-- Drag and drop onto calendar
-- See conflicts instantly (red = overlap)
-- Color-coded courses (same course = same color)
-- Export as PNG image
-- Save to your account
+**What this module does:**
 
-**Time saved:** From 4-6 hours to under 10 minutes
+- Takes the existing HKU SPACE course data and displays it visually
+- Allows students to search for courses by code or title
+- Provides a weekly calendar view from Monday to Saturday, 8 AM to 9 PM
+- Lets students drag and drop courses directly onto the calendar
+- Automatically checks for scheduling conflicts when courses are added
+- Colors each course consistently based on its code for easy identification
+- Allows students to save their timetable to their account
+- Exports the timetable as an image file for printing or sharing
+
+**How it solves Problem 1:** Students no longer need to manually check PDF files. The system does the conflict detection automatically.
 
 ---
 
-## SLIDE 13: HOW CONFLICT DETECTION WORKS
+## SLIDE 11: HOW CONFLICT DETECTION WORKS
 
-**Image Placeholder:** [Two overlapping course blocks with red border, showing before/after]
+**Image Placeholder:** [Diagram showing two overlapping course blocks with red border]
 
 **Text:**
 
 # Automatic Conflict Detection
 
-**What happens when you try to add a course:**
+**When a student adds a course to their timetable, the system:**
 
-1. System checks every course already in your timetable
-2. Compares day (Monday? Tuesday?)
-3. Compares times (14:30-17:30 vs 16:00-18:00)
-4. If overlap detected → RED border + cannot save
+1. Retrieves all existing courses already in the student's timetable
+2. Compares the day of the new course (Monday? Tuesday?) with each existing course
+3. Compares the time range of the new course (start time and end time) with each existing course on the same day
+4. If the new course's time range overlaps with an existing course on the same day, the system flags a conflict
+5. The conflicting course block turns red on the calendar
+6. The system prevents the student from saving the overlapping schedule
 
-**No more guessing. No more manual checking.**
+**Example scenario:**
+- Existing course: Tuesday, 2:30 PM to 5:30 PM
+- Proposed new course: Tuesday, 4:00 PM to 6:00 PM
+- Result: Conflict detected (the two courses share 1.5 hours of overlap)
 
-**Example:** Existing course 14:30-17:30 + new course 16:00-18:00 = CONFLICT
+**The student can then choose a different class time or remove the conflicting course.**
 
 ---
 
-## SLIDE 14: MODULE 2 - GROUP FORMATION
+## SLIDE 12: MODULE 2 - GROUP FORMATION
 
 **Image Placeholder:** [Screenshot of group formation request list with filter options]
 
 **Text:**
 
-# Group Formation: Find Compatible Study Partners
+# Group Formation: Structured Study Partner Matching
 
-**How it works:**
-1. Create request with major, description, preferences
-2. Optional: share GPA, DSE score, phone
-3. Browse other students' requests
-4. Filter by major or keyword
-5. Send private invitation via email
+**What this module does:**
 
-**Privacy first:** Email addresses never shown publicly
+- Allows students to create study group requests with their major, description, and preferences
+- Provides optional fields for GPA, DSE score, and phone number (student chooses what to share)
+- Shows all active requests in a searchable and filterable list
+- Allows students to filter requests by major or keyword
+- Enables students to send private invitations to request creators
+- Sends email notifications when someone expresses interest
+- Keeps email addresses private (not shown in public list)
+- Allows students to delete their request once they have found a group
+
+**How it solves Problem 2:** Students can find partners based on actual compatibility criteria, not just whoever sees their WhatsApp message. Contact information stays private.
 
 ---
 
-## SLIDE 15: THE INVITATION FLOW
+## SLIDE 13: THE INVITATION FLOW
 
-**Image Placeholder:** [Flow diagram: Student A creates request → Student B finds it → System sends email → Student A decides]
+**Image Placeholder:** [Flow diagram with four steps: Create → Browse → Invite → Connect]
 
 **Text:**
 
-# How Matching Works
+# How the Matching Process Works
 
-**Step 1:** Student A creates a request (major, description, preferences)
+**Step 1: Student A creates a request**
+- Fills in major, description, desired groupmates
+- Optionally includes GPA, DSE score, or phone number
+- Request appears in the public list
 
-**Step 2:** Student B browses and finds a good match
+**Step 2: Student B browses available requests**
+- Searches by major or keyword
+- Reads descriptions from different students
+- Identifies Student A as a potential good match
 
-**Step 3:** Student B clicks "Send Invite" + types message
+**Step 3: Student B sends an invitation**
+- Clicks "Send Invite" button
+- Types a personalized message
+- System sends email to Student A
 
-**Step 4:** System sends email to Student A (email address stays private)
+**Step 4: Student A reviews and decides**
+- Reads the invitation and Student B's information
+- Decides whether to respond
+- If interested, they coordinate directly
+- If not, the request remains active for others
 
-**Step 5:** Student A reviews and decides whether to respond
-
-**Both parties opt in. No spam. No unwanted contact.**
+**Key feature:** Student A's email address is never shown to Student B. The system handles the communication.
 
 ---
 
-## SLIDE 16: MODULE 3 - QUESTIONNAIRE EXCHANGE
+## SLIDE 14: MODULE 3 - QUESTIONNAIRE EXCHANGE
 
-**Image Placeholder:** [Credit flow diagram showing: 3 credits start → Post (-1) → Fill (+1) → Repeat]
+**Image Placeholder:** [Credit flow diagram showing: Start → Post (-1) → Fill (+1) → Repeat]
 
 **Text:**
 
-# Questionnaire Exchange: A Fair Credit System
+# Questionnaire Exchange: A Credit-Based System
 
-**The economy of responses:**
+**What this module does:**
 
-| Action | Credits |
-|--------|---------|
-| New user starts with | 3 credits |
-| Post your own survey | Costs 1 credit |
-| Fill someone's survey | Earns 1 credit |
-| Reach 30 responses | Survey completes |
+- Gives every new user an initial balance of credits
+- Allows students to post their survey links for others to fill
+- Costs credits to post a survey
+- Awards credits to students who fill other people's surveys
+- Tracks how many responses each survey has received
+- Marks surveys as completed when they reach their target
+- Prevents students from filling the same survey twice
 
-**Fair exchange:** Help others, earn credits, spend credits to get help.
+**How it solves Problem 3:** Instead of competing for respondents, students have an incentive to help each other. Filling surveys earns credits, which can be used to post one's own survey.
 
 ---
 
-## SLIDE 17: WHY THE CREDIT SYSTEM WORKS
+## SLIDE 15: HOW THE CREDIT ECONOMY WORKS
 
-**Image Placeholder:** [Simple equation showing: Help 3 people → Get 3 credits → Post your survey]
+**Image Placeholder:** [Diagram showing: Help others → Earn credits → Post your survey → Get helped]
 
 **Text:**
 
-# Solving Supply and Demand
+# The Credit Cycle
 
-**Without credits:** Everyone posts, few respond → Nobody wins
+**Starting point:** Every new student receives an initial credit balance.
 
-**With credits:** 
-- To post, you must have earned credits (or use your starting 3)
-- To earn credits, you must help others
-- Result: Balanced supply and demand
+**To post a survey:** The student spends credits. The survey becomes visible to other students.
 
-**What users said:**
-> *"The credit system makes it fair. Everyone has to contribute."*
+**To fill a survey:** The student opens the survey link, completes it, then returns to the platform to claim credit. The system verifies that the student has not already filled that survey before awarding credit.
 
-**79% of users agreed the credit system is fair.**
+**To earn more credits:** The student fills other people's surveys. Each filled survey adds to their credit balance.
+
+**Result:** Students who help others earn the ability to be helped in return.
+
+**When a survey reaches its target number of responses:** It is marked as completed and removed from the active list.
 
 ---
 
-## SLIDE 18: MODULE 4 - MATERIALS REPOSITORY
+## SLIDE 16: MODULE 4 - MATERIALS REPOSITORY
 
 **Image Placeholder:** [Screenshot of materials list organized by course code]
 
 **Text:**
 
-# Materials Repository: Everything in One Place
+# Materials Repository: Centralized Learning Resources
 
-**Features:**
-- Organized by course code
-- Search by course or material name
-- Download count tracking (see what's popular)
-- Only admins upload (quality control)
+**What this module does:**
 
-**Supported formats:** PDF, images, Word, PowerPoint
+- Organizes course materials by course code
+- Allows students to browse materials for their enrolled courses
+- Provides search functionality by course or material name
+- Tracks download counts for each material
+- Restricts uploads to administrators (quality control)
+- Supports multiple file formats: PDF, images, Word documents, PowerPoint files
 
-**User feedback:** 92% said organized materials are useful
+**What this module addresses (bonus feature):**
 
-**Top requests:** Lecture notes (88%), Past exam papers (79%)
+- Course materials are currently scattered across different platforms
+- Some materials are on Moodle, some on WhatsApp, some on email attachments
+- Students waste time searching for resources
+- Centralizing materials saves time and provides a single source of truth
 
 ---
 
-## SLIDE 19: THE DASHBOARD - YOUR CENTRAL HUB
+## SLIDE 17: THE DASHBOARD
 
-**Image Placeholder:** [Screenshot of user dashboard showing credits, quick actions, statistics]
+**Image Placeholder:** [Screenshot of user dashboard showing credits, modules, and information]
 
 **Text:**
 
-# One Dashboard. Everything You Need.
+# One Dashboard. Everything in One Place.
 
-**What you see when you log in:**
-- Welcome message and student ID
-- Credit balance (starts at 3)
-- Quick action buttons to all modules
-- Statistics (courses, groups, surveys, materials)
-- Recent activity feed
+**What students see when they log in:**
 
-**88% of users found the dashboard helpful**
+- Welcome message with their student ID
+- Current credit balance (for questionnaire exchange)
+- Quick action buttons to access all four modules
+- Statistics summary showing their courses, groups, surveys, and materials
+- Recent activity log
+
+**Why this matters:**
+
+- Students no longer need to navigate between multiple different tools
+- All information is visible from a single screen
+- The dashboard provides a starting point for all activities
 
 ---
 
-## SLIDE 20: USER ROLES & PERMISSIONS
+## SLIDE 18: USER ROLES
 
-**Image Placeholder:** [Three user icons: Student, Admin, Pending with different access levels]
+**Image Placeholder:** [Three user icons: Student, Admin, Pending]
 
 **Text:**
 
 # Three Types of Users
 
-| Role | What They Can Do |
-|------|------------------|
-| **Student** | Timetable, groups, surveys, materials, profile |
-| **Admin** | All student permissions + approve accounts, approve courses, upload materials, manage users |
-| **Pending** | Registered, waiting for approval (cannot log in yet) |
+| Role | Permissions |
+|------|-------------|
+| **Student** | View timetable, create group requests, post and fill questionnaires, download materials, edit own profile |
+| **Admin** | All student permissions, plus approve new account registrations, approve course requests, upload materials, view all users, delete users |
+| **Pending** | Account created but awaiting admin approval (cannot log in until approved) |
 
-**New registrations require admin approval to prevent spam.**
+**Why pending accounts exist:** New registrations require verification using student ID photos to ensure only legitimate HKU SPACE students can join.
 
 ---
 
-## SLIDE 21: LIVE DEMONSTRATION
+## SLIDE 19: LIVE DEMONSTRATION
 
-**Video Placeholder:** [Screen recording of the following:]
+**Video Placeholder:** [Screen recording showing the following features in action]
 
 **Text:**
 
 # Watch EFS in Action
 
-**Live demonstration of:**
+**The following will be demonstrated:**
 
-1. Account registration
-2. Admin approval
-3. Login to dashboard
-4. Timetable planner (search, drag-drop, conflict detection, export)
-5. Group formation (create request, browse, send invitation)
-6. Questionnaire exchange (post survey, fill survey, credit changes)
-7. Materials repository (browse, download)
+1. **Account registration** - Creating a new student account
+2. **Admin approval** - Approving a pending registration
+3. **Login and dashboard** - Accessing the main interface
+4. **Timetable planner** - Searching for courses, dragging onto calendar, conflict detection, exporting
+5. **Group formation** - Creating a request, browsing requests, sending an invitation
+6. **Questionnaire exchange** - Checking credit balance, posting a survey, filling a survey, credit changes
+7. **Materials repository** - Browsing materials by course, downloading a file
+8. **Profile management** - Editing profile information
 
-**Duration:** 8-10 minutes
+**Demonstration duration:** 8-10 minutes
 
 ---
 
-## SLIDE 22: DEMO PART 1 - ACCOUNT CREATION
+## SLIDE 20: DEMO PART 1 - ACCOUNT CREATION
 
-**Video Placeholder:** [Screen recording showing registration form and student ID upload]
+**Video Placeholder:** [Screen recording showing registration form and student ID photo upload]
 
 **Text:**
 
-# Step 1: Create an Account
+# Account Creation Process
 
 **What the user does:**
-1. Enters student ID, email, password
-2. Uploads student ID card photo (verification)
-3. Clicks submit
 
-**What happens next:**
-- Account goes to "pending" status
-- Admin receives notification
-- User waits for approval email
+- Navigates to the registration page
+- Enters student ID, email address, and password
+- Uploads a photo of their student ID card (for verification)
+- Submits the registration form
 
-**Why this step?** Prevents non-HKU SPACE students from joining.
+**What happens after submission:**
+
+- The account is created with "pending" status
+- The account appears in the admin panel
+- The student cannot log in until approved
+
+**Why student ID verification is required:** Prevents people outside HKU SPACE from creating accounts.
 
 ---
 
-## SLIDE 23: DEMO PART 2 - ADMIN APPROVAL
+## SLIDE 21: DEMO PART 2 - ADMIN APPROVAL
 
-**Video Placeholder:** [Screen recording showing admin dashboard with pending accounts]
+**Video Placeholder:** [Screen recording showing admin dashboard with pending accounts and approval action]
 
 **Text:**
 
-# Step 2: Admin Approves Account
+# Admin Approval Process
 
-**What the admin sees:**
-- List of pending accounts
-- Student ID and email
-- Uploaded student ID photo (click to enlarge)
-- Approve or Reject buttons
+**What the administrator sees:**
 
-**What the user receives:**
-- Approval email with login instructions
-- OR rejection email with reason
+- List of pending accounts with student IDs and email addresses
+- Thumbnail preview of uploaded student ID photos
+- Approve and Reject buttons for each account
 
-**Typical approval time:** Within 24 hours
+**What the administrator does:**
+
+- Clicks on the student ID photo to view it full size
+- Verifies that the photo matches the student ID information
+- Clicks "Approve" if the verification passes
+- Clicks "Reject" with a reason if the verification fails
+
+**What happens after approval:**
+
+- The student receives an email notification
+- The student can now log in to the platform
+- The account status changes from "pending" to "active"
 
 ---
 
-## SLIDE 24: DEMO PART 3 - TIMETABLE PLANNER
+## SLIDE 22: DEMO PART 3 - TIMETABLE PLANNER
 
-**Video Placeholder:** [Screen recording showing course search, drag-and-drop, conflict detection]
+**Video Placeholder:** [Screen recording showing course search, drag-and-drop, and conflict detection]
 
 **Text:**
 
-# Step 3: Build Your Timetable
+# Timetable Planner Demonstration
 
-**Demonstration of:**
-- Searching for courses by code (e.g., "CCIT4080")
-- Viewing available classes with times and rooms
-- Dragging courses onto the calendar
-- Seeing conflict detection (red = overlap)
-- Exporting timetable as PNG
+**This demonstration shows:**
 
-**Real-time feedback:** Every action updates instantly.
+- Searching for a course by typing its code (e.g., "CCIT4080")
+- Viewing the search results showing available class times and rooms
+- Dragging a course from the search results onto the calendar
+- Seeing the course appear as a colored block at the correct day and time
+- Searching for a second course that overlaps with the first
+- Dragging the second course onto the calendar
+- Watching the conflict detection trigger (red border appears)
+- Saving the timetable to the account
+- Exporting the timetable as a PNG image
+
+**The demonstration shows both successful adds and conflict scenarios.**
 
 ---
 
-## SLIDE 25: DEMO PART 4 - GROUP FORMATION
+## SLIDE 23: DEMO PART 4 - GROUP FORMATION
 
-**Video Placeholder:** [Screen recording showing creating request, browsing, sending invitation]
+**Video Placeholder:** [Screen recording showing request creation, browsing, and invitation sending]
 
 **Text:**
 
-# Step 4: Find Study Partners
+# Group Formation Demonstration
 
-**Demonstration of:**
-- Creating a request with major and description
-- Browsing existing requests
-- Filtering by major or keyword
-- Sending a private invitation
-- Email notification being sent
+**This demonstration shows:**
 
-**Privacy preserved:** Email addresses never exposed publicly.
+- Clicking "Create Request" to open the request form
+- Filling in major (e.g., "Engineering")
+- Writing a description of what kind of study partners the student wants
+- Adding optional information (GPA, DSE score, phone number)
+- Submitting the request
+- Viewing the new request in the public list
+- Using filters to search for requests by major
+- Clicking "Send Invite" on another student's request
+- Typing a personalized message
+- Confirming the invitation is sent
+
+**The demonstration shows the full cycle from creation to invitation.**
 
 ---
 
-## SLIDE 26: DEMO PART 5 - QUESTIONNAIRE EXCHANGE
+## SLIDE 24: DEMO PART 5 - QUESTIONNAIRE EXCHANGE
 
 **Video Placeholder:** [Screen recording showing credit balance, posting survey, filling survey]
 
 **Text:**
 
-# Step 5: Exchange Surveys
+# Questionnaire Exchange Demonstration
 
-**Demonstration of:**
-- Checking credit balance (starts at 3)
-- Posting a survey (costs 1 credit)
-- Browsing available surveys
-- Filling someone's survey (earns 1 credit)
-- Progress tracking (X/30 responses)
+**This demonstration shows:**
 
-**Live credit updates:** Balance changes instantly after each action.
+- The current credit balance displayed at the top of the page (starting at 3)
+- Clicking "Create Questionnaire" to open the posting form
+- Entering a description of the survey
+- Pasting the Google Forms link
+- Setting the target number of responses (30 for EAP II)
+- Submitting the questionnaire (credit balance decreases by 1)
+- Viewing the new questionnaire in the "Available" list
+- Clicking "Open Link" to view an available survey
+- Marking the survey as filled (credit balance increases by 1)
+- Checking that the same survey cannot be filled twice
 
----
-
-## SLIDE 27: DEMO PART 6 - MATERIALS & PROFILE
-
-**Video Placeholder:** [Screen recording showing materials repository and profile editing]
-
-**Text:**
-
-# Step 6: Access Materials & Manage Profile
-
-**Materials Repository:**
-- Browse by course code
-- Download files
-- View download counts
-
-**Profile Management:**
-- Edit email, phone, major
-- Add GPA, DSE score (optional)
-- Update skills and bio
-- Profile photo from student ID upload
-
-**96% of users said privacy controls are important**
+**The demonstration shows both posting and filling workflows.**
 
 ---
 
-## SLIDE 28: HOW WE BUILT IT - SIMPLE EXPLANATION
+## SLIDE 25: DEMO PART 6 - MATERIALS REPOSITORY
 
-**Image Placeholder:** [Three-tier diagram: User with laptop (Client) → Cloud (Server) → Database cylinder]
+**Video Placeholder:** [Screen recording showing materials browsing and downloading]
 
 **Text:**
 
-# How We Built EFS (Plain English)
+# Materials Repository Demonstration
 
-**Three layers:**
+**This demonstration shows:**
+
+- Navigating to the materials section
+- Viewing materials organized by course code
+- Searching for a specific course code
+- Clicking on a material to view its details (file name, upload date, size, download count)
+- Clicking the download button
+- The file downloading to the computer
+
+**Note:** Uploading materials is restricted to administrators only. This demonstration focuses on the student experience of browsing and downloading.
+
+---
+
+## SLIDE 26: DEMO PART 7 - PROFILE MANAGEMENT
+
+**Video Placeholder:** [Screen recording showing profile page and editing]
+
+**Text:**
+
+# Profile Management Demonstration
+
+**This demonstration shows:**
+
+- Navigating to the profile page
+- Viewing current profile information (student ID, email, major, etc.)
+- Clicking "Edit Profile" to enter edit mode
+- Updating the phone number
+- Changing the major field
+- Adding GPA information (optional field)
+- Adding skills as tags
+- Writing an "about me" description
+- Saving the changes
+- Viewing the updated profile
+
+**The demonstration shows that all changes persist after saving and reappear when the user logs back in.
+
+---
+
+## SLIDE 27: HOW WE BUILT IT - THREE TIERS
+
+**Image Placeholder:** [Three-tier diagram: Client (laptop) → Server (cloud) → Database (cylinder)]
+
+**Text:**
+
+# The Three Layers of EFS
+
+**Every web application has three layers:**
 
 | Layer | Name | What it does |
 |-------|------|--------------|
-| Top | Client (Frontend) | What you see and click |
-| Middle | Server (Backend) | The brain that processes requests |
-| Bottom | Database | Where information is stored |
+| Top | Client (Frontend) | What the user sees and clicks in the browser |
+| Middle | Server (Backend) | Processes requests, runs business logic |
+| Bottom | Database | Stores all data permanently |
 
-**Analogy:** Restaurant dining room (client) → Kitchen (server) → Refrigerator (database)
+**Analogy for understanding:**
+- Client = Restaurant dining room (where customers sit)
+- Server = Kitchen (where food is prepared)
+- Database = Refrigerator (where ingredients are stored)
+
+**EFS uses this standard three-tier architecture.**
 
 ---
 
-## SLIDE 29: THE TECHNOLOGY STACK (MERN)
+## SLIDE 28: THE TECHNOLOGY STACK
 
 **Image Placeholder:** [Four connected icons: MongoDB leaf, Express.js, React logo, Node.js logo]
 
 **Text:**
 
-# The MERN Stack Explained
+# The MERN Stack
 
-| Letter | Technology | What it does | Plain English |
-|--------|------------|--------------|---------------|
-| M | MongoDB | Database | Digital filing cabinet |
-| E | Express.js | Backend framework | Traffic controller |
-| R | React | Frontend library | Screen builder |
-| N | Node.js | Runtime | Engine that runs the server |
+**MERN stands for four technologies that work together:**
 
-**Cool fact:** Everything is JavaScript – same language from screen to server to database.
+| Letter | Technology | Role |
+|--------|------------|------|
+| M | MongoDB | Database tier - stores user accounts, courses, surveys, group requests |
+| E | Express.js | Server framework - organizes how the server responds to different requests |
+| R | React | Client library - builds the user interface in the browser |
+| N | Node.js | Runtime - executes JavaScript code on the server |
+
+**Why we chose these technologies:**
+
+- All four use JavaScript, so the same language works across all three tiers
+- The MERN stack is well-documented with many learning resources
+- MongoDB's document model fits educational data well (courses and users have different structures)
+- React is good for interactive features like drag-and-drop calendars
 
 ---
 
-## SLIDE 30: HOW DATA MOVES (A REQUEST'S JOURNEY)
+## SLIDE 29: HOW A REQUEST TRAVELS
 
 **Image Placeholder:** [Flow diagram: Browser → Server → Database → Server → Browser]
 
@@ -614,364 +690,320 @@ Class: CL15 | Group: 07
 
 # What Happens When You Click a Button
 
-**Example: Adding a course to timetable**
+**Example: Student adds a course to their timetable**
 
-1. **Browser:** "Hey server, add CCIT4080 to my timetable"
-2. **Server:** "Let me check if you're logged in..."
-3. **Server:** "Let me check if that course exists..."
-4. **Server:** "Let me check for conflicts..."
-5. **Database:** "I saved it. Here's confirmation."
-6. **Server:** "Success! Your timetable is updated."
-7. **Browser:** Shows the new course on calendar
+1. **Browser** sends a request to the server asking to add the course
+2. **Server** receives the request and checks the student's authentication token
+3. **Server** validates that the course exists in the database
+4. **Server** runs the conflict detection algorithm against existing courses
+5. **Server** sends a write request to the database to save the new course
+6. **Database** confirms the write operation completed
+7. **Server** sends a success response back to the browser
+8. **Browser** updates the screen to show the new course
 
-**Total time:** Usually under 200 milliseconds (faster than a blink)
+**Total time per request:** Typically between 150 and 250 milliseconds
 
 ---
 
-## SLIDE 31: HOW WE KEEP DATA SAFE
+## SLIDE 30: AUTHENTICATION AND SECURITY
 
-**Image Placeholder:** [Lock icon with three checkmarks: Passwords, Tokens, Roles]
+**Image Placeholder:** [Lock icon with three security elements: Password hash, Token, Role check]
 
 **Text:**
 
-# Security in Plain English
+# How We Protect User Data
 
-| Feature | What it does | Why it matters |
-|---------|--------------|----------------|
-| Password hashing | Turns password into secret code | Even if database stolen, passwords stay secret |
-| JWT tokens | Digital ID card that expires | Proves you're really you, expires after 24 hours |
-| Role-based access | Student vs Admin permissions | Students can't access admin functions |
-| HTTPS encryption | Scrambles data in transit | Nobody can spy on what you send |
+**Password storage:**
+- Passwords are not stored as plain text in the database
+- When a user creates a password, the system converts it into a scrambled format called a hash
+- The hash cannot be reversed to get the original password
+- When the user logs in, the system hashes the entered password and compares it to the stored hash
 
-**Result:** Zero security breaches during testing.
+**Session management:**
+- When a user logs in successfully, the system issues a digital token
+- The token proves the user's identity for future requests
+- Tokens expire after 24 hours, requiring re-authentication
+
+**Access control:**
+- Each request checks the user's role (student or admin)
+- Admin-only endpoints return an error if a non-admin user tries to access them
+
+**Data in transit:**
+- All communication between browser and server uses HTTPS encryption
+- This prevents anyone from intercepting and reading the data
 
 ---
 
-## SLIDE 32: THE BIGGEST TECHNICAL CHALLENGE (PDF PARSING)
+## SLIDE 31: DEPLOYMENT AND HOSTING
 
-**Image Placeholder:** [Screenshot of messy PDF next to clean structured JSON data]
+**Image Placeholder:** [Vercel logo and MongoDB Atlas logo]
 
 **Text:**
 
-# Challenge: Extracting Data from PDFs
+# Where EFS Runs
 
-**The problem:** HKU SPACE timetables are PDFs designed for printing, not computers.
+**Frontend and Server: Vercel**
 
-**Our solution:** Python script using PyMuPDF library
-- Reads PDF as coordinates (text at X,Y position)
-- Groups text that belongs together
-- Outputs clean JSON data
-- Seeds the database automatically
+- EFS is deployed on Vercel, a cloud hosting platform
+- Vercel uses a "serverless" model, meaning the code only runs when someone visits the site
+- The platform automatically scales to handle more users without additional configuration
+- Deployment is automatic when code is pushed to the GitHub repository
 
-**Why this was hard:** PDF formats change. Combined classes like "01+02" need special handling.
+**Database: MongoDB Atlas**
+
+- The database is hosted on MongoDB Atlas, a cloud database service
+- The free tier provides enough storage and connection capacity for testing and demonstration
+- The database is accessible only from authorized connections
+
+**Result:** EFS is available 24/7 from anywhere with an internet connection, without requiring any installation.
 
 ---
 
-## SLIDE 33: TESTING - HOW WE KNOW IT WORKS
+## SLIDE 32: DATA EXTRACTION FROM PDFs
 
-**Image Placeholder:** [Three icons: Checkmark, Speedometer, Lock]
+**Image Placeholder:** [Screenshot of PDF timetable next to JSON data output]
 
 **Text:**
 
-# Three Types of Testing
+# Getting Course Data into the System
 
-| Test Type | What We Did | Result |
-|-----------|-------------|--------|
-| Manual testing | Tried every feature ourselves | All features work |
-| Load testing | Simulated 200 users at once | Response time: 219ms |
-| Security testing | Tried to break in | No unauthorized access |
+**Challenge:** HKU SPACE distributes course timetables as PDF files. PDFs are designed for printing, not for computers to read automatically.
 
-**Also tested on:** Chrome, Firefox, Safari (all work)
+**Solution:** Python scripts using a library called PyMuPDF
 
-**Lighthouse score:** 96/100 for accessibility (great for students with disabilities)
+**The extraction process:**
+
+1. The script opens the PDF file and reads its contents
+2. It identifies text blocks and their positions on each page (X and Y coordinates)
+3. It groups text blocks that belong together (e.g., course code + title + time + room)
+4. It extracts the data into a structured format (JSON)
+5. A separate script merges data from multiple PDF files and removes duplicate entries
+6. The final JSON data is inserted into MongoDB
+
+**Special handling for combined classes:**
+- Some courses appear as "01+02" in the PDF, indicating two classes merged together
+- The script detects the plus sign and creates separate entries for each class number
+- Each separate entry includes a reference to the original combined class for display purposes
 
 ---
 
-## SLIDE 34: WHO TESTED OUR PLATFORM
+## SLIDE 33: TESTING THE PLATFORM
 
-**Image Placeholder:** [Pie charts showing demographics]
+**Image Placeholder:** [Three icons: Manual testing, Load testing, Security testing]
 
 **Text:**
 
-# Our Test Users: 24 HKU SPACE Students
+# How We Tested EFS
 
-**Demographics:**
-- 83% were Year 2 students (experienced with college systems)
-- 71% were Engineering majors
-- 71% use online platforms daily
+**Manual feature testing:**
+- Each member tested every feature multiple times
+- Test cases included normal usage, edge cases, and error conditions
+- Different web browsers (Chrome, Firefox, Safari) were used to check compatibility
+- Screen sizes from desktop to mobile were tested for layout issues
 
-**This group represented our target users well.**
+**Load testing:**
+- The platform was tested with simulated multiple users accessing it at the same time
+- This simulated conditions during peak periods like add/drop week
+- Response times and error rates were measured
 
-**They tested every feature and gave anonymous feedback.**
+**Security testing:**
+- Attempted to access protected endpoints without authentication tokens (expected: denied)
+- Attempted to access admin endpoints with student accounts (expected: denied)
+- Attempted to submit invalid or malformed data to API endpoints (expected: proper error messages)
 
 ---
 
-## SLIDE 35: WHAT USERS TOLD US - OVERALL
+## SLIDE 34: USER FEEDBACK SUMMARY
 
-**Image Placeholder:** [Bar chart showing percentages]
+**Image Placeholder:** [Bar chart showing feature ratings with neutral labeling]
 
 **Text:**
 
-# Overall Feedback: Very Positive
+# What Users Told Us About EFS
 
-| Question | Positive Response |
-|----------|-------------------|
-| Platform is useful | 92% |
-| Would use this platform | 88% |
-| Rating: Excellent or Good | 88% |
+**Method:** Anonymous survey distributed to HKU SPACE students after they had the opportunity to use the platform.
 
-**Nobody rated it Fair or Poor.**
+**Sample:** Students from different years and majors who volunteered to test the platform.
 
-> *"Finally, a platform specialized for HKU SPACE students."*
+**Feedback collected on:**
 
-> *"This should be official. Why doesn't HKU SPACE already have something like this?"*
+- The overall concept of an integrated platform for HKU SPACE
+- The usefulness of each of the four modules (Timetable Planner, Group Formation, Questionnaire Exchange, Materials Repository)
+- The dashboard and user interface
+- The credit system for questionnaire exchange
+- Privacy controls and profile management
+- Feature requests and suggestions for improvement
+
+**Key themes from open-ended responses:**
+- The timetable planner's visual interface and conflict detection were noted as helpful compared to manual PDF checking
+- The ability to control what information is shared publicly was mentioned positively
+- The questionnaire credit system was seen as a fair way to balance supply and demand
+- Requests for additional features included deadline reminders and more materials
 
 ---
 
-## SLIDE 36: WHAT USERS SAID ABOUT EACH FEATURE
+## SLIDE 35: PERFORMANCE TEST RESULTS
 
-**Image Placeholder:** [Horizontal bar chart with percentages]
+**Image Placeholder:** [Metric table with green indicators]
 
 **Text:**
 
-# Feature-by-Feature Satisfaction
+# System Performance Measurements
 
-| Feature | % Agree/Strongly Agree |
-|---------|------------------------|
-| Timetable saves time vs PDFs | 92% |
-| Materials repository is useful | 92% |
-| Dashboard is helpful | 88% |
-| Group formation helps find partners | 83% |
-| Credit system is fair | 79% |
+| Test | Result |
+|------|--------|
+| Average API response time | 219 milliseconds |
+| Response time under concurrent users | Maintained under 300 milliseconds |
+| Error rate during load testing | Zero errors recorded |
+| Page load time (initial visit) | Approximately 1.5 seconds |
+| Page load time (subsequent visits) | Approximately 0.8 seconds (cached) |
 
-**Every feature scored above 75%.**
+**Lighthouse audit scores (Google's web quality tool):**
+
+| Category | Score |
+|----------|-------|
+| Performance | 76 out of 100 |
+| Accessibility | 96 out of 100 |
+| Best Practices | 96 out of 100 |
+| SEO | 90 out of 100 |
+
+**The accessibility score indicates the platform can be used by students with disabilities who rely on screen readers or keyboard navigation.**
 
 ---
 
-## SLIDE 37: DIRECT QUOTES FROM USERS
+## SLIDE 36: CHALLENGES WE FACED
 
-**Image Placeholder:** [Speech bubbles with quotes]
+**Image Placeholder:** [Five challenge icons with brief solutions]
 
 **Text:**
 
-# What Students Actually Said
+# Technical Challenges and Solutions
 
-> *"Much faster and more efficient than checking PDFs manually."*
+**Challenge 1: Serverless deployment incompatibility**
+- Traditional server code expects to run continuously
+- Vercel uses serverless functions that start and stop per request
+- **Solution:** Restructured the code to export handler functions instead of starting a server
 
-> *"The credit system makes it fair. Everyone has to contribute."*
+**Challenge 2: File upload storage**
+- Traditional file upload libraries write to the local disk
+- Vercel's filesystem is temporary and resets frequently
+- **Solution:** Used GridFS to store files directly in MongoDB
 
-> *"I love that I can see my whole week at a glance."*
+**Challenge 3: Database connection limits**
+- The free MongoDB tier limits concurrent connections
+- Each serverless function call could create a new connection
+- **Solution:** Implemented connection pooling to reuse connections across requests
 
-> *"Finally, a platform that understands HKU SPACE students."*
+**Challenge 4: PDF parsing inconsistency**
+- Timetable PDFs have different formatting across semesters
+- Some tables span multiple pages, some have merged cells
+- **Solution:** Used coordinate-based text extraction rather than table structure detection
 
-> *"Being able to control what information is visible is very important to me."*
-
-**96% said privacy controls are important.**
-
----
-
-## SLIDE 38: MOST VALUABLE FEATURE (According to Users)
-
-**Image Placeholder:** [Pie chart showing feature rankings]
-
-**Text:**
-
-# Which Feature Do Students Value Most?
-
-| Rank | Feature | % saying "Most Valuable" |
-|------|---------|-------------------------|
-| 1 | Questionnaire Exchange | 25% |
-| 2 | Timetable Planner | 21% |
-| 3 | Group Formation | 17% |
-| 4 | Materials Repository | 17% |
-| 5 | Dashboard | 12% |
-
-**Questionnaire Exchange #1 confirms survey fatigue is real.**
+**Challenge 5: Email deliverability**
+- Invitation emails from new senders often go to spam folders
+- **Solution:** Configured proper SMTP settings and used Gmail's App Password feature
 
 ---
 
-## SLIDE 39: WHAT NEEDS IMPROVEMENT (Honest Feedback)
-
-**Image Placeholder:** [Bar chart showing improvement requests]
-
-**Text:**
-
-# What Users Want Us to Improve
-
-| Feature | % saying "Needs Improvement" |
-|---------|------------------------------|
-| Materials Repository | 21% (want MORE materials) |
-| Dashboard | 17% (want deadline reminders) |
-| Group Formation | 13% (want better filtering) |
-| Timetable Planner | 8% (mostly happy with it) |
-
-**We're addressing these in future updates.**
-
-**Top request:** Deadline reminders on dashboard.
-
----
-
-## SLIDE 40: PERFORMANCE TEST RESULTS
-
-**Image Placeholder:** [Metric table with green checkmarks]
-
-**Text:**
-
-# How Fast and Reliable Is It?
-
-| Metric | Our Result | Industry Standard |
-|--------|------------|-------------------|
-| Average response time | 219ms | Under 500ms = Good ✓ |
-| Peak users handled | 200 concurrent | More than expected |
-| Errors under load | 0% | Perfect ✓ |
-| Uptime | 99.9% | Reliable ✓ |
-
-**Lighthouse scores:**
-- Performance: 76/100 (Good)
-- Accessibility: 96/100 (Excellent)
-- Best Practices: 96/100 (Excellent)
-
----
-
-## SLIDE 41: CHALLENGES WE OVERCAME
-
-**Image Placeholder:** [Five challenge icons with checkmarks]
-
-**Text:**
-
-# Five Major Challenges (And How We Solved Them)
-
-| Challenge | Solution |
-|-----------|----------|
-| Vercel serverless doesn't support traditional servers | Restructured code to use serverless functions |
-| File uploads need permanent storage | Used GridFS (stores files in database) |
-| Free database only allows 20 connections | Connection pooling (reuse connections) |
-| PDF formats are inconsistent | Python script with coordinate-based extraction |
-| Email invitations going to spam | Proper Gmail SMTP configuration |
-
-**Every challenge has a solution.**
-
----
-
-## SLIDE 42: LESSONS WE LEARNED
+## SLIDE 37: LESSONS LEARNED
 
 **Image Placeholder:** [Lightbulb icon with bullet points]
 
 **Text:**
 
-# What We'll Do Differently Next Time
+# What We Learned
 
 **Technical lessons:**
-- Test deployment EARLY (not at the end)
-- Connection pooling is critical with free tiers
-- PDF parsing is fragile – need monitoring
+
+- Test deployment configuration early in the development process, not at the end
+- Database connection limits require planning even with cloud services
+- PDF parsing is fragile and may need maintenance when source documents change
+- Environment variables should be managed centrally, not scattered across configuration files
 
 **Process lessons:**
-- Build small, test, iterate (agile works)
-- Write documentation as you go
-- Get user feedback early and often
+
+- Building small working features first and then adding more works better than trying to build everything at once
+- Writing documentation during development saves time during integration
+- Getting feedback from potential users early helps identify which features are most needed
 
 **Team lessons:**
-- Clear roles help, but communication is essential
-- Daily check-ins kept us aligned
-- Start simple, then add features
 
-**First working version:** Only login and a basic calendar. Everything else came later.
+- Clear division of responsibilities helps, but regular communication is essential
+- Daily brief check-ins help keep everyone aligned, even during busy exam periods
+- Using version control with feature branches prevents code conflicts
 
 ---
 
-## SLIDE 43: WHAT WE ACCOMPLISHED
+## SLIDE 38: WHAT WE BUILT - SUMMARY
 
-**Image Placeholder:** [Nine checkboxes with checkmarks]
+**Image Placeholder:** [Four module screenshots in a grid]
 
 **Text:**
 
-# Requirements: 9 for 9
+# Summary of Deliverables
 
-**Functional Requirements (6/6):**
-- ✓ Display institutional timetable
-- ✓ Drag-and-drop scheduling
-- ✓ Document upload
-- ✓ Academic profiles
-- ✓ Questionnaire platform
-- ✓ Credit incentives
+**The EFS platform includes:**
 
-**Non-Functional Requirements (3/3):**
-- ✓ Intuitive UI (92% user satisfaction)
-- ✓ Security & privacy (fully verified)
-- ✓ Responsiveness (<219ms under load)
+1. **Timetable Planner** - Visual calendar with drag-and-drop course scheduling, automatic conflict detection, and PNG export
+2. **Group Formation** - Structured study partner requests, search and filter functionality, private email invitations
+3. **Questionnaire Exchange** - Credit-based system for posting and filling surveys, response tracking, completion status
+4. **Materials Repository** - Centralized course materials organized by course code, download tracking
+5. **User Dashboard** - Central view showing credit balance, quick actions, and activity summary
+6. **Admin Panel** - Account approval, course request approval, user management, platform statistics
+7. **Authentication System** - Registration, login, role-based access control, password hashing
 
-**We delivered what we promised.**
+**All modules are fully integrated with a single user account.**
 
 ---
 
-## SLIDE 44: PROJECT STATISTICS
-
-**Image Placeholder:** [Four large numbers with icons]
-
-**Text:**
-
-# By The Numbers
-
-**5,000+** lines of code
-
-**25+** API endpoints
-
-**8** database collections
-
-**24** survey respondents
-
-**5 months** of development
-
-**3** team members with no prior full-stack experience
-
-**We're proud of what we built.**
-
----
-
-## SLIDE 45: WHAT'S NEXT (Future Work)
+## SLIDE 39: FUTURE WORK
 
 **Image Placeholder:** [Roadmap with short-term and long-term items]
 
 **Text:**
 
-# The Road Ahead
+# Planned Future Enhancements
 
-**Short-term (3-6 months):**
-- Password reset functionality
-- Deadline reminders on dashboard
-- More granular privacy controls (96% user demand)
+**Short-term (next iteration):**
 
-**Long-term (6-12 months):**
-- Native mobile apps (iOS and Android)
-- AI-powered study group recommendations
-- Integration with HKU SPACE official systems
+- Password reset functionality (currently not implemented)
+- Deadline reminder system connected to the timetable
+- More granular privacy controls for profile information
+- Expanded file format previews in materials repository
 
-**First priority:** Privacy controls (what 96% of users asked for)
+**Long-term (future development):**
+
+- Native mobile applications for iOS and Android
+- Integration with HKU SPACE official systems if APIs become available
+- Automated study group recommendations based on course enrollment
+- Analytics dashboard for instructors to see platform usage patterns
+- Real-time notifications (currently the system uses periodic checks)
+
+**The priority for immediate next steps is based on user feedback collected during testing.**
 
 ---
 
-## SLIDE 46: TEAM CONTRIBUTIONS
+## SLIDE 40: TEAM CONTRIBUTIONS
 
-**Image Placeholder:** [Three team member names with role descriptions]
+**Image Placeholder:** [Three team member names with brief role descriptions]
 
 **Text:**
 
-# Who Did What
+# Who Built What
 
-| Member | Role | Key Contributions |
-|--------|------|-------------------|
-| Xavier Wong | Backend Lead | Server, database, API, authentication, deployment |
-| Kwok Ho Yin | Frontend Lead | User interface, calendar, drag-and-drop, forms |
-| Young Ho Tim | Data Lead | PDF parsing, data pipeline, testing, documentation |
+| Team Member | Primary Role | Key Contributions |
+|-------------|--------------|-------------------|
+| Xavier Wong | Backend Development | Server architecture, API endpoints, MongoDB schema, GridFS file storage, authentication system, Vercel deployment configuration |
+| Kwok Ho Yin | Frontend Development | React user interface, calendar component with drag-and-drop, group formation UI, dashboard layout, profile management screens, CSS styling |
+| Young Ho Tim | Data Processing & Testing | PDF parsing scripts using PyMuPDF, data transformation pipelines, database seeding, integration testing, documentation, logbook maintenance |
 
-**Everything was collaborative.** We all contributed to documentation, testing, and the project logbook.
+**Collaborative work across all members:** System design decisions, testing, user feedback collection, project logbook, final report writing.
 
 ---
 
-## SLIDE 47: TRY IT YOURSELF
+## SLIDE 41: TRY EFS YOURSELF
 
-**Image Placeholder:** [Screenshot of the live website with URL]
+**Image Placeholder:** [Screenshot of the live website with URL displayed]
 
 **Text:**
 
@@ -979,37 +1011,40 @@ Class: CL15 | Group: 07
 
 **URL:** `https://platform-efs2.vercel.app`
 
-**Can't show live demo?** We have screen recordings of every feature.
+**To try the platform:**
+1. Open the URL in any modern web browser (Chrome, Firefox, Safari, Edge)
+2. Click "Register" to create a test account
+3. Upload a student ID photo (any image file is acceptable for demonstration)
+4. Wait for admin approval (or ask the presenters to approve immediately)
+5. Log in and explore all four modules
 
-**To try it yourself:**
-1. Create an account
-2. Wait for admin approval (or ask us to approve)
-3. Log in and explore
+**No installation required.** The platform runs entirely in the browser.
 
-**Repository available upon request for examiners.**
+**The source code repository is available upon request for examiners.**
 
 ---
 
-## SLIDE 48: ACKNOWLEDGMENTS
+## SLIDE 42: ACKNOWLEDGMENTS
 
-**Image Placeholder:** [Thank you graphic with logos]
+**Image Placeholder:** [Thank you graphic]
 
 **Text:**
 
-# Thank You
+# Acknowledgments
 
-**We want to thank:**
+**We would like to thank:**
 
-- **Mr. Lau Chung Yin (Tim)** – Our supervisor for guidance and feedback
-- **HKU SPACE Community College** – For the opportunity and resources
-- **The 24 students** – Who gave us honest feedback
-- **Open source community** – For MERN stack, PyMuPDF, and all the libraries
+- **Mr. Lau Chung Yin (Tim)** - For supervising this project and providing guidance throughout both semesters
 
-**Without these, EFS wouldn't exist.**
+- **HKU SPACE Community College** - For providing the opportunity to work on this project and access to resources
+
+- **The students who participated in testing** - For their time and feedback
+
+- **The open source community** - For creating and maintaining the libraries and tools we used: MongoDB, Express.js, React, Node.js, PyMuPDF, Nodemailer, and many others
 
 ---
 
-## SLIDE 49: QUESTIONS?
+## SLIDE 43: QUESTIONS AND DISCUSSION
 
 **Image Placeholder:** [Q&A graphic with question marks]
 
@@ -1017,33 +1052,120 @@ Class: CL15 | Group: 07
 
 # Questions?
 
-**We'd love to answer:**
+**We welcome questions about:**
 
+- How specific features work
 - Technical implementation details
-- User testing methodology
-- Future plans
-- Anything else!
+- Design decisions and alternatives considered
+- Testing methodology
+- Future development plans
+- Any other aspect of the project
 
-**Direct questions to:**
-- Xavier – Backend, database, deployment
-- Kwok – Frontend, UI, calendar
-- Tim – Data, PDF parsing, testing
+**Direct technical questions to:**
+- Xavier Wong - Backend, database, deployment
+- Kwok Ho Yin - Frontend, UI, calendar
+- Young Ho Tim - Data processing, PDF parsing, testing
 
 ---
 
-## SLIDE 50: BACKUP - ARCHITECTURE DETAILS
+## SLIDE 44: BACKUP - SYSTEM ARCHITECTURE DIAGRAM
 
-**Image Placeholder:** [Detailed three-tier architecture diagram]
+**Image Placeholder:** [Detailed three-tier architecture diagram with arrows showing data flow]
 
 **Text:**
 
-# Appendix: Complete Architecture (For Reference)
+# Appendix: Complete System Architecture
 
-**Available if you have technical questions:**
+**This diagram is available for reference during Q&A if there are technical questions about how the components connect.**
 
-- Complete API documentation (25+ endpoints)
-- Database schema diagrams
-- PDF parsing script details
-- Security implementation details
+**The diagram shows:**
+- Client tier: React application running in the browser
+- Application tier: Express.js API endpoints deployed on Vercel
+- Database tier: MongoDB Atlas collections and GridFS buckets
+- External services: Gmail SMTP for email notifications
 
-**Ask us during Q&A.**
+**The arrows indicate the flow of data between components when a user interacts with the platform.**
+
+---
+
+## SLIDE 45: BACKUP - API ENDPOINTS LIST
+
+**Image Placeholder:** [Table of API endpoints with methods and descriptions]
+
+**Text:**
+
+# Appendix: API Endpoint Reference
+
+**Available during Q&A for technical questions.**
+
+| Module | Endpoint | Method | Purpose |
+|--------|----------|--------|---------|
+| Auth | /api/auth/register | POST | Create new pending account |
+| Auth | /api/auth/login | POST | Authenticate and receive token |
+| Auth | /api/auth/check | GET | Verify token validity |
+| Courses | /api/courses | GET | List all courses |
+| Courses | /api/courses/:code | GET | Get course details |
+| Calendar | /api/calendar/events | GET | Get timetable events |
+| Calendar | /api/calendar/save | POST | Save user timetable |
+| Group | /api/group/requests | GET | List group requests |
+| Group | /api/group/requests | POST | Create group request |
+| Group | /api/group/requests/:id/invite | POST | Send invitation |
+| Questionnaire | /api/questionnaire | GET | List questionnaires |
+| Questionnaire | /api/questionnaire | POST | Create questionnaire |
+| Questionnaire | /api/questionnaire/:id/fill | POST | Mark questionnaire as filled |
+| Materials | /api/materials/all | GET | List all materials |
+| Materials | /api/materials/download/:id | GET | Download material file |
+| Profile | /api/profile/me | GET | Get current user profile |
+| Profile | /api/profile/update | PUT | Update profile |
+| Admin | /api/admin/pending/accounts | GET | List pending accounts |
+| Admin | /api/admin/pending/accounts/:sid/approve | POST | Approve account |
+| Admin | /api/admin/stats | GET | Get platform statistics |
+
+---
+
+## SLIDE 46: BACKUP - DATABASE COLLECTIONS
+
+**Image Placeholder:** [List of collections with descriptions]
+
+**Text:**
+
+# Appendix: Database Schema
+
+**Available during Q&A for technical questions.**
+
+| Collection | Purpose | Key Fields |
+|------------|---------|------------|
+| users | Student and admin accounts | sid, email, passwordHash, role, credits, token, timetable |
+| courses | Course session data | code, name, weekday, startTime, endTime, room, classNo |
+| pending_accounts | Accounts awaiting approval | sid, email, passwordHash, photoFileId |
+| pending_courses | Course requests awaiting approval | code, title, requestedBy |
+| group_requests | Study group posts | sid, major, description, email, status |
+| questionnaires | Survey exchange listings | creatorSid, description, link, targetResponses, filledBy, currentResponses |
+| materials | Course resource metadata | id, name, fileId, courseCode, downloads, uploadedBy |
+| uploads.files | GridFS file metadata | filename, uploadDate, length, metadata |
+| uploads.chunks | GridFS file binary chunks | files_id, n, data |
+
+**Relationships between collections are maintained through reference fields (e.g., courseCode in materials references code in courses).**
+
+---
+
+## SLIDE 47: THANK YOU
+
+**Image Placeholder:** [Closing graphic]
+
+**Text:**
+
+# Thank You for Your Attention
+
+**EFS Platform - Educational Facilitation System**
+
+**Group 7**
+- Xavier Wong (20296532)
+- Kwok Ho Yin (20293303)
+- Young Ho Tim (20293048)
+
+**Supervisor:** Mr. Lau Chung Yin (Tim)
+
+**Questions?**
+
+---

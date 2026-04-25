@@ -1,6 +1,5 @@
 # CL15_Group7_Logbook (2nd)
 
-> **Note:** Replace `CL??` with your course code (e.g., CL30) and `Group??` with your group number (e.g., Group01).
 
 ---
 
@@ -85,9 +84,9 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 | Nov 25-27, 2025 | Admin System | Created admin approval workflow for user registration | ✅ Complete |
 | Nov 26, 2025 | Email Notifications | Configured Nodemailer with Gmail SMTP | ✅ Complete |
 
-**Image Placeholder 1:** <br><img src="img/MongoDB_Atlas_cluster_showcase_screenshot.png" width="400" height="400">
+<br><img src="img/MongoDB_Atlas_cluster_showcase_screenshot.png" width="400" height="400">
 
-*[Insert screenshot of MongoDB Atlas cluster showing collections: users, courses, pending_accounts, group_requests, questionnaires, materials, uploads.files]*
+*[screenshot of MongoDB Atlas cluster showing collections: users, courses, pending_accounts, group_requests, questionnaires, materials, uploads.files]*
 
 ### Phase 3: Frontend Development (December 2025)
 
@@ -119,13 +118,13 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 | Feb 24, 2026 | Dashboard Mobile Fix | Fixed missing CSS file import in Dashboard.jsx | ✅ Complete |
 | Feb 24, 2026 | Routing Verification | Final routing fixes for production deployment | ✅ Complete |
 
-**Image Placeholder 2:** <br><img src="img/deployed_app_homepage_on_desktop_browser_screenshot.png" height="400" width="700">
+<br><img src="img/deployed_app_homepage_on_desktop_browser_screenshot.png" height="400" width="700">
 
-*[Insert screenshot of the deployed application homepage on desktop browser]*
+*[screenshot of the deployed application homepage on desktop browser]*
 
-**Image Placeholder 3:** <br><img src="img/screenshot_of_the_application_on_mobile_device_showing_responsive_layout.png" width=70% height="70%">
+<br><img src="img/screenshot_of_the_application_on_mobile_device_showing_responsive_layout.png" width=70% height="70%">
 
-*[Insert screenshot of the application on mobile device showing responsive layout]*
+*[screenshot of the application on mobile device showing responsive layout]*
 
 ---
 
@@ -138,7 +137,7 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 | **Date** | October 27, 2025 |
 | **Time** | 14:00 - 15:30 |
 | **Location** | Online (Discord) |
-| **Attendees** | [Team Member Names] |
+| **Attendees** | [Young Ho Tim,Xavier Wong,Kwok Ho Yin] |
 
 **Agenda:**
 1. Review project requirements
@@ -156,14 +155,14 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 
 | Action Item | Assigned To | Due Date |
 |-------------|-------------|----------|
-| Create GitHub repository | [Name] | Oct 27 |
-| Set up development environment | [Name] | Oct 28 |
-| Research MongoDB Atlas setup | [Name] | Oct 29 |
-| Design database schema | [Team] | Nov 1 |
+| Create GitHub repository | [Young Ho Tim] | Oct 27 |
+| Set up development environment | [Young Ho Tim] | Oct 28 |
+| Research MongoDB Atlas setup | [Young Ho Tim] | Oct 29 |
+| Design database schema | [Kwok Ho Yin] | Nov 1 |
 
-**Image Placeholder 4:** <br><img src ="img/Database_schema_image.png" height="600" width="800">
+<br><img src ="img/Database_schema_image.png" height="600" width="800">
 
-*[Insert screenshot of initial database schema design diagram]*
+*[screenshot of initial database schema design diagram]*
 
 ---
 
@@ -198,10 +197,10 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 
 | Action Item | Assigned To | Due Date |
 |-------------|-------------|----------|
-| Convert server.js to ESM | [Name] | Dec 20 |
-| Implement GridFS upload | [Name] | Dec 22 |
-| Test file upload on Vercel | [Name] | Dec 23 |
-| Update all route imports to ESM | [Name] | Dec 24 |
+| Convert server.js to ESM | [Young Ho Tim] | Dec 20 |
+| Implement GridFS upload | [Young Ho Tim] | Dec 22 |
+| Test file upload on Vercel | [Kwok Ho Yin] | Dec 23 |
+| Update all route imports to ESM | [Young Ho Tim] | Dec 24 |
 
 ---
 
@@ -212,7 +211,7 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 | **Date** | February 20, 2026 |
 | **Time** | 16:00 - 17:30 |
 | **Location** | Online (Discord) |
-| **Attendees** | [Team Member Names] |
+| **Attendees** | [Young Ho Tim,Kwok Ho Yin,Xavier Wong] |
 
 **Agenda:**
 1. Review mobile responsiveness
@@ -235,14 +234,14 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 
 | Action Item | Assigned To | Due Date |
 |-------------|-------------|----------|
-| Add responsive CSS classes | [Name] | Feb 22 |
-| Fix combined class display | [Name] | Feb 22 |
-| Test on multiple devices | [Name] | Feb 23 |
-| Prepare final documentation | [Name] | Feb 24 |
+| Add responsive CSS classes | [Young Ho Tim] | Feb 22 |
+| Fix combined class display | [Young Ho Tim] | Feb 22 |
+| Test on multiple devices | [Young Ho Tim] | Feb 23 |
+| Prepare final documentation | [Xavier Wong] | Feb 24 |
 
-**Image Placeholder 5:** <br><img src="img/screenshot_of_combined_classes_display_in_timetable-showing_01_(+1)_badge.jpeg" height="400" width="200">
+<br><img src="img/screenshot_of_combined_classes_display_in_timetable-showing_01_(+1)_badge.jpeg" height="400" width="200">
 
-*[Insert screenshot of combined classes display in timetable - showing "01 (+1)" badge]*
+*[screenshot of combined classes display in timetable - showing "01 (+1)" badge]*
 
 ---
 
@@ -303,9 +302,9 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 | **Alternatives Considered** | Keep as single entry (confusing for students), Display both class numbers in one block (calendar display issues) |
 | **Trade-offs** | More entries in database; need to handle deletion of all related classes when removing a combined class |
 
-**Image Placeholder 6:** <br><img src="img/screenshot_of_combined_classes_being_added_to_timetable-showing_class_selection_UI.jpeg" height="600" width="600">
+<br><img src="img/screenshot_of_combined_classes_being_added_to_timetable-showing_class_selection_UI.jpeg" height="600" width="600">
 
-*[Insert screenshot of combined classes being added to timetable - showing class selection UI]*
+*[screenshot of combined classes being added to timetable - showing class selection UI]*
 
 ### Decision 6: CORS Configuration
 
@@ -346,9 +345,9 @@ const connectDB = async () => {
 ```
 | **Result** | Connection established once per cold start, reused for subsequent calls |
 
-**Image Placeholder 7:** <br><img src="img/MongoDB_Atlas_connection_metrics_showing_reduced_connection_count_after_fix_screenshot.png" width="1100" height="800">
+<br><img src="img/MongoDB_Atlas_connection_metrics_showing_reduced_connection_count_after_fix_screenshot.png" width="1100" height="800">
 
-*[Insert screenshot of MongoDB Atlas connection metrics showing reduced connection count after fix]*
+*[screenshot of MongoDB Atlas connection metrics showing reduced connection count after fix]*
 
 ### Issue 2: Vercel 404 on API Routes
 
@@ -405,9 +404,9 @@ GMAIL_APP_PASSWORD=abcd efgh ijkl mnop
 ```
 | **Result** | Emails sent successfully via Gmail SMTP |
 
-**Image Placeholder 8:** <br><img src="img/screenshot_of_Gmail_App_Password_generation_page.jpeg" width="600" height="600">
+<br><img src="img/screenshot_of_Gmail_App_Password_generation_page.jpeg" width="600" height="600">
 
-*[Insert screenshot of Gmail App Password generation page]*
+*[screenshot of Gmail App Password generation page]*
 
 ### Issue 5: Login Blank Screen
 
@@ -446,9 +445,9 @@ const getDayString = (weekday) => {
 | **Solution** | 1. Added MongoDB Atlas IP whitelist for Vercel's IP ranges<br>2. Configured connection string with `mongodb+srv` protocol (uses port 443, not blocked)<br>3. Deployed from off-campus network |
 | **Result** | Database accessible from Vercel serverless functions |
 
-**Image Placeholder 9:** <img src="img/MongoDB_Atlas_Network_Access_settings_showing_whitelisted_IPs_screenshot.png" height=100 >
+<img src="img/MongoDB_Atlas_Network_Access_settings_showing_whitelisted_IPs_screenshot.png" height=100 >
 
-*[Insert screenshot of MongoDB Atlas Network Access settings showing whitelisted IPs]*
+*[screenshot of MongoDB Atlas Network Access settings showing whitelisted IPs]*
 
 ### Issue 8: Combined Classes Not Displaying
 
@@ -532,9 +531,9 @@ uploads.files: (GridFS) { filename, metadata, uploadDate }
 uploads.chunks: (GridFS) { files_id, n, data }
 ```
 
-**Image Placeholder 10:** <br><img src="img/MongoDB_course_collection.png"><img src="img/MongoDB_group_requests_collection.png" ><img src="img/MongoDB_invitaion_collection.png" ><img src="img/MongoDB_materials_collection.png"><img src="img/MongoDB_questionnaires_collection.png"><img src="img/MongoDB_users_collection .png">
+<br><img src="img/MongoDB_course_collection.png"><img src="img/MongoDB_group_requests_collection.png" ><img src="img/MongoDB_invitaion_collection.png" ><img src="img/MongoDB_materials_collection.png"><img src="img/MongoDB_questionnaires_collection.png"><img src="img/MongoDB_users_collection .png">
 
-*[Insert screenshot of MongoDB Atlas Collections view showing all collections]*
+*[screenshot of MongoDB Atlas Collections view showing all collections]*
 
 ---
 
@@ -582,13 +581,13 @@ uploads.chunks: (GridFS) { files_id, n, data }
 | Chrome (Android) | ✅ Working |
 | Safari (iOS) | ✅ Working |
 
-**Image Placeholder 11:** <br><img src="img/screenshot_that_show_successful_api_response.png" width="600" height="500">
+<br><img src="img/screenshot_that_show_successful_api_response.png" width="600" height="500">
 
-*[Insert screenshot of browser developer tools showing successful API response]*
+*[screenshot of browser developer tools showing successful API response]*
 
-**Image Placeholder 12:** <br> <img src="img/photo_of_mobile_device_showing_the_application_running.png" width=70% height=70%>
+<br> <img src="img/photo_of_mobile_device_showing_the_application_running.png" width=70% height=70%>
 
-*[Insert photo of mobile device showing the application running]*
+*[screenshot of mobile device showing the application running]*
 
 ---
 
@@ -650,9 +649,9 @@ VITE_API_URL=http://localhost:3000/api
 3. In Database Access, create user with read/write permissions
 4. Create database named `efs_platform`
 
-**Image Placeholder 13:** <br><img src="img/MongoDB_Atlas_cluster_creation_page.jpeg">
+<br><img src="img/MongoDB_Atlas_cluster_creation_page.jpeg">
 
-*[Insert screenshot of MongoDB Atlas cluster creation page]*
+*[screenshot of MongoDB Atlas cluster creation page]*
 
 #### Step 4: Deploy to Vercel
 
@@ -836,9 +835,9 @@ platform-efs2/
 - [ ] API health check returns `{ ok: true }`
 - [ ] Login flow works end-to-end
 
-**Image Placeholder 14:** <img src="img/vercel_success_deploy_log.jpeg">
+<img src="img/vercel_success_deploy_log.jpeg">
 
-*[Insert screenshot of successful Vercel deployment log]*
+*[screenshot of successful Vercel deployment log]*
 
 ---
 
@@ -893,75 +892,8 @@ platform-efs2/
 
 ---
 
-## Document Sign-off
 
-| Role | Name | Signature | Date |
-|------|------|-----------|------|
-| Project Lead | [Name] | [Signature] | [Date] |
-| Backend Lead | [Name] | [Signature] | [Date] |
-| Frontend Lead | [Name] | [Signature] | [Date] |
-| QA Lead | [Name] | [Signature] | [Date] |
 
----
 
-## How to Compile This Markdown to PDF
-
-### Method 1: Using VS Code (Recommended)
-
-1. Install the **Markdown PDF** extension in VS Code
-2. Open the markdown file
-3. Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac)
-4. Type `Markdown PDF: Export (pdf)`
-5. The PDF will be saved in the same directory
-
-### Method 2: Using Command Line with Pandoc
-
-```bash
-# Install pandoc (if not installed)
-# macOS: brew install pandoc
-# Ubuntu: sudo apt-get install pandoc
-# Windows: download from https://pandoc.org/installing.html
-
-# Convert to PDF
-pandoc "CL15_Group7_Logbook (2nd).md" -o "CL15_Group7_Logbook (2nd).pdf" --pdf-engine=xelatex -V geometry:margin=1in
-```
-
-### Method 3: Using Online Converter
-
-1. Go to https://www.markdowntopdf.com/
-2. Paste the markdown content
-3. Click "Convert to PDF"
-4. Download the PDF
-
-### Method 4: Using Typora (If available)
-
-1. Open the markdown file in Typora
-2. Go to File → Export → PDF
-3. Save the PDF
-
----
-
-## Image Placeholder Summary
-
-Before compiling to PDF, insert the following images:
-
-| # | Location | Description |
-|---|----------|-------------|
-| 1 | Section 2, Phase 2 | MongoDB Atlas collections screenshot |
-| 2 | Section 2, Phase 5 | Desktop homepage screenshot |
-| 3 | Section 2, Phase 5 | Mobile responsive view screenshot |
-| 4 | Section 3, Meeting #1 | Database schema diagram |
-| 5 | Section 3, Meeting #3 | Combined classes display in timetable |
-| 6 | Section 4, Decision 5 | Class selection UI for combined classes |
-| 7 | Section 5, Issue 1 | MongoDB Atlas connection metrics |
-| 8 | Section 5, Issue 4 | Gmail App Password generation page |
-| 9 | Section 5, Issue 7 | MongoDB Atlas Network Access whitelist |
-| 10 | Section 6, Change 5 | All MongoDB collections view |
-| 11 | Section 7.3 | Browser dev tools showing API response |
-| 12 | Section 7.3 | Mobile device photo showing app |
-| 13 | Section 8.2, Step 3 | MongoDB Atlas cluster creation |
-| 14 | Section 8.6 | Vercel deployment success log |
-
----
 
 **End of Logbook**

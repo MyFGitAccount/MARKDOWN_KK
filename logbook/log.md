@@ -25,7 +25,7 @@
 | **Project Name** | EFS Platform (Educational Facilitation System) |
 | **Course** | CL04 (Replace with your course code) |
 | **Group** | Group7 (Replace with your group number) |
-| **Submission Date** | [Insert date] |
+| **Submission Date** | [28/4/2026] |
 | **Repository 1** | https://github.com/MyFGitAccount/KPDproject-Learning-PlatForm |
 | **Repository 2** | https://github.com/MyFGitAccount/efs-platform                 |
 | **Repository 3** | https://github.com/MyFGitAccount/platform-efs                 |
@@ -173,7 +173,7 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 | **Date** | December 15, 2025 |
 | **Time** | 15:00 - 16:30 |
 | **Location** | Online (Discord) |
-| **Attendees** | [Team Member Names] |
+| **Attendees** | [Young Ho Tim,Kwok Ho Yin,Xavier Wong] |
 
 **Agenda:**
 1. Review completed features

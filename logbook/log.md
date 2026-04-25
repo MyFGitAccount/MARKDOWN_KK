@@ -130,7 +130,7 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 
 ## 3. Meeting Minutes
 
-### Meeting #1: Project Kickoff
+### Meeting 1: Project Kickoff
 
 | Item | Detail |
 |------|--------|
@@ -166,7 +166,7 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 
 ---
 
-### Meeting #2: Mid-Project Review
+### Meeting 2: Mid-Project Review
 
 | Item | Detail |
 |------|--------|
@@ -204,7 +204,7 @@ The EFS Platform is a web-based educational facilitation system designed to supp
 
 ---
 
-### Meeting #3: Pre-Final Review
+### Meeting 3: Pre-Final Review
 
 | Item | Detail |
 |------|--------|
@@ -757,6 +757,8 @@ platform-efs2/
 │       ├── main.jsx
 │       ├── responsive.css
 │       ├── components/
+│       │   ├── Chat/
+│       │   │   └── ChatPanel.jsx
 │       │   └── layout/
 │       │       ├── MainLayout.css
 │       │       └── MainLayout.jsx
@@ -786,6 +788,7 @@ platform-efs2/
 │       └── utils/
 │           └── api.js
 ├── server/
+│   ├── .env
 │   ├── package.json
 │   ├── package-lock.json
 │   ├── server.js
@@ -794,11 +797,13 @@ platform-efs2/
 │   │   ├── .env
 │   │   ├── connection.js
 │   │   ├── gridfs.js
+│   │   ├── init.js
 │   │   └── setup.js
 │   └── routes/
 │       ├── admin.js
 │       ├── auth.js
 │       ├── calendar.js
+│       ├── chat.js
 │       ├── courses.js
 │       ├── dashboard.js
 │       ├── group.js
@@ -811,13 +816,11 @@ platform-efs2/
 ├── node_modules/
 ├── .env
 ├── .env.local
+├── .git/
 ├── .gitignore
-├── k6test.js
 ├── package.json
 ├── package-lock.json
 ├── README.md
-├── report.html
-├── test.txt
 ├── vercel.json
 └── vercel-build.js
 ```

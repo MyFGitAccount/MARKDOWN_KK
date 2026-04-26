@@ -228,7 +228,7 @@ EFS creates what we call a secure walled garden, where students can collaborate 
 
 **Visual:** Core features list and "How it solves Problem 3" box
 
-**Speaker Says (Kwok - handing over from Xavier):**
+**Speaker Says (Xavier):**
 
 "Thank you Xavier. Now let me talk about the Questionnaire Exchange module.
 
@@ -244,7 +244,7 @@ How does this solve problem three? It replaces competitive spamming with a fair 
 
 **Visual:** How to Earn Credits and How to Spend Credits lists
 
-**Speaker Says (Kwok):**
+**Speaker Says (Xavier):**
 
 "Let me explain how the credit economy works. It is very simple.
 
@@ -262,7 +262,7 @@ The give-to-get principle ensures a sustainable ecosystem where every student co
 
 **Visual:** Anti-Spam Measures, Response Validation, Reporting System
 
-**Speaker Says (Kwok):**
+**Speaker Says (Xavier):**
 
 "To keep the system fair and high quality, we built in several protections.
 
@@ -282,7 +282,7 @@ This creates a self-regulating ecosystem that rewards genuine participation."
 
 **Visual:** Key Features list and Benefits for Students box
 
-**Speaker Says (Kwok):**
+**Speaker Says (Xavier):**
 
 "The fourth module is the Materials Repository. This is an additional feature we added to make EFS even more useful.
 
@@ -298,7 +298,7 @@ The benefit for students is simple: It provides a centralized hub for all learni
 
 **Visual:** Dashboard description
 
-**Speaker Says (Kwok):**
+**Speaker Says (Xavier):**
 
 "All of these modules come together in the Student Dashboard. This is your command center.
 
@@ -314,7 +314,7 @@ Everything you need is just one click away."
 
 **Visual:** User & Content Management and System & Data Control sections
 
-**Speaker Says (Kwok):**
+**Speaker Says (Xavier):**
 
 "Behind the scenes, administrators have their own panel to manage the platform.
 
@@ -332,7 +332,7 @@ This gives full control to the institution while keeping the student experience 
 
 **Visual:** Diagram showing EFS Core with four modules
 
-**Speaker Says (Kwok):**
+**Speaker Says (Xavier):**
 
 "Putting it all together, EFS has four core modules working as one integrated system.
 

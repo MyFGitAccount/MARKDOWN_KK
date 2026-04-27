@@ -3,9 +3,9 @@
 
 ---
 
-Group mate:
-Xavier Wong
-Kwok Ho Yin
+Group mate:<br>
+Xavier Wong <br>
+Kwok Ho Yin <br>
 Young Ho Tim
 
 ## Table of Contents

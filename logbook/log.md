@@ -10,6 +10,11 @@ Group mate:
 <li>Young Ho Tim (20293048)</li>
 </ul>
 
+Supervisor: Mr. Lau Chung Yin (Tim) 
+
+Semester: S2
+
+
 ## Table of Contents
 
 1. [Project Overview](#1-project-overview)

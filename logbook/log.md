@@ -1,12 +1,13 @@
 # CL15_Group7_Logbook (2nd)
 
-
+# CCIT4080 Project on Knowledge Products Development (PKPD)
 ---
-
-Group mate:<br>
-Xavier Wong <br>
-Kwok Ho Yin <br>
-Young Ho Tim
+Group mate:
+<ul>
+<li>Xavier Wong (20296532)</li>
+<li>Kwok Ho Yin (20293303)</li>
+<li>Young Ho Tim (20293048)</li>
+</ul>
 
 ## Table of Contents
 
@@ -35,7 +36,7 @@ Young Ho Tim
 | **Repository 2** | https://github.com/MyFGitAccount/efs-platform                 |
 | **Repository 3** | https://github.com/MyFGitAccount/platform-efs                 |
 | **Repository 4** | https://github.com/MyFGitAccount/platform-efs2                |
-| **Live Demo** | hku.wiki |
+| **Live Demo** | efs.homes |
 
 ### 1.2 Executive Summary
 
@@ -888,7 +889,7 @@ platform-efs2/
 
 ## Appendix C: References
 
-- **Live Application:** <a href="hku.wiki">hku.wiki</a>
+- **Live Application:** <a href="efs.hoems">efs.homes</a>
 - **GitHub Repository 1:** https://github.com/MyFGitAccount/KPDproject-Learning-PlatForm 
 - **GitHub Repository 2:** https://github.com/MyFGitAccount/efs-platform
 - **GitHub Repository 3:** https://github.com/MyFGitAccount/platform-efs

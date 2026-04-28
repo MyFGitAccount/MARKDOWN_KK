@@ -1,4 +1,4 @@
-# CL15_Group7_Logbook (2nd)
+# CL15_Group7_Logbook (2nd) for Educational Facilitation System (EFS)
 
 # CCIT4080 Project on Knowledge Products Development (PKPD)
 ---

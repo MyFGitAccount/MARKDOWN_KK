@@ -1,4 +1,3 @@
-Here is a **detailed, expanded summary** of every assessment component, including **exact folder structure**, **file naming conventions**, **content checklists**, and **specific submission steps**.
 
 ---
 
